@@ -307,15 +307,16 @@ def screen_big_holders(snaps, names):
     return m.merge(names, on='證券代號', how='left')
 
 def append_journal(rows):
-    """第 4 步：把每次的篩選結果寫進交易日誌（同一天、同類別、同代號不重複寫入）"""
+    """第 4 步：把每次的篩選結果寫進交易日誌（同一天、同類別重跑會覆蓋）"""
     if not rows:
         return
     os.makedirs(DATA_DIR, exist_ok=True)
     new = pd.DataFrame(rows).astype(str)
     if os.path.exists(JOURNAL_PATH):
         old = pd.read_csv(JOURNAL_PATH, dtype=str)
-        new = pd.concat([old, new], ignore_index=True)
-    new = new.drop_duplicates(subset=['資料日期', '類別', '證券代號'], keep='last')
+        # 同一天、同類別重跑時，以最新結果整批取代
+        replaced = old.set_index(['資料日期', '類別']).index.isin(new.set_index(['資料日期', '類別']).index)
+        new = pd.concat([old[~replaced], new], ignore_index=True)
     new.to_csv(JOURNAL_PATH, index=False, encoding='utf-8-sig')
     print(f"  交易日誌已更新：{JOURNAL_PATH}（共 {len(new)} 筆）")
 
