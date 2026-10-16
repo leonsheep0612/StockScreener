@@ -238,9 +238,6 @@ def label(row):
 def main():
     print("啟動量化程式...")
     try:
-        # 第一步：先發送一則純文字測試，確認 LINE 通訊正常
-        send_line_message("🤖 系統報告：GitHub Actions 正在執行選股腳本...")
-
         # 第二步：抓取最近 CONSEC_DAYS 個交易日的資料（上市＋上櫃）
         print(f"\n--- 開始抓取近 {CONSEC_DAYS} 個交易日資料（上市＋上櫃）---")
         days = fetch_recent_days(CONSEC_DAYS)
