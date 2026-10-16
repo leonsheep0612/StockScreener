@@ -8,6 +8,11 @@ from datetime import datetime
 LINE_TOKEN = os.environ.get("LINE_CHANNEL_ACCESS_TOKEN")
 LINE_USER_ID = os.environ.get("LINE_USER_ID")
 
+# 2. 篩選門檻（單位：張，1 張 = 1,000 股），可依需要調整
+MIN_FOREIGN_LOTS = 1000  # 外資買超至少 1,000 張（參考書中「外資當日買超 >1,000 張」）
+MIN_TRUST_LOTS = 100     # 投信買超至少 100 張
+TOP_N = 10               # 訊息中顯示前幾名
+
 def send_line_message(message):
     """使用 LINE Messaging API 發送 Push Message"""
     # 檢查金鑰是否有抓到
@@ -59,10 +64,24 @@ def get_twse_sync_buy():
     df['外資買賣超股數'] = pd.to_numeric(df['外資買賣超股數'].str.replace(',', ''), errors='coerce')
     df['投信買賣超股數'] = pd.to_numeric(df['投信買賣超股數'].str.replace(',', ''), errors='coerce')
     
-    # 篩選：外資與投信同步買超 (>0)
-    sync_buy_df = df[(df['外資買賣超股數'] > 0) & (df['投信買賣超股數'] > 0)]
-    print(f"抓取完畢，共有 {len(sync_buy_df)} 檔符合法人同步買超。")
-    return sync_buy_df[['證券代號', '證券名稱', '外資買賣超股數', '投信買賣超股數']]
+    # 換算成張數（1 張 = 1,000 股）
+    df['外資買超張數'] = df['外資買賣超股數'] // 1000
+    df['投信買超張數'] = df['投信買賣超股數'] // 1000
+    df['證券代號'] = df['證券代號'].str.strip()
+    df['證券名稱'] = df['證券名稱'].str.strip()
+
+    # 排除 ETF、ETN、權證等：只保留 4 位數、且不是 00 開頭的一般股票
+    stock_df = df[df['證券代號'].str.fullmatch(r'[1-9]\d{3}')]
+
+    # 篩選：外資與投信同步買超，且達到張數門檻
+    sync_buy_df = stock_df[(stock_df['外資買超張數'] >= MIN_FOREIGN_LOTS) & (stock_df['投信買超張數'] >= MIN_TRUST_LOTS)]
+
+    # 依外資＋投信合計買超張數排序，買最多的排前面
+    sync_buy_df = sync_buy_df.assign(合計買超張數=sync_buy_df['外資買超張數'] + sync_buy_df['投信買超張數'])
+    sync_buy_df = sync_buy_df.sort_values('合計買超張數', ascending=False)
+
+    print(f"抓取完畢，共有 {len(sync_buy_df)} 檔符合條件（外資 ≥{MIN_FOREIGN_LOTS} 張、投信 ≥{MIN_TRUST_LOTS} 張）。")
+    return sync_buy_df[['證券代號', '證券名稱', '外資買超張數', '投信買超張數', '合計買超張數']]
 
 def main():
     print("啟動量化程式...")
@@ -80,10 +99,11 @@ def main():
         if sync_buy_df.empty:
             msg += "⚠️ 目前無符合標的。\n(註：若於下午 3:00 前執行，因今日籌碼尚未公布，皆會顯示無資料喔！)"
         else:
-            msg += "🔥 法人同步買超前五名：\n"
-            top5 = sync_buy_df.head(5)
-            for index, row in top5.iterrows():
+            msg += f"條件：外資 ≥{MIN_FOREIGN_LOTS:,} 張、投信 ≥{MIN_TRUST_LOTS:,} 張\n"
+            msg += f"共 {len(sync_buy_df)} 檔，依合計買超排序前 {TOP_N} 名：\n\n"
+            for index, row in sync_buy_df.head(TOP_N).iterrows():
                 msg += f"[{row['證券代號']}] {row['證券名稱']}\n"
+                msg += f"  外資 {row['外資買超張數']:,} 張｜投信 {row['投信買超張數']:,} 張\n"
                 
         send_line_message(msg)
 
