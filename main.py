@@ -51,6 +51,10 @@ def get_twse_sync_buy():
         
     df = pd.DataFrame(res['data'], columns=res['fields'])
     
+    # 證交所欄位名稱為「外陸資買賣超股數(不含外資自營商)」，統一改名方便後續使用
+    foreign_col = next(c for c in df.columns if c.startswith('外陸資買賣超股數') or c == '外資買賣超股數')
+    df = df.rename(columns={foreign_col: '外資買賣超股數'})
+
     # 清理逗號並轉為數值
     df['外資買賣超股數'] = pd.to_numeric(df['外資買賣超股數'].str.replace(',', ''), errors='coerce')
     df['投信買賣超股數'] = pd.to_numeric(df['投信買賣超股數'].str.replace(',', ''), errors='coerce')
