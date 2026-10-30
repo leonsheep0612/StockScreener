@@ -313,6 +313,16 @@ async function handleWebhook(request, env) {
   return new Response('OK');
 }
 
+// 卡片標題：淺黃底黑字、固定高度，名稱一行、說明最多兩行，每張卡標題對齊
+function cardHeader(title, desc) {
+  return {
+    type: 'box', layout: 'vertical', backgroundColor: '#FFF4CC', paddingAll: '14px', height: '92px', contents: [
+      { type: 'text', text: title, color: '#1d2433', weight: 'bold', size: 'lg' },
+      { type: 'text', text: desc, color: '#6b6250', size: 'xs', wrap: true, maxLines: 2, margin: 'sm' },
+    ],
+  };
+}
+
 const liffUrl = (env, presetId) => `https://liff.line.me/${env.LIFF_ID}${presetId ? `?preset=${presetId}` : ''}`;
 
 // 每個條件組合一張卡：策略圖示、名稱、最新結果摘要、三個按鈕
@@ -330,12 +340,7 @@ function presetBubble(env, p, result, resultsDate) {
       }));
   return {
     type: 'bubble', size: 'kilo',
-    header: {
-      type: 'box', layout: 'vertical', backgroundColor: '#1b2a40', paddingAll: '16px', contents: [
-        { type: 'text', text: `${info.icon} ${p.name}`, color: '#ffffff', weight: 'bold', size: 'lg', wrap: true },
-        { type: 'text', text: info.desc, color: '#a9b7cc', size: 'xs', wrap: true, margin: 'sm' },
-      ],
-    },
+    header: cardHeader(`${info.icon} ${p.name}`, info.desc),
     body: {
       type: 'box', layout: 'vertical', spacing: 'sm', contents: [
         ...(result ? [{ type: 'text', text: `資料日期 ${result.date}${stale ? '（條件已修改）' : ''}`, size: 'xs', color: stale ? '#e5484d' : '#8c8c8c' }] : []),
@@ -383,10 +388,9 @@ async function runCommand(env, action, params) {
       presetBubble(env, p, results?.results?.[p.id] && { ...results.results[p.id], date: results.date }, resultsDate));
     bubbles.push({
       type: 'bubble', size: 'kilo',
-      body: { type: 'box', layout: 'vertical', justifyContent: 'center', spacing: 'md', contents: [
+      header: cardHeader('＋ 新增條件組合', '從四種策略範本開始，或自由搭配各種條件'),
+      body: { type: 'box', layout: 'vertical', justifyContent: 'center', contents: [
         { type: 'text', text: '＋', size: '4xl', align: 'center', color: '#06c755' },
-        { type: 'text', text: '新增條件組合', weight: 'bold', align: 'center' },
-        { type: 'text', text: '從四種策略範本開始，或自由搭配', size: 'xs', color: '#8c8c8c', align: 'center', wrap: true },
       ] },
       footer: { type: 'box', layout: 'vertical', contents: [
         { type: 'button', style: 'primary', color: '#06c755', height: 'sm', action: { type: 'uri', label: '開啟設定', uri: liffUrl(env, 'new') } },
