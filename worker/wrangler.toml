@@ -9,12 +9,11 @@ rules = [{ type = "Text", globs = ["**/*.html"], fallthrough = true }]
 GITHUB_REPO = "leonsheep0612/StockScreener"
 GITHUB_BRANCH = "main"
 WORKFLOW_FILE = "schedule.yml"
-# 在 LINE Developers 建立 LIFF App 後填入，例如 "2001234567-AbCdEfGh"
-LIFF_ID = ""
 
-# 以下用 `npx wrangler secret put <名稱>` 設定，不要寫在這裡：
+# 以下密鑰由 GitHub Actions（.github/workflows/deploy-worker.yml）從 GitHub Secrets 設定，不要寫在這裡：
 #   LINE_CHANNEL_SECRET        Messaging API channel 的 Channel secret（驗證 webhook 簽章）
 #   LINE_CHANNEL_ACCESS_TOKEN  Messaging API channel 的 access token（回覆訊息）
-#   LINE_USER_ID               你自己的 userId（和 GitHub Secrets 相同），只有這個人能改設定
+#   LINE_USER_ID               你自己的 userId，只有這個人能改設定
+#   LIFF_ID                    LIFF App 的 ID
 #   LIFF_CHANNEL_ID            LIFF App 所在的 LINE Login channel 的 Channel ID（驗證登入身分）
 #   GITHUB_TOKEN               GitHub fine-grained token：本 repo 的 Contents 與 Actions 讀寫權限

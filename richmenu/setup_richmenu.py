@@ -2,8 +2,8 @@
 
 用法：
     python richmenu/setup_richmenu.py draw      # 只產生 richmenu/richmenu.png 預覽
-    python richmenu/setup_richmenu.py upload    # 產生圖片並上傳、設為所有使用者的預設選單
-上傳需要環境變數 LINE_CHANNEL_ACCESS_TOKEN 與 LIFF_ID
+    python richmenu/setup_richmenu.py upload    # 上傳 richmenu.png（沒有才重畫）並設為所有使用者的預設選單
+上傳需要環境變數 LINE_CHANNEL_ACCESS_TOKEN 與 LIFF_ID；平常由 GitHub Actions 的 Deploy LINE Worker 執行
 """
 import os
 import sys
@@ -109,6 +109,8 @@ def upload():
 
 if __name__ == "__main__":
     command = sys.argv[1] if len(sys.argv) > 1 else "draw"
-    draw()
+    # 上傳時直接用 repo 裡的圖（GitHub 主機沒有中文字型，重畫會變成方塊字）
+    if command == "draw" or not os.path.exists(IMAGE_PATH):
+        draw()
     if command == "upload":
         upload()

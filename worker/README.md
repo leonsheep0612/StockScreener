@@ -48,38 +48,37 @@ GitHub → 右上頭像 → Settings → Developer settings → Personal access 
 2. 同一個 Provider → Create a new channel → **LINE Login**（App types 勾 Web app）
    - 必須和官方帳號在**同一個 Provider**，userId 才會相同
    - Basic settings → 複製 **Channel ID**
-   - LIFF 分頁 → Add：Size **Full**、Endpoint URL 先填 `https://example.com`（第 3 步部署後再改）、Scopes 勾 **openid**
+   - LIFF 分頁 → Add：Size **Full**、Endpoint URL 先填 `https://example.com`（第 5 步部署後再改）、Scopes 勾 **openid**
    - 複製 **LIFF ID**（像 `2001234567-AbCdEfGh`）
 
-### 3. 部署 Worker
-```bash
-cd worker
-npm install
-npx wrangler login
-```
-`wrangler.toml` 填入 `LIFF_ID`，再依序設定密鑰（每個指令會要你貼上值）：
-```bash
-npx wrangler secret put LINE_CHANNEL_SECRET
-npx wrangler secret put LINE_CHANNEL_ACCESS_TOKEN
-npx wrangler secret put LINE_USER_ID
-npx wrangler secret put LIFF_CHANNEL_ID
-npx wrangler secret put GITHUB_TOKEN
-npx wrangler deploy
-```
-`LINE_CHANNEL_ACCESS_TOKEN`、`LINE_USER_ID` 和 GitHub Secrets 是同一組值（GitHub Secrets 無法讀出，請從 LINE 後台再複製一次：access token 在 Messaging API 分頁最下方，userId 在 Basic settings 的 Your user ID）。
+### 3. Cloudflare（Worker 由 GitHub Actions 部署，不用在本機裝任何東西）
+1. 註冊 https://dash.cloudflare.com （免費），左側 **Workers & Pages** 點進去一次，依提示設定你的 `workers.dev` 子網域
+2. 右上頭像 → **My Profile** → **API Tokens** → Create Token → 範本 **Edit Cloudflare Workers** → Use template
+   - Account Resources 選你的帳號、Zone Resources 選 All zones → Continue → Create Token，複製 token
+3. **Account ID**：Workers & Pages 頁面右側（或網址 `dash.cloudflare.com/` 後面那串）
 
-部署完會得到網址，例如 `https://stock-screener-line.<帳號>.workers.dev`：
-- LIFF 的 Endpoint URL 改成這個網址（結尾加 `/`）
-- Messaging API 分頁 → Webhook URL 填 `網址/webhook`，按 Verify，打開 **Use webhook**
+### 4. GitHub Secrets（repo → Settings → Secrets and variables → Actions → New repository secret）
+| 名稱 | 值 |
+|---|---|
+| `CLOUDFLARE_API_TOKEN` | 第 3 步的 API token |
+| `CLOUDFLARE_ACCOUNT_ID` | 第 3 步的 Account ID |
+| `LINE_CHANNEL_SECRET` | Messaging API channel 的 Channel secret |
+| `LIFF_ID` | LIFF ID |
+| `LIFF_CHANNEL_ID` | LINE Login channel 的 Channel ID |
+| `WORKER_GITHUB_TOKEN` | 第 1 步的 GitHub token（GitHub 不允許以 `GITHUB_` 開頭命名） |
+
+`LINE_CHANNEL_ACCESS_TOKEN`、`LINE_USER_ID` 已經有了，不用重設。
+
+### 5. 部署
+GitHub → **Actions** → **Deploy LINE Worker** → Run workflow（勾選上傳圖文選單）。
+完成後在「部署 Cloudflare Worker」步驟的紀錄裡找到網址，例如 `https://stock-screener-line.<子網域>.workers.dev`，回 LINE Developers：
+- LINE Login channel → LIFF → Endpoint URL 改成這個網址（結尾加 `/`）
+- Messaging API channel → Webhook URL 填 `網址/webhook`，按 **Verify**，打開 **Use webhook**
 - LINE Official Account Manager → 回應設定 → 關閉「自動回應訊息」
 
-### 4. 上傳圖文選單
-```bash
-pip install pillow requests
-LINE_CHANNEL_ACCESS_TOKEN=… LIFF_ID=… python richmenu/setup_richmenu.py upload
-```
+之後 `worker/` 或 `strategies.json` 有改動推上 GitHub 時會自動重新部署。
 
-### 5. 第一次執行
+### 6. 第一次篩選
 GitHub → Actions → Stock Screener Schedule → Run workflow。第一次會回補約一年的行情（日／週／月 KD 需要），大約 30～40 分鐘；之後每天只抓當天。
 
 ## 本機預覽

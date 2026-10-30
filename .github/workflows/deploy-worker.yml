@@ -1,0 +1,66 @@
+name: Deploy LINE Worker
+
+on:
+  workflow_dispatch:
+    inputs:
+      upload_richmenu:
+        description: "同時上傳圖文選單（第一次部署或選單圖片有改時勾選）"
+        type: boolean
+        default: true
+  # Worker 程式或策略範本有改動時自動重新部署
+  push:
+    branches: [main]
+    paths:
+      - "worker/**"
+      - "strategies.json"
+
+concurrency:
+  group: deploy-worker
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: 部署 Cloudflare Worker
+        working-directory: worker
+        run: |
+          npm install --no-audit --no-fund
+          npx wrangler deploy
+
+      - name: 設定 Worker 密鑰
+        working-directory: worker
+        env:
+          LINE_CHANNEL_SECRET: ${{ secrets.LINE_CHANNEL_SECRET }}
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+          LIFF_ID: ${{ secrets.LIFF_ID }}
+          LIFF_CHANNEL_ID: ${{ secrets.LIFF_CHANNEL_ID }}
+          # GitHub 不允許 Secrets 以 GITHUB_ 開頭，所以存成 WORKER_GITHUB_TOKEN
+          WORKER_GITHUB_TOKEN: ${{ secrets.WORKER_GITHUB_TOKEN }}
+        run: |
+          for name in LINE_CHANNEL_SECRET LINE_CHANNEL_ACCESS_TOKEN LINE_USER_ID LIFF_ID LIFF_CHANNEL_ID WORKER_GITHUB_TOKEN; do
+            if [ -z "${!name}" ]; then echo "❌ 缺少 GitHub Secret：$name"; exit 1; fi
+          done
+          jq -n --arg a "$LINE_CHANNEL_SECRET" --arg b "$LINE_CHANNEL_ACCESS_TOKEN" --arg c "$LINE_USER_ID" \
+                --arg d "$LIFF_ID" --arg e "$LIFF_CHANNEL_ID" --arg f "$WORKER_GITHUB_TOKEN" \
+                '{LINE_CHANNEL_SECRET: $a, LINE_CHANNEL_ACCESS_TOKEN: $b, LINE_USER_ID: $c, LIFF_ID: $d, LIFF_CHANNEL_ID: $e, GITHUB_TOKEN: $f}' > secrets.json
+          npx wrangler secret bulk secrets.json
+          rm secrets.json
+
+      - name: 上傳圖文選單
+        if: github.event_name == 'workflow_dispatch' && inputs.upload_richmenu
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LIFF_ID: ${{ secrets.LIFF_ID }}
+        run: |
+          pip install requests pillow
+          python richmenu/setup_richmenu.py upload
