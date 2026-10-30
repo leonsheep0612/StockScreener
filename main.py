@@ -326,6 +326,17 @@ def season_shift(y, s, n):
     i = y * 4 + (s - 1) - n
     return i // 4, i % 4 + 1
 
+REVENUE_NAMES = ['營業收入', '淨收益', '收益合計', '收入合計', '營業收益', '收益', '收入']
+
+def find_revenue_col(columns):
+    """營收欄位：各產業表格名稱不同（一般業「營業收入」、金控「淨收益」、證券「收益」…）
+    先找完全相同的名稱，避免把銀行的「利息淨收益」當成「淨收益」"""
+    names = {str(c).replace(' ', ''): c for c in columns}
+    for kw in REVENUE_NAMES:
+        if kw in names:
+            return names[kw]
+    return find_col(columns, *REVENUE_NAMES, exclude=('營業外', '利息', '其他', '每股', '手續費'))
+
 def fetch_season_market(y, s, market):
     res = requests.post("https://mopsov.twse.com.tw/mops/web/ajax_t163sb04", headers=HEADERS, timeout=60, data={
         'encodeURIComponent': 1, 'step': 1, 'firstin': 1, 'off': 1, 'isQuery': 'Y',
@@ -343,9 +354,9 @@ def fetch_season_market(y, s, market):
         if code is None or eps is None:
             continue
         # 一般業是「營業收入」，金融保險業是「淨收益」「收益合計」等
-        rev = find_col(t.columns, '營業收入', '淨收益', '收益合計', '收入合計')
+        rev = find_revenue_col(t.columns)
         parts.append(pd.DataFrame({'證券代號': t[code].astype(str).str.strip(),
-                                   '營收': to_number(t[rev], fill=None) if rev else None,
+                                   '營收': to_number(t[rev], fill=None) if rev else float('nan'),
                                    'EPS': to_number(t[eps], fill=None)}))
     return pd.concat(parts, ignore_index=True) if parts else None
 
@@ -374,6 +385,8 @@ class Financials:
                 os.makedirs(FIN_DIR, exist_ok=True)
                 df.to_csv(path, index=False, encoding='utf-8-sig')
                 print(f"  已更新財報 {y}Q{s}：{len(df)} 家")
+        if df is not None:  # 確保是數值欄位，缺值為 NaN（物件欄位遇到 0 會直接 ZeroDivisionError）
+            df[['營收', 'EPS']] = df[['營收', 'EPS']].apply(pd.to_numeric, errors='coerce')
         self.seasons[(y, s)] = None if df is None else df.set_index('證券代號')
         return self.seasons[(y, s)]
 
