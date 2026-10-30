@@ -1,0 +1,63 @@
+{
+  "blank": {
+    "strategy": "custom",
+    "notify_days": [],
+    "combine": "separate",
+    "top_n": 10,
+    "filters": {"require_above_ma20": false, "min_avg_volume_lots": 300, "volume_surge": 4},
+    "strong": {"enabled": false, "plus_di_min": 30, "minus_di_max": 20, "di_adx_order": true, "pctb_min": 1.0,
+               "bandwidth_max": 0.2, "min_volume_lots": 500, "kd_daily": true, "kd_weekly": true, "kd_monthly": true,
+               "ma5_above_ma20": true, "big_holder_no_decrease": true},
+    "growth": {"enabled": false, "eps_q_yoy": 25, "eps_q_count": 2, "eps_y_yoy": 25, "eps_y_count": 1,
+               "rev_q_yoy": 25, "rev_q_count": 1, "roe_min": 17, "cum_eps_auto": true, "cum_eps_min": 0.75},
+    "value": {"enabled": false, "cash_div_min": 1.5, "yield_min": 5.5, "per_max": 15, "pbr_max": 2,
+              "above_ma60": true, "ma60_rising": true},
+    "big_holder": {"enabled": false, "min_change": 8, "surge": 15, "ratio_range": [20, 80], "sweet_spot": [40, 70],
+                   "stock_change_tolerance": 1, "max_capital_yi": 50},
+    "consecutive": {"enabled": false, "days": 10},
+    "cum_sync": {"enabled": false, "days": 60},
+    "monthly_ratio": {"enabled": false, "foreign_pct": 8, "trust_pct": 2},
+    "daily": {"enabled": false, "min_trust_lots": 100,
+              "foreign_combos": [{"pct": 29, "lots": 1000}, {"pct": 15, "lots": 2000}, {"pct": 8, "lots": 4000}]}
+  },
+  "strategies": [
+    {
+      "key": "growth", "icon": "📈", "name": "長期成長股",
+      "desc": "CAN SLIM｜企業成長＋複利｜持有半年～5 年",
+      "freq": "每季財報截止後（5/15、8/14、11/14、3/31）",
+      "sections": ["growth"],
+      "notify_days": [],
+      "overrides": {"filters": {"require_above_ma20": false, "min_avg_volume_lots": 300}}
+    },
+    {
+      "key": "strong", "icon": "⚡", "name": "中短線強勢股",
+      "desc": "動能、強者恆強｜持有 1 週～3 個月",
+      "freq": "每 2～3 天或每週",
+      "sections": ["strong"],
+      "notify_days": [],
+      "overrides": {"filters": {"require_above_ma20": false, "min_avg_volume_lots": 0}}
+    },
+    {
+      "key": "chip", "icon": "🐳", "name": "主力操作股",
+      "desc": "跟隨法人籌碼、跟隨不搶跑｜持有數天～6 個月",
+      "freq": "每週（集保週五晚公布，週一看）",
+      "sections": ["big_holder", "consecutive", "cum_sync", "monthly_ratio", "daily"],
+      "notify_days": [],
+      "overrides": {"filters": {"require_above_ma20": true, "min_avg_volume_lots": 300}}
+    },
+    {
+      "key": "value", "icon": "💰", "name": "高殖利率價值股",
+      "desc": "均值回歸、安全邊際｜持有 1～3 年",
+      "freq": "每年 3 月起公告股利後",
+      "sections": ["value"],
+      "notify_days": [],
+      "overrides": {"filters": {"require_above_ma20": false, "min_avg_volume_lots": 300}}
+    }
+  ],
+  "growth_levels": [
+    {"label": "① 標準", "values": {"eps_q_yoy": 25, "eps_q_count": 2, "eps_y_yoy": 25, "eps_y_count": 1, "rev_q_yoy": 25, "rev_q_count": 1, "roe_min": 17, "cum_eps_auto": true}},
+    {"label": "② 較嚴格", "values": {"eps_q_yoy": 25, "eps_q_count": 2, "eps_y_yoy": 25, "eps_y_count": 2, "rev_q_yoy": 25, "rev_q_count": 3, "roe_min": 17, "cum_eps_auto": true}},
+    {"label": "③ 累季 EPS>0", "values": {"eps_q_yoy": 25, "eps_q_count": 2, "eps_y_yoy": 25, "eps_y_count": 2, "rev_q_yoy": 25, "rev_q_count": 3, "roe_min": 17, "cum_eps_auto": false, "cum_eps_min": 0}},
+    {"label": "④ 較寬鬆", "values": {"eps_q_yoy": 20, "eps_q_count": 2, "eps_y_yoy": 20, "eps_y_count": 2, "rev_q_yoy": 20, "rev_q_count": 3, "roe_min": 17, "cum_eps_auto": true}}
+  ]
+}

@@ -5,13 +5,25 @@ on:
     # 台灣時間週一至週五 16:30（UTC 08:30）執行，確保證交所、櫃買中心已公布當天資料
     - cron: "30 8 * * 1-5"
   workflow_dispatch:
+    inputs:
+      preset:
+        description: "只推播這個條件組合 id（從 LINE 設定頁按「立即篩選」時自動帶入；留空則依各組合的推播日）"
+        required: false
+        default: ""
 
 permissions:
-  contents: write  # 允許把交易日誌、集保快照存回 GitHub
+  contents: write  # 允許把交易日誌、集保快照、最新結果存回 GitHub
+
+# 同時只跑一個，避免兩次執行互相覆蓋 data
+concurrency:
+  group: screener
+  cancel-in-progress: false
 
 jobs:
   run-screener:
     runs-on: ubuntu-latest
+    # 第一次執行要回補約一年的行情（每次查詢間隔 3 秒），大約 30～40 分鐘；之後每天只抓當天
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,9 +34,14 @@ jobs:
         env:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
-      - name: 儲存交易日誌與集保快照
+          PRESET: ${{ inputs.preset }}
+      - name: 儲存交易日誌、集保快照與最新結果
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
           git add data
-          git diff --cached --quiet || (git commit -m "Update journal $(TZ=Asia/Taipei date +%F)" && git push)
+          git diff --cached --quiet && exit 0
+          git commit -m "Update journal $(TZ=Asia/Taipei date +%F)"
+          # 執行期間可能有人從 LINE 改了 config.json，先接上最新版本再推
+          git pull --rebase origin main
+          git push

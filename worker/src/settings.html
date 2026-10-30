@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>篩選條件設定</title>
+<script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+<style>
+  :root {
+    --bg: #f2f4f7; --card: #ffffff; --text: #1d2433; --muted: #6b7489; --line: #e3e7ee;
+    --accent: #06c755; --accent-soft: #e6f9ee; --accent-ink: #ffffff; --danger: #e5484d; --input: #f6f8fb; --off: #c9ced8;
+    --hero: #1b2a40; --hero-ink: #ffffff; --hero-muted: #a9b7cc; --overlay: rgba(10, 14, 20, .45);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11151c; --card: #1a2029; --text: #e8ecf2; --muted: #8d97a8; --line: #2a323f;
+      --accent-soft: #123524; --input: #222a35; --off: #4a5363; --hero: #22344f; --overlay: rgba(0, 0, 0, .6);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.5 -apple-system, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    padding: 0 0 calc(96px + env(safe-area-inset-bottom));
+  }
+  button { font: inherit; }
+  header { padding: 18px 16px 4px; display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; }
+  header h1 { margin: 0; font-size: 20px; }
+  header p { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+  .quota { text-align: right; font-size: 12px; color: var(--muted); white-space: nowrap; }
+  .quota b { display: block; font-size: 15px; color: var(--text); }
+  .meter { width: 92px; height: 6px; border-radius: 6px; background: var(--line); margin-top: 4px; overflow: hidden; margin-left: auto; }
+  .meter i { display: block; height: 100%; background: var(--accent); }
+  .tabs { display: flex; gap: 8px; overflow-x: auto; padding: 10px 16px 4px; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab { flex: none; padding: 7px 14px; border-radius: 20px; border: 1px solid var(--line); background: var(--card); color: var(--text); font-size: 14px; cursor: pointer; }
+  .tab.active { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; }
+  .tab.new { border-style: dashed; color: var(--accent); border-color: var(--accent); }
+  .card { background: var(--card); margin: 12px 16px; border-radius: 14px; border: 1px solid var(--line); overflow: hidden; }
+  .card-head { display: flex; align-items: center; gap: 10px; padding: 14px 16px; }
+  .card-head .icon { font-size: 22px; }
+  .card-head .title { flex: 1; }
+  .card-head .title b { display: block; font-size: 16px; }
+  .card-head .title small { color: var(--muted); font-size: 12px; }
+  .card-head .remove { border: 0; background: var(--input); color: var(--muted); width: 32px; height: 32px; border-radius: 50%; font-size: 16px; cursor: pointer; }
+  .card-body { padding: 4px 16px 14px; border-top: 1px solid var(--line); }
+  .hero { background: var(--hero); color: var(--hero-ink); border: 0; }
+  .hero .card-body { border-top: 0; padding-top: 16px; }
+  .badge { display: inline-block; font-size: 12px; padding: 2px 10px; border-radius: 12px; background: rgba(255,255,255,.12); color: var(--hero-muted); margin-bottom: 8px; }
+  .hero .desc { font-size: 12px; color: var(--hero-muted); margin: 6px 0 0; }
+  .name-input { width: 100%; padding: 10px 12px; border: 1px solid rgba(255,255,255,.15); border-radius: 10px; background: rgba(255,255,255,.08); color: var(--hero-ink); font-size: 18px; font-weight: 700; }
+  .name-input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+  .label { font-size: 13px; color: var(--muted); margin: 12px 0 6px; }
+  .hero .label { color: var(--hero-muted); }
+  .days, .seg { display: flex; gap: 6px; }
+  .day, .seg button { flex: 1; padding: 8px 0; border-radius: 10px; border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.06); color: var(--hero-muted); font-size: 14px; cursor: pointer; }
+  .day.on, .seg button.on { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 700; }
+  .hint { font-size: 12px; color: var(--hero-muted); margin-top: 6px; }
+  .preset-actions { display: flex; gap: 8px; margin-top: 14px; }
+  .preset-actions button { flex: 1; padding: 8px; border-radius: 10px; border: 1px solid rgba(255,255,255,.18); background: transparent; color: var(--hero-ink); font-size: 13px; cursor: pointer; }
+  .preset-actions button.danger { color: #ff8a8d; }
+  .preset-actions button:disabled { opacity: .4; }
+  .row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0; }
+  .row + .row { border-top: 1px dashed var(--line); }
+  .row label { flex: 1; }
+  .row label.switch { flex: none; }
+  .row label small { display: block; color: var(--muted); font-size: 12px; }
+  .field { display: flex; align-items: center; gap: 6px; }
+  .field span { color: var(--muted); font-size: 13px; white-space: nowrap; }
+  input[type=number] {
+    width: 76px; padding: 8px; border: 1px solid var(--line); border-radius: 8px;
+    background: var(--input); color: var(--text); font-size: 15px; text-align: right;
+  }
+  input[type=number]:focus { outline: 2px solid var(--accent); border-color: transparent; }
+  .switch { position: relative; width: 48px; height: 28px; flex: none; }
+  .switch input { opacity: 0; width: 0; height: 0; }
+  .switch i { position: absolute; inset: 0; background: var(--off); border-radius: 28px; transition: .2s; cursor: pointer; }
+  .switch i::after { content: ""; position: absolute; left: 3px; top: 3px; width: 22px; height: 22px; border-radius: 50%; background: #fff; transition: .2s; }
+  .switch input:checked + i { background: var(--accent); }
+  .switch input:checked + i::after { transform: translateX(20px); }
+  .levels { display: flex; gap: 6px; flex-wrap: wrap; padding: 10px 0 4px; }
+  .levels button { padding: 6px 10px; border-radius: 16px; border: 1px solid var(--line); background: var(--input); color: var(--text); font-size: 13px; cursor: pointer; }
+  .levels button.on { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+  .combo { display: flex; align-items: center; gap: 6px; background: var(--input); border: 1px solid var(--line); border-radius: 10px; padding: 8px 8px 8px 10px; margin-bottom: 8px; }
+  .combo .no { font-size: 12px; color: var(--muted); width: 14px; }
+  .combo input[type=number] { width: 58px; background: var(--card); }
+  .combo .and { color: var(--muted); font-size: 13px; }
+  .combo .del { margin-left: auto; border: 0; background: transparent; color: var(--danger); font-size: 20px; width: 32px; height: 32px; border-radius: 8px; cursor: pointer; }
+  .add { width: 100%; padding: 10px; border: 1.5px dashed var(--accent); color: var(--accent); background: transparent; border-radius: 10px; font-size: 14px; font-weight: 600; cursor: pointer; }
+  .section-title { margin: 20px 16px 4px; font-size: 13px; color: var(--muted); }
+  .addable { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 16px; }
+  .addable button { text-align: left; padding: 10px 12px; border-radius: 12px; border: 1.5px dashed var(--line); background: var(--card); color: var(--text); font-size: 13px; cursor: pointer; }
+  .addable button b { display: block; font-size: 14px; }
+  .addable button small { color: var(--muted); }
+  .bar {
+    position: fixed; left: 0; right: 0; bottom: 0; display: flex; gap: 8px; z-index: 5;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); background: var(--card); border-top: 1px solid var(--line);
+  }
+  .bar button { flex: 1; padding: 12px 6px; border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer; border: 1px solid var(--line); background: var(--card); color: var(--text); }
+  .bar button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); flex: 1.5; }
+  .bar button:disabled { opacity: .45; cursor: default; }
+  .sheet-bg { position: fixed; inset: 0; background: var(--overlay); z-index: 10; display: none; }
+  .sheet-bg.show { display: block; }
+  .sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 11; background: var(--bg); border-radius: 18px 18px 0 0; padding: 16px 16px calc(16px + env(safe-area-inset-bottom)); max-height: 88vh; overflow-y: auto; transform: translateY(100%); transition: transform .25s; }
+  .sheet.show { transform: none; }
+  .sheet h2 { margin: 0 0 4px; font-size: 18px; }
+  .sheet > p { margin: 0 0 12px; color: var(--muted); font-size: 13px; }
+  .strategy { display: flex; gap: 12px; width: 100%; text-align: left; align-items: flex-start; padding: 14px; margin-bottom: 10px; border-radius: 14px; border: 1px solid var(--line); background: var(--card); color: var(--text); cursor: pointer; }
+  .strategy .big { font-size: 30px; line-height: 1; }
+  .strategy b { font-size: 16px; }
+  .strategy small { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .strategy .when { color: var(--accent); }
+  .toast { position: fixed; left: 50%; bottom: calc(86px + env(safe-area-inset-bottom)); transform: translateX(-50%); background: rgba(20,24,32,.92); color: #fff; padding: 10px 16px; border-radius: 10px; font-size: 14px; max-width: calc(100% - 32px); opacity: 0; transition: .25s; pointer-events: none; z-index: 20; }
+  .toast.show { opacity: 1; }
+  .loading { text-align: center; color: var(--muted); padding: 60px 16px; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>篩選條件設定</h1>
+    <p id="status">讀取中…</p>
+  </div>
+  <div class="quota" id="quota"></div>
+</header>
+<nav class="tabs" id="tabs"></nav>
+<main id="app"><div class="loading">載入設定中…</div></main>
+
+<div class="bar">
+  <button id="reset" disabled>還原</button>
+  <button id="save" disabled>儲存</button>
+  <button id="saveRun" class="primary" disabled>立即篩選</button>
+</div>
+<div class="sheet-bg" id="sheetBg"></div>
+<div class="sheet" id="sheet"></div>
+<div class="toast" id="toast"></div>
+
+<script id="strategies" type="application/json">__STRATEGIES__</script>
+<script>
+const LIFF_ID = '__LIFF_ID__';
+const PREVIEW = !LIFF_ID || LIFF_ID.startsWith('__');
+const STRATEGIES = JSON.parse(document.getElementById('strategies').textContent);
+const STRATEGY = Object.fromEntries(STRATEGIES.strategies.map((s) => [s.key, s]));
+const CUSTOM = { key: 'custom', icon: '🧩', name: '自訂組合', desc: '自由搭配各種條件區塊', freq: '自己決定' };
+const WEEKDAYS = ['一', '二', '三', '四', '五'];
+
+// 各條件區塊的標題與欄位
+const SECTIONS = {
+  strong: { icon: '⚡', title: '強勢股技術面', sub: 'DMI、布林、KD、均線（第 4 章）', body: () =>
+    numberRow('strong.plus_di_min', '+DI 大於', '多方力道', '', 1) +
+    numberRow('strong.minus_di_max', '−DI 小於', '空方力道', '', 1) +
+    switchRow('strong.di_adx_order', '+DI > ADX > −DI', '趨勢確認') +
+    numberRow('strong.pctb_min', '布林 %b 大於', '1.0 = 突破上軌', '', 0.1) +
+    numberRow('strong.bandwidth_max', '布林帶寬小於', '整理後剛突破', '', 0.01) +
+    numberRow('strong.min_volume_lots', '當日成交量至少', '', '張') +
+    switchRow('strong.kd_daily', '日 K > D', '') +
+    switchRow('strong.kd_weekly', '週 K > D', '週 KD 定方向') +
+    switchRow('strong.kd_monthly', '月 K > D', '') +
+    switchRow('strong.ma5_above_ma20', '5MA > 20MA', '') +
+    switchRow('strong.big_holder_no_decrease', '千張大戶不減少', '集保週增減 ≥ 0') },
+  growth: { icon: '📈', title: 'CAN SLIM 成長股財報', sub: 'EPS、營收年增、ROE（第 3 章）', body: () =>
+    `<div class="levels">${STRATEGIES.growth_levels.map((l, i) =>
+      `<button data-level="${i}" class="${levelMatch(l) ? 'on' : ''}">${esc(l.label)}</button>`).join('')}</div>` +
+    numberRow('growth.eps_q_yoy', '單季 EPS 年增 ≥', '', '%') +
+    numberRow('growth.eps_q_count', '　連續幾季', '本季、前一季…（最多 3）', '季') +
+    numberRow('growth.rev_q_yoy', '單季營收年增 ≥', '', '%') +
+    numberRow('growth.rev_q_count', '　連續幾季', '最多 3', '季') +
+    numberRow('growth.eps_y_yoy', '年度 EPS 年增 ≥', '', '%') +
+    numberRow('growth.eps_y_count', '　連續幾年', '最多 2', '年') +
+    numberRow('growth.roe_min', '近 4 季 ROE ≥', '', '%') +
+    switchRow('growth.cum_eps_auto', '累季 EPS 門檻自動', 'Q1 0.25、Q2 0.5、Q3 0.75、Q4 1.0 元') +
+    (get('growth.cum_eps_auto') ? '' : numberRow('growth.cum_eps_min', '累季 EPS 大於', '', '元', 0.01)) },
+  value: { icon: '💰', title: '高殖利率價值', sub: '股利、殖利率、本益比、淨值比（第 6 章）', body: () =>
+    numberRow('value.cash_div_min', '現金股利 ≥', '', '元', 0.1) +
+    numberRow('value.yield_min', '現金殖利率 ≥', '定存利率 2 倍以上', '%', 0.1) +
+    numberRow('value.per_max', '本益比 ≤', '', '倍', 0.5) +
+    numberRow('value.pbr_max', '股價淨值比 ≤', '', '倍', 0.1) +
+    switchRow('value.above_ma60', '股價在季線之上', '60 日均線') +
+    switchRow('value.ma60_rising', '季線向上', '避開價值陷阱') },
+  big_holder: { icon: '🐳', title: '千張大戶週增', sub: '集保股權分散表，每週更新（第 5 章）', body: () =>
+    numberRow('big_holder.min_change', '大戶持股週增幅 ≥', '', '%', 0.1) +
+    rangeRow('big_holder.ratio_range', '大戶比例範圍', '太低無主力、太高過度集中', '%') +
+    numberRow('big_holder.max_capital_yi', '股本上限', '中小型股', '億') +
+    numberRow('big_holder.stock_change_tolerance', '庫存變動容忍', '超過視為增資／合併並排除', '%', 0.1) +
+    numberRow('big_holder.surge', '💥 單週大增', '加分訊號', '%', 0.1) +
+    rangeRow('big_holder.sweet_spot', '🍯 甜蜜區', '加分訊號', '%') },
+  consecutive: { icon: '🏆', title: '法人連續同步買超', sub: '外資、投信每天都買超', body: () =>
+    numberRow('consecutive.days', '連續天數', '2 週約 10 個交易日', '日') },
+  cum_sync: { icon: '🤝', title: '法人累計同步買超', sub: '近 N 日外資、投信累計都買超', body: () =>
+    numberRow('cum_sync.days', '累計天數', '三個月約 60 個交易日', '日') },
+  monthly_ratio: { icon: '📅', title: '當月外資＋投信佔比', sub: '當月買超佔成交比重', body: () =>
+    numberRow('monthly_ratio.foreign_pct', '外資當月佔比 ≥', '', '%', 0.5) +
+    numberRow('monthly_ratio.trust_pct', '投信當月佔比 ≥', '', '%', 0.5) },
+  daily: { icon: '🔥', title: '單日外資大買＋投信同步', sub: '外資符合任一組，且投信同步買超', body: () =>
+    `<div class="label">外資條件（符合任一組即可）</div>` +
+    get('daily.foreign_combos').map((c, i) => `
+      <div class="combo">
+        <span class="no">${i + 1}</span>
+        <span class="and">佔比≥</span><input type="number" inputmode="decimal" data-path="daily.foreign_combos.${i}.pct" value="${esc(c.pct)}"><span class="and">%</span>
+        <span class="and">且≥</span><input type="number" inputmode="numeric" data-path="daily.foreign_combos.${i}.lots" value="${esc(c.lots)}"><span class="and">張</span>
+        <button class="del" data-del="${i}" aria-label="刪除第 ${i + 1} 組">✕</button>
+      </div>`).join('') +
+    `<button class="add" id="addCombo">＋ 新增一組外資條件</button>` +
+    numberRow('daily.min_trust_lots', '投信買超下限', '', '張') },
+};
+
+let token = null, sha = null, saved = null, cfg = null, idx = 0, quota = null;
+
+function toast(text) {
+  const el = document.getElementById('toast');
+  el.textContent = text;
+  el.classList.add('show');
+  clearTimeout(toast.timer);
+  toast.timer = setTimeout(() => el.classList.remove('show'), 2800);
+}
+
+async function api(method, path, body) {
+  const res = await fetch(path, {
+    method,
+    headers: { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json' },
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error || '發生錯誤');
+  return data;
+}
+
+// ---- 讀寫目前條件組合 ----
+const cur = () => cfg.presets[idx];
+function get(path) {
+  return path.split('.').reduce((o, k) => o[k], cur());
+}
+function set(path, value) {
+  const keys = path.split('.');
+  const last = keys.pop();
+  keys.reduce((o, k) => o[k], cur())[last] = value;
+}
+const dirty = () => JSON.stringify(cfg) !== JSON.stringify(saved);
+const enabledSections = () => Object.keys(SECTIONS).filter((k) => cur()[k].enabled);
+const levelMatch = (l) => Object.entries(l.values).every(([k, v]) => cur().growth[k] === v);
+
+// 從策略範本建立新組合（空白範本 + 該策略的覆寫值 + 開啟對應區塊）
+function fromStrategy(key) {
+  const base = structuredClone(STRATEGIES.blank);
+  const s = STRATEGY[key];
+  if (s) {
+    for (const [k, v] of Object.entries(s.overrides || {})) Object.assign(base[k], v);
+    s.sections.forEach((sec) => (base[sec].enabled = true));
+    base.notify_days = [...s.notify_days];
+  }
+  base.strategy = s ? key : 'custom';
+  let name = s ? s.name : '自訂組合';
+  for (let n = 2; cfg.presets.some((p) => p.name === name); n++) name = name.replace(/ \d+$/, '') + ' ' + n;
+  const id = s && !cfg.presets.some((p) => p.id === key) ? key : 'p' + Date.now().toString(36);
+  return { id, name, ...base };
+}
+
+// ---- 畫面元件 ----
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+function numberRow(path, label, hint, unit, step = 1) {
+  return `<div class="row"><label>${label}${hint ? `<small>${hint}</small>` : ''}</label>
+    <div class="field"><input type="number" inputmode="decimal" step="${step}" data-path="${path}" value="${esc(get(path))}"><span>${unit}</span></div></div>`;
+}
+function rangeRow(path, label, hint, unit) {
+  return `<div class="row"><label>${label}${hint ? `<small>${hint}</small>` : ''}</label>
+    <div class="field"><input type="number" inputmode="decimal" data-path="${path}.0" value="${esc(get(path)[0])}"><span>～</span>
+    <input type="number" inputmode="decimal" data-path="${path}.1" value="${esc(get(path)[1])}"><span>${unit}</span></div></div>`;
+}
+function switchRow(path, label, hint) {
+  return `<div class="row"><label>${label}${hint ? `<small>${hint}</small>` : ''}</label>
+    <label class="switch"><input type="checkbox" data-path="${path}" ${get(path) ? 'checked' : ''}><i></i></label></div>`;
+}
+
+function notifyHint() {
+  const days = cur().notify_days;
+  if (!days.length) return '目前不推播：每天 16:30 仍會篩選，到 LINE 選單「查看結果」就能取最新結果（免費）';
+  const pushDays = new Set(cfg.presets.flatMap((p) => p.notify_days)).size;
+  return `勾選的日子 16:30 主動推播。所有組合同一天的推播會合併成 1 則，目前每週約用 ${pushDays} 則`;
+}
+
+function renderTabs() {
+  document.getElementById('tabs').innerHTML = cfg.presets.map((p, i) =>
+    `<button class="tab ${i === idx ? 'active' : ''}" data-tab="${i}">${(STRATEGY[p.strategy] || CUSTOM).icon} ${esc(p.name || '未命名')}</button>`).join('') +
+    (cfg.presets.length < 12 ? '<button class="tab new" id="newPreset">＋ 新組合</button>' : '');
+}
+
+function render() {
+  renderTabs();
+  const p = cur();
+  const info = STRATEGY[p.strategy] || CUSTOM;
+  const enabled = enabledSections();
+  const hero = `<section class="card hero"><div class="card-body">
+      <span class="badge">${info.icon} ${esc(info.name)}｜建議頻率：${esc(info.freq)}</span>
+      <input class="name-input" id="presetName" maxlength="20" placeholder="組合名稱（顯示在 LINE 卡片上）" value="${esc(p.name)}">
+      <p class="desc">${esc(info.desc)}</p>
+      <div class="label">定期推播（選填，每則會用推播額度）</div>
+      <div class="days">${WEEKDAYS.map((w, d) => `<button class="day ${p.notify_days.includes(d) ? 'on' : ''}" data-day="${d}">週${w}</button>`).join('')}</div>
+      <div class="hint" id="notifyHint">${notifyHint()}</div>
+      ${enabled.length > 1 ? `<div class="label">多個區塊的結果</div>
+      <div class="seg"><button data-combine="separate" class="${p.combine !== 'intersect' ? 'on' : ''}">分開列出</button>
+        <button data-combine="intersect" class="${p.combine === 'intersect' ? 'on' : ''}">只列同時符合</button></div>` : ''}
+      <div class="preset-actions">
+        <button id="copyPreset">⧉ 複製這組</button>
+        <button id="deletePreset" class="danger" ${cfg.presets.length <= 1 ? 'disabled' : ''}>🗑 刪除這組</button>
+      </div>
+    </div></section>`;
+
+  const cards = enabled.map((key) => {
+    const s = SECTIONS[key];
+    return `<section class="card"><div class="card-head"><span class="icon">${s.icon}</span>
+      <div class="title"><b>${s.title}</b><small>${s.sub}</small></div>
+      <button class="remove" data-remove="${key}" aria-label="移除${s.title}">✕</button></div>
+      <div class="card-body">${s.body()}</div></section>`;
+  }).join('');
+
+  const addable = Object.keys(SECTIONS).filter((k) => !p[k].enabled);
+  const addSection = addable.length ? `<div class="section-title">＋ 加入其他條件區塊</div><div class="addable">${addable.map((k) =>
+    `<button data-enable="${k}"><b>${SECTIONS[k].icon} ${SECTIONS[k].title}</b><small>${SECTIONS[k].sub}</small></button>`).join('')}</div>` : '';
+
+  const common = `<section class="card"><div class="card-head"><span class="icon">⚙️</span>
+      <div class="title"><b>共同過濾與顯示</b><small>套用在這組的所有結果</small></div></div>
+      <div class="card-body">` +
+      switchRow('filters.require_above_ma20', '收盤站上月線', '20 日均線') +
+      numberRow('filters.min_avg_volume_lots', '月均量下限', '排除冷門股', '張') +
+      numberRow('filters.volume_surge', '🚀 爆量倍數', '當日量 ÷ 月均量', '倍', 0.1) +
+      numberRow('top_n', '每區顯示', 'LINE 訊息中列出幾檔', '檔') + '</div></section>';
+
+  document.getElementById('app').innerHTML = hero + cards + addSection + common;
+  updateBar();
+}
+
+function renderQuota() {
+  const el = document.getElementById('quota');
+  if (!quota || !quota.limit) { el.innerHTML = quota ? `本月推播<b>${quota.used} 則</b>` : ''; return; }
+  const pct = Math.min(100, quota.used / quota.limit * 100);
+  el.innerHTML = `本月推播<b>${quota.used} / ${quota.limit}</b><div class="meter"><i style="width:${pct}%"></i></div>`;
+}
+
+function updateBar() {
+  const d = dirty();
+  document.getElementById('reset').disabled = !d;
+  document.getElementById('save').disabled = !d;
+  const run = document.getElementById('saveRun');
+  run.disabled = false;
+  run.textContent = d ? '儲存並篩選這組' : '立即篩選這組';
+}
+
+// ---- 選擇策略 ----
+function openPicker() {
+  const sheet = document.getElementById('sheet');
+  sheet.innerHTML = `<h2>新增條件組合</h2><p>選一種策略，會自動帶入書中的篩選條件，之後都可以再調整</p>` +
+    [...STRATEGIES.strategies, CUSTOM].map((s) => `
+      <button class="strategy" data-strategy="${s.key}"><span class="big">${s.icon}</span>
+        <span><b>${esc(s.name)}</b><small>${esc(s.desc)}</small><small class="when">建議頻率：${esc(s.freq)}</small></span></button>`).join('');
+  sheet.classList.add('show');
+  document.getElementById('sheetBg').classList.add('show');
+}
+function closePicker() {
+  document.getElementById('sheet').classList.remove('show');
+  document.getElementById('sheetBg').classList.remove('show');
+}
+
+// ---- 互動 ----
+document.addEventListener('input', (e) => {
+  if (e.target.id === 'presetName') {
+    cur().name = e.target.value;
+    renderTabs();
+    return updateBar();
+  }
+  const path = e.target.dataset.path;
+  if (!path) return;
+  if (e.target.type === 'checkbox') {
+    set(path, e.target.checked);
+    if (path === 'growth.cum_eps_auto') render();
+  } else {
+    set(path, e.target.value === '' ? '' : Number(e.target.value));
+  }
+  document.querySelectorAll('[data-level]').forEach((b) => b.classList.toggle('on', levelMatch(STRATEGIES.growth_levels[b.dataset.level])));
+  updateBar();
+});
+
+document.getElementById('sheetBg').onclick = closePicker;
+
+document.addEventListener('click', (e) => {
+  const t = e.target.closest('button');
+  if (!t) return;
+  const d = t.dataset;
+  if (d.tab !== undefined) {
+    idx = Number(d.tab);
+    render();
+    window.scrollTo(0, 0);
+  } else if (t.id === 'newPreset') {
+    openPicker();
+  } else if (d.strategy) {
+    cfg.presets.push(fromStrategy(d.strategy));
+    idx = cfg.presets.length - 1;
+    closePicker();
+    render();
+    window.scrollTo(0, 0);
+    toast('已帶入「' + (STRATEGY[d.strategy] || CUSTOM).name + '」的條件，記得按儲存');
+  } else if (t.id === 'copyPreset') {
+    const copy = structuredClone(cur());
+    delete copy.updated_at;
+    let name = cur().name + ' 複本';
+    for (let n = 2; cfg.presets.some((p) => p.name === name); n++) name = name.replace(/ \d+$/, '') + ' ' + n;
+    cfg.presets.push({ ...copy, id: 'p' + Date.now().toString(36), name: name.slice(0, 20), notify_days: [] });
+    idx = cfg.presets.length - 1;
+    render();
+  } else if (t.id === 'deletePreset') {
+    if (!confirm(`確定刪除「${cur().name}」？（按儲存後才會生效）`)) return;
+    cfg.presets.splice(idx, 1);
+    idx = Math.max(0, idx - 1);
+    render();
+  } else if (d.day !== undefined) {
+    const day = Number(d.day);
+    const days = cur().notify_days;
+    cur().notify_days = days.includes(day) ? days.filter((x) => x !== day) : [...days, day].sort();
+    t.classList.toggle('on');
+    document.getElementById('notifyHint').textContent = notifyHint();
+    updateBar();
+  } else if (d.combine) {
+    cur().combine = d.combine;
+    render();
+  } else if (d.remove) {
+    if (enabledSections().length <= 1) return toast('至少要保留一個條件區塊');
+    cur()[d.remove].enabled = false;
+    render();
+  } else if (d.enable) {
+    cur()[d.enable].enabled = true;
+    render();
+    toast(`已加入「${SECTIONS[d.enable].title}」`);
+  } else if (d.level !== undefined) {
+    Object.assign(cur().growth, STRATEGIES.growth_levels[d.level].values);
+    render();
+  } else if (t.id === 'addCombo') {
+    const combos = cur().daily.foreign_combos;
+    combos.push({ ...(combos.at(-1) || { pct: 10, lots: 2000 }) });
+    render();
+  } else if (d.del !== undefined) {
+    cur().daily.foreign_combos.splice(Number(d.del), 1);
+    render();
+  }
+});
+
+document.getElementById('reset').onclick = () => {
+  const id = cur().id;
+  cfg = structuredClone(saved);
+  idx = Math.max(0, cfg.presets.findIndex((p) => p.id === id));
+  render();
+  toast('已還原為上次儲存的設定');
+};
+
+async function save(run) {
+  const id = cur().id;
+  if (run && !confirm(`立即篩選「${cur().name}」並推播結果？\n會用掉 1 則推播額度，約 3～5 分鐘後收到。\n（不急的話，16:30 排程後到選單「查看結果」免費）`)) return;
+  const buttons = document.querySelectorAll('.bar button');
+  buttons.forEach((b) => (b.disabled = true));
+  try {
+    if (PREVIEW) {
+      saved = structuredClone(cfg);
+      toast(run ? '（預覽模式）已儲存並送出篩選' : '（預覽模式）已儲存');
+    } else if (!dirty() && run) {
+      await api('POST', '/api/run', { preset: id });
+      toast('▶️ 已開始篩選，約 3～5 分鐘後推播結果');
+    } else {
+      const res = await api('PUT', '/api/config', { config: cfg, sha, run: run ? id : null });
+      sha = res.sha;
+      cfg = res.config;
+      saved = structuredClone(cfg);
+      idx = Math.max(0, cfg.presets.findIndex((p) => p.id === id));
+      toast(run ? '✅ 已儲存，結果約 3～5 分鐘後推播' : '✅ 已儲存，下次排程會套用');
+      render();
+    }
+    document.getElementById('status').textContent = '已儲存 ' + new Date().toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit' });
+  } catch (err) {
+    toast('⚠️ ' + err.message);
+  } finally {
+    updateBar();
+  }
+}
+document.getElementById('save').onclick = () => save(false);
+document.getElementById('saveRun').onclick = () => save(true);
+
+async function start() {
+  try {
+    if (PREVIEW) {
+      cfg = { presets: [] };
+      cfg.presets = STRATEGIES.strategies.map((s) => fromStrategy(s.key));
+      quota = { limit: 200, used: 23 };
+      document.getElementById('status').textContent = '預覽模式（不會真的儲存）';
+    } else {
+      await liff.init({ liffId: LIFF_ID });
+      if (!liff.isLoggedIn()) return liff.login();
+      token = liff.getIDToken();
+      const res = await api('GET', '/api/config');
+      cfg = res.config;
+      sha = res.sha;
+      quota = res.quota;
+      document.getElementById('status').textContent = '每個交易日 16:30 自動篩選所有組合';
+    }
+    // 補齊舊設定缺少的區塊
+    cfg.presets = cfg.presets.map((p) => {
+      const full = structuredClone(STRATEGIES.blank);
+      for (const [k, v] of Object.entries(p)) full[k] = v && typeof v === 'object' && !Array.isArray(v) ? { ...full[k], ...v } : v;
+      return full;
+    });
+    saved = structuredClone(cfg);
+    // 從 LINE 卡片點「改條件」會帶 ?preset=id；?preset=new 直接開啟策略選單
+    const want = new URLSearchParams(location.search).get('preset');
+    idx = Math.max(0, cfg.presets.findIndex((p) => p.id === want));
+    renderQuota();
+    render();
+    if (want === 'new') openPicker();
+  } catch (err) {
+    document.getElementById('app').innerHTML = `<div class="loading">⚠️ ${esc(err.message)}</div>`;
+    document.getElementById('status').textContent = '讀取失敗';
+  }
+}
+start();
+</script>
+</body>
+</html>
