@@ -1,0 +1,59 @@
+name: Diagnose LINE Setup
+
+# 檢查 LINE、Worker、GitHub token 的設定是否正確（只印檢查結果，不會印出任何金鑰）
+on: workflow_dispatch
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 檢查設定
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_CHANNEL_SECRET: ${{ secrets.LINE_CHANNEL_SECRET }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+          LIFF_ID: ${{ secrets.LIFF_ID }}
+          LIFF_CHANNEL_ID: ${{ secrets.LIFF_CHANNEL_ID }}
+          WORKER_GITHUB_TOKEN: ${{ secrets.WORKER_GITHUB_TOKEN }}
+          WORKER_URL: https://stock-screener-line.leonsheep.workers.dev
+          REPO: ${{ github.repository }}
+        shell: python
+        run: |
+          import os, json, hmac, hashlib, base64, requests
+          env = os.environ
+          line = {"Authorization": f"Bearer {env['LINE_CHANNEL_ACCESS_TOKEN']}"}
+
+          def show(title, ok, detail=""):
+              print(f"{'✅' if ok else '❌'} {title}" + (f"：{detail}" if detail else ""))
+
+          r = requests.get("https://api.line.me/v2/bot/info", headers=line)
+          show("Messaging API access token", r.ok, r.json().get("displayName", r.text) if r.ok else r.text)
+
+          r = requests.get("https://api.line.me/v2/bot/channel/webhook/endpoint", headers=line).json()
+          show("Webhook URL", r.get("endpoint") == env["WORKER_URL"] + "/webhook", r.get("endpoint"))
+          show("Use webhook 已開啟", r.get("active") is True, str(r.get("active")))
+
+          r = requests.post("https://api.line.me/v2/bot/channel/webhook/test", headers=line, json={}).json()
+          hint = "（401 代表 LINE_CHANNEL_SECRET 不是 Messaging API channel 的 Channel secret）" if r.get("statusCode") == 401 else ""
+          show("LINE 實際呼叫 Worker", r.get("success") is True, f"{r.get('statusCode')} {r.get('reason')} {r.get('detail', '')}{hint}")
+
+          prefix = env["LIFF_ID"].split("-")[0]
+          show("LIFF ID 格式", "-" in env["LIFF_ID"] and prefix.isdigit(), "應該像 2001234567-AbCdEfGh")
+          show("LIFF_CHANNEL_ID 與 LIFF ID 前段相同", prefix == env["LIFF_CHANNEL_ID"].strip(),
+               "不同也沒關係，Worker 現在直接用 LIFF ID 前段" if prefix != env["LIFF_CHANNEL_ID"].strip() else "")
+
+          r = requests.get(env["WORKER_URL"] + "/")
+          show("Worker 設定頁", r.ok and env["LIFF_ID"] in r.text, f"HTTP {r.status_code}")
+
+          body = json.dumps({"events": [{"type": "postback", "replyToken": "test-token",
+                                         "source": {"type": "user", "userId": env["LINE_USER_ID"]},
+                                         "postback": {"data": "action=status"}}]})
+          sig = base64.b64encode(hmac.new(env["LINE_CHANNEL_SECRET"].encode(), body.encode(), hashlib.sha256).digest()).decode()
+          r = requests.post(env["WORKER_URL"] + "/webhook", data=body, headers={"X-Line-Signature": sig, "Content-Type": "application/json"})
+          show("Worker 處理按鈕事件", r.ok, f"HTTP {r.status_code}")
+
+          gh = {"Authorization": f"Bearer {env['WORKER_GITHUB_TOKEN']}", "Accept": "application/vnd.github+json"}
+          r = requests.get(f"https://api.github.com/repos/{env['REPO']}/contents/config.json", headers=gh)
+          show("WORKER_GITHUB_TOKEN 讀取 config.json", r.ok, f"HTTP {r.status_code}")
+          r = requests.get(f"https://api.github.com/repos/{env['REPO']}/actions/workflows/schedule.yml", headers=gh)
+          show("WORKER_GITHUB_TOKEN 讀取 Actions", r.ok, f"HTTP {r.status_code}")

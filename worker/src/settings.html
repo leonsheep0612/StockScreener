@@ -221,7 +221,15 @@ async function api(method, path, body) {
     body: body ? JSON.stringify(body) : undefined,
   });
   const data = await res.json();
+  // 快取的登入資訊過期：登出後重新登入一次（用 sessionStorage 避免無限重來）
+  if (res.status === 401 && data.code === 'expired' && !PREVIEW && !sessionStorage.getItem('relogin')) {
+    sessionStorage.setItem('relogin', '1');
+    liff.logout();
+    liff.login({ redirectUri: location.href });
+    return new Promise(() => {});
+  }
   if (!res.ok) throw new Error(data.error || '發生錯誤');
+  sessionStorage.removeItem('relogin');
   return data;
 }
 
@@ -491,8 +499,9 @@ async function start() {
       document.getElementById('status').textContent = '預覽模式（不會真的儲存）';
     } else {
       await liff.init({ liffId: LIFF_ID });
-      if (!liff.isLoggedIn()) return liff.login();
+      if (!liff.isLoggedIn()) return liff.login({ redirectUri: location.href });
       token = liff.getIDToken();
+      if (!token) throw new Error('取不到登入資訊：請在 LINE Developers 的 LIFF 設定勾選 openid');
       const res = await api('GET', '/api/config');
       cfg = res.config;
       sha = res.sha;

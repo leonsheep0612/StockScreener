@@ -42,7 +42,7 @@ export default {
       }
       return new Response('Not found', { status: 404 });
     } catch (e) {
-      return json({ error: e.message }, e.status || 500);
+      return json({ error: e.message, code: e.code }, e.status || 500);
     }
   },
 };
@@ -62,15 +62,25 @@ function httpError(status, message) {
 
 async function authorize(request, env) {
   const token = (request.headers.get('Authorization') || '').replace(/^Bearer /, '');
-  if (!token) throw httpError(401, '請從 LINE 開啟此頁面');
+  if (!token || token === 'null') throw httpError(401, '取不到登入資訊：請在 LINE Developers 的 LIFF 設定勾選 openid');
   const res = await fetch('https://api.line.me/oauth2/v2.1/verify', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams({ id_token: token, client_id: env.LIFF_CHANNEL_ID }),
+    // LIFF ID 的「-」前面就是 LINE Login channel 的 Channel ID，直接從這裡取最不會填錯
+    body: new URLSearchParams({ id_token: token, client_id: (env.LIFF_ID || '').split('-')[0] || env.LIFF_CHANNEL_ID }),
   });
-  if (!res.ok) throw httpError(401, '登入已過期，請關閉後重新開啟');
+  if (!res.ok) {
+    const reason = (await res.json().catch(() => ({}))).error_description || `HTTP ${res.status}`;
+    console.log('verify failed', reason);
+    if (/expired/i.test(reason)) throw Object.assign(httpError(401, '登入已過期，重新登入中…'), { code: 'expired' });
+    if (/audience/i.test(reason)) throw httpError(401, 'LIFF_CHANNEL_ID 設定錯誤：要填 LIFF 所在 LINE Login channel 的 Channel ID');
+    throw httpError(401, `登入驗證失敗：${reason}`);
+  }
   const { sub } = await res.json();
-  if (sub !== env.LINE_USER_ID) throw httpError(403, '此設定頁僅限擁有者使用');
+  if (sub !== env.LINE_USER_ID) {
+    console.log('user mismatch', sub);
+    throw httpError(403, '此設定頁僅限擁有者使用（若你就是擁有者：LINE Login channel 必須和官方帳號在同一個 Provider，且 LINE_USER_ID 要正確）');
+  }
 }
 
 // ---------- GitHub：讀寫 config.json、讀最新結果、觸發排程 ----------
@@ -274,10 +284,17 @@ async function reply(env, replyToken, messages) {
 async function handleWebhook(request, env) {
   const body = await request.text();
   if (!(await verifySignature(body, request.headers.get('X-Line-Signature') || '', env.LINE_CHANNEL_SECRET))) {
+    console.log('bad signature：LINE_CHANNEL_SECRET 與 Messaging API channel 的 Channel secret 不符');
     return new Response('Bad signature', { status: 401 });
   }
-  for (const event of JSON.parse(body).events || []) {
-    if (event.source?.userId !== env.LINE_USER_ID || !event.replyToken) continue;
+  const events = JSON.parse(body).events || [];
+  console.log('webhook events', events.map((e) => `${e.type}:${e.postback?.data || e.message?.text || ''}`).join(', '));
+  for (const event of events) {
+    if (!event.replyToken) continue;
+    if (event.source?.userId !== env.LINE_USER_ID) {
+      console.log('ignored user', event.source?.userId);
+      continue;
+    }
     let params;
     if (event.type === 'postback') {
       params = new URLSearchParams(event.postback.data);

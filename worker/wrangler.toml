@@ -5,6 +5,10 @@ compatibility_date = "2026-10-01"
 # 讓 settings.html 以字串匯入
 rules = [{ type = "Text", globs = ["**/*.html"], fallthrough = true }]
 
+# 在 Cloudflare 後台 Workers → stock-screener-line → Logs 可查看執行紀錄
+[observability]
+enabled = true
+
 [vars]
 GITHUB_REPO = "leonsheep0612/StockScreener"
 GITHUB_BRANCH = "main"
