@@ -682,8 +682,10 @@ def section_big_holder(ctx, p):
 
     # 加分：連續三週大戶股數都增加（需要 4 份快照）
     if len(snaps) >= 4:
-        series = [s.set_index('證券代號')['大戶股數'] for _, s in snaps[:4]]
-        up3 = (series[0] > series[1]) & (series[1] > series[2]) & (series[2] > series[3])
+        # 每週上市櫃的股票不完全相同，先對齊成同一張表（只留四週都有的股票）再比較
+        wk = pd.concat([s.drop_duplicates('證券代號').set_index('證券代號')['大戶股數'] for _, s in snaps[:4]],
+                       axis=1, join='inner', keys=range(4))
+        up3 = (wk[0] > wk[1]) & (wk[1] > wk[2]) & (wk[2] > wk[3])
         m['連3週增'] = m['證券代號'].map(up3).fillna(False).astype(bool)
     else:
         m['連3週增'] = False
@@ -842,8 +844,8 @@ def build_report(p, ctx):
         except SkipSection as e:
             problems.append(str(e))
         except Exception as e:
+            # 程式錯誤只記在 GitHub Actions 執行紀錄，不放進 LINE 訊息，其他區塊照常顯示
             print(f"⚠️ {key} 篩選失敗：{e}")
-            problems.append(f"⚠️ {key} 篩選失敗：{e}")
 
     journal = []
     if p['combine'] == 'intersect' and sections:

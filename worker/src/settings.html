@@ -89,6 +89,7 @@
   .combo .del { margin-left: auto; border: 0; background: transparent; color: var(--danger); font-size: 20px; width: 32px; height: 32px; border-radius: 8px; cursor: pointer; }
   .add { width: 100%; padding: 10px; border: 1.5px dashed var(--accent); color: var(--accent); background: transparent; border-radius: 10px; font-size: 14px; font-weight: 600; cursor: pointer; }
   .section-title { margin: 20px 16px 4px; font-size: 13px; color: var(--muted); }
+  .empty-hint { display: block; padding: 10px 12px; border-radius: 10px; background: #FFF4CC; color: #6b5a1e; font-size: 14px; }
   .addable { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 16px; }
   .addable button { text-align: left; padding: 10px 12px; border-radius: 12px; border: 1.5px dashed var(--line); background: var(--card); color: var(--text); font-size: 13px; cursor: pointer; }
   .addable button b { display: block; font-size: 14px; }
@@ -245,7 +246,7 @@ function set(path, value) {
   keys.reduce((o, k) => o[k], cur())[last] = value;
 }
 const dirty = () => JSON.stringify(cfg) !== JSON.stringify(saved);
-const enabledSections = () => Object.keys(SECTIONS).filter((k) => cur()[k].enabled);
+const enabledSections = (p = cur()) => Object.keys(SECTIONS).filter((k) => p[k].enabled);
 const levelMatch = (l) => Object.entries(l.values).every(([k, v]) => cur().growth[k] === v);
 
 // 從策略範本建立新組合（空白範本 + 該策略的覆寫值 + 開啟對應區塊）
@@ -324,7 +325,8 @@ function render() {
   }).join('');
 
   const addable = Object.keys(SECTIONS).filter((k) => !p[k].enabled);
-  const addSection = addable.length ? `<div class="section-title">＋ 加入其他條件區塊</div><div class="addable">${addable.map((k) =>
+  const addSection = addable.length ? `<div class="section-title" id="addSection">${enabled.length ? '＋ 加入其他條件區塊'
+      : '<b class="empty-hint">這組還沒有條件，從下面選一個以上的區塊加入</b>'}</div><div class="addable">${addable.map((k) =>
     `<button data-enable="${k}"><b>${SECTIONS[k].icon} ${SECTIONS[k].title}</b><small>${SECTIONS[k].sub}</small></button>`).join('')}</div>` : '';
 
   const common = `<section class="card"><div class="card-head"><span class="icon">⚙️</span>
@@ -461,6 +463,14 @@ document.getElementById('reset').onclick = () => {
 };
 
 async function save(run) {
+  // 每次儲存會送出所有組合，有一組沒有條件區塊就整份存不進去：直接帶到那一組
+  const empty = cfg.presets.findIndex((p) => !enabledSections(p).length);
+  if (empty >= 0) {
+    idx = empty;
+    render();
+    document.getElementById('addSection').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return toast(`「${cfg.presets[empty].name}」還沒加入條件區塊：從下方選一個，或按上方 🗑 刪除這組`);
+  }
   const id = cur().id;
   if (run && !confirm(`立即篩選「${cur().name}」並推播結果？\n會用掉 1 則推播額度，約 3～5 分鐘後收到。\n（不急的話，16:30 排程後到選單「查看結果」免費）`)) return;
   const buttons = document.querySelectorAll('.bar button');
