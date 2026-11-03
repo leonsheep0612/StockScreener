@@ -386,9 +386,7 @@
       "id": "pmw0gbzyd",
       "name": "自訂組合",
       "strategy": "custom",
-      "notify_days": [
-        0
-      ],
+      "notify_days": [],
       "combine": "separate",
       "top_n": 10,
       "filters": {
@@ -477,7 +475,7 @@
           }
         ]
       },
-      "updated_at": "2026-11-03T08:55:48.836Z"
+      "updated_at": "2026-11-03T08:55:56.800Z"
     }
   ]
 }
