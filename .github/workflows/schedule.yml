@@ -2,8 +2,10 @@ name: Stock Screener Schedule
 
 on:
   schedule:
-    # 台灣時間週一至週五 16:30（UTC 08:30）執行，確保證交所、櫃買中心已公布當天資料
-    - cron: "30 8 * * 1-5"
+    # 每天 16:30 由 Cloudflare Worker 的 cron 觸發（workflow_dispatch，準時）。
+    # 這個是備援：GitHub 排程常延遲好幾個小時，Worker 已經跑過的話 main.py 會直接略過。
+    # 時間刻意排在 18:00（UTC 10:00），避免和 Worker 同時觸發而推播兩次。
+    - cron: "0 10 * * 1-5"
   workflow_dispatch:
     inputs:
       preset:

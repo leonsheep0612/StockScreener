@@ -9,6 +9,11 @@ const STRATEGY_INFO = Object.fromEntries(STRATEGIES.strategies.map((s) => [s.key
 const CUSTOM_INFO = { icon: '🧩', name: '自訂組合', desc: '自由搭配各種條件' };
 
 export default {
+  // wrangler.toml 的 cron：每個交易日 16:30 觸發篩選，依各組合的推播日推播
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(triggerWorkflow(env, ''));
+  },
+
   async fetch(request, env) {
     const url = new URL(request.url);
     try {

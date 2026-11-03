@@ -59,6 +59,8 @@ QUOTA_RESERVE = 3                                   # 本月推播剩不到幾�
 
 TW_TZ = timezone(timedelta(hours=8))  # GitHub 主機是 UTC，日期一律用台灣時間
 TODAY = datetime.now(TW_TZ).date()
+# 這次是哪個交易日收盤後的篩選：GitHub 備援排程可能延遲到隔天凌晨，中午前執行算前一天
+RUN_DAY = TODAY - timedelta(days=1) if datetime.now(TW_TZ).hour < 12 else TODAY
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 def line_api(method, path, **kwargs):
@@ -907,10 +909,22 @@ def save_results(latest_date, reports):
     with open(RESULTS_PATH, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
 
+def already_ran_today():
+    """Worker 16:30 觸發的篩選已經跑完了嗎（results.json 在 RUN_DAY 16:00 之後產生）"""
+    try:
+        with open(RESULTS_PATH, encoding='utf-8') as f:
+            generated = datetime.fromisoformat(json.load(f)['generated_at'])
+    except (OSError, KeyError, ValueError):
+        return False
+    return generated >= datetime.combine(RUN_DAY, datetime.min.time(), TW_TZ).replace(hour=16)
+
 def main():
     print("啟動量化程式...")
+    if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and already_ran_today():
+        print("今天 16:30 已由 Worker 觸發篩選並推播，GitHub 備援排程略過。")
+        return
     # 今天有安排推播（或從 LINE 手動觸發）才推；否則連錯誤通知都不推，避免消耗額度
-    will_push = bool(ONLY_PRESET) or any(TODAY.weekday() in p['notify_days'] for p in PRESETS)
+    will_push = bool(ONLY_PRESET) or any(RUN_DAY.weekday() in p['notify_days'] for p in PRESETS)
     notify = send_line_message if will_push else lambda text: print("（今天沒有安排推播，不發送）")
     try:
         # 取得最近 PRICE_DAYS 個交易日行情（最近 INSTI_DAYS 天含法人買賣超），第一次會比較久
@@ -953,7 +967,7 @@ def main():
         if ONLY_PRESET:
             to_send = [msg for p, msg, _ in reports if p['id'] == ONLY_PRESET]
         else:
-            to_send = [msg for p, msg, _ in reports if TODAY.weekday() in p['notify_days']]
+            to_send = [msg for p, msg, _ in reports if RUN_DAY.weekday() in p['notify_days']]
         if to_send:
             send_line_message(to_send)
         else:

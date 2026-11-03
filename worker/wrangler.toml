@@ -9,6 +9,11 @@ rules = [{ type = "Text", globs = ["**/*.html"], fallthrough = true }]
 [observability]
 enabled = true
 
+# 台灣時間週一至週五 16:30（UTC 08:30）觸發 GitHub Actions 篩選。
+# GitHub 自己的排程會延遲好幾個小時，Cloudflare 的 cron 準時；星期用英文縮寫，Cloudflare 的數字 1 是週日
+[triggers]
+crons = ["30 8 * * MON-FRI"]
+
 [vars]
 GITHUB_REPO = "leonsheep0612/StockScreener"
 GITHUB_BRANCH = "main"
