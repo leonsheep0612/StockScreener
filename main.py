@@ -119,8 +119,24 @@ def only_stocks(df):
     df['證券代號'] = df['證券代號'].astype(str).str.strip()
     return df[df['證券代號'].str.fullmatch(r'[1-9]\d{3}')]
 
+def fetch(method, url, timeout=30, tries=3, **kwargs):
+    """發送請求；逾時、連線失敗或 5xx 時等一下再重試（證交所偶爾回應很慢）"""
+    for i in range(tries):
+        try:
+            res = requests.request(method, url, headers=HEADERS, timeout=timeout, **kwargs)
+            if res.status_code < 500:
+                return res
+            error = requests.HTTPError(f"{res.status_code} {res.reason}")
+        except (requests.Timeout, requests.ConnectionError) as e:
+            error = e
+        if i < tries - 1:
+            wait = 15 * (i + 1)
+            print(f"⚠️ {url.split('?')[0]} 失敗（{error}），{wait} 秒後重試")
+            time.sleep(wait)
+    raise error
+
 def get_json(url):
-    res = requests.get(url, headers=HEADERS, timeout=30).json()
+    res = fetch("GET", url).json()
     time.sleep(3)  # 證交所、櫃買中心都限制查詢頻率，太快會被暫時封鎖
     return res
 
@@ -288,7 +304,7 @@ def fetch_valuation(date):
     tpex_res = get_json(f"https://www.tpex.org.tw/www/zh-tw/afterTrading/peQryDate?date={date:%Y/%m/%d}&response=json")
     tpex = table_from(tpex_res, '代號', '本益比')
     if tpex is None:  # 備援：櫃買中心 OpenAPI
-        rows = requests.get("https://www.tpex.org.tw/openapi/v1/tpex_mainboard_peratio_analysis", headers=HEADERS, timeout=30).json()
+        rows = fetch("GET", "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_peratio_analysis").json()
         tpex = pd.DataFrame(rows).rename(columns={'SecuritiesCompanyCode': '代號', 'PriceEarningRatio': '本益比',
                                                   'DividendPerShare': '每股股利', 'YieldRatio': '殖利率(%)',
                                                   'PriceBookRatio': '股價淨值比'})
@@ -340,7 +356,7 @@ def find_revenue_col(columns):
     return find_col(columns, *REVENUE_NAMES, exclude=('營業外', '利息', '其他', '每股', '手續費'))
 
 def fetch_season_market(y, s, market):
-    res = requests.post("https://mopsov.twse.com.tw/mops/web/ajax_t163sb04", headers=HEADERS, timeout=60, data={
+    res = fetch("POST", "https://mopsov.twse.com.tw/mops/web/ajax_t163sb04", timeout=60, data={
         'encodeURIComponent': 1, 'step': 1, 'firstin': 1, 'off': 1, 'isQuery': 'Y',
         'TYPEK': market, 'year': y - 1911, 'season': f"{s:02d}"})
     time.sleep(3)
@@ -475,7 +491,7 @@ def compute_metrics(days):
 def fetch_tdcc():
     """集保股權分散表（每週五更新），整理成每檔：千張大戶股數、比例、集保庫存總股數"""
     url = "https://opendata.tdcc.com.tw/getOD.ashx?id=1-5"
-    text = requests.get(url, headers=HEADERS, timeout=60).content.decode('utf-8-sig')
+    text = fetch("GET", url, timeout=60).content.decode('utf-8-sig')
     raw = pd.read_csv(io.StringIO(text), dtype=str)
     raw.columns = ['資料日期', '證券代號', '持股分級', '人數', '股數', '比例']
     raw = only_stocks(raw)
