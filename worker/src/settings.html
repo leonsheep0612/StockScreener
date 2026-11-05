@@ -284,9 +284,9 @@ function switchRow(path, label, hint) {
 
 function notifyHint() {
   const days = cur().notify_days;
-  if (!days.length) return '目前不推播：每天 16:30 仍會篩選，到 LINE 選單「查看結果」就能取最新結果（免費）';
+  if (!days.length) return '目前不推播：每天 17:00 仍會篩選，到 LINE 選單「查看結果」就能取最新結果（免費）';
   const pushDays = new Set(cfg.presets.flatMap((p) => p.notify_days)).size;
-  return `勾選的日子 16:30 主動推播。所有組合同一天的推播會合併成 1 則，目前每週約用 ${pushDays} 則`;
+  return `勾選的日子 17:00 主動推播。所有組合同一天的推播會合併成 1 則，目前每週約用 ${pushDays} 則`;
 }
 
 function renderTabs() {
@@ -472,7 +472,7 @@ async function save(run) {
     return toast(`「${cfg.presets[empty].name}」還沒加入條件區塊：從下方選一個，或按上方 🗑 刪除這組`);
   }
   const id = cur().id;
-  if (run && !confirm(`立即篩選「${cur().name}」並推播結果？\n會用掉 1 則推播額度，約 3～5 分鐘後收到。\n（不急的話，16:30 排程後到選單「查看結果」免費）`)) return;
+  if (run && !confirm(`立即篩選「${cur().name}」並推播結果？\n會用掉 1 則推播額度，約 1～2 分鐘後收到。\n（結果已是最新的話不會重跑；不急的話，17:00 排程後到選單「查看結果」免費）`)) return;
   const buttons = document.querySelectorAll('.bar button');
   buttons.forEach((b) => (b.disabled = true));
   try {
@@ -480,15 +480,18 @@ async function save(run) {
       saved = structuredClone(cfg);
       toast(run ? '（預覽模式）已儲存並送出篩選' : '（預覽模式）已儲存');
     } else if (!dirty() && run) {
-      await api('POST', '/api/run', { preset: id });
-      toast('▶️ 已開始篩選，約 3～5 分鐘後推播結果');
+      const res = await api('POST', '/api/run', { preset: id });
+      toast(res.fresh ? `ℹ️ 已是最新結果（資料日期 ${res.fresh}），不用重跑：到選單「查看結果」免費查看`
+                      : '▶️ 已開始篩選，約 1～2 分鐘後推播結果');
     } else {
       const res = await api('PUT', '/api/config', { config: cfg, sha, run: run ? id : null });
       sha = res.sha;
       cfg = res.config;
       saved = structuredClone(cfg);
       idx = Math.max(0, cfg.presets.findIndex((p) => p.id === id));
-      toast(run ? '✅ 已儲存，結果約 3～5 分鐘後推播' : '✅ 已儲存，下次排程會套用');
+      toast(!run ? '✅ 已儲存，下次排程會套用'
+        : res.fresh ? `✅ 已儲存；這組已是最新結果（資料日期 ${res.fresh}），到選單「查看結果」免費查看`
+        : '✅ 已儲存，結果約 1～2 分鐘後推播');
       render();
     }
     document.getElementById('status').textContent = '已儲存 ' + new Date().toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit' });
@@ -517,7 +520,7 @@ async function start() {
       cfg = res.config;
       sha = res.sha;
       quota = res.quota;
-      document.getElementById('status').textContent = '每個交易日 16:30 自動篩選所有組合';
+      document.getElementById('status').textContent = '每個交易日 17:00 自動篩選所有組合';
     }
     // 補齊舊設定缺少的區塊
     cfg.presets = cfg.presets.map((p) => {

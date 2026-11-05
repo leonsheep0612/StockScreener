@@ -2,7 +2,7 @@ name: Stock Screener Schedule
 
 on:
   schedule:
-    # 每天 16:30 由 Cloudflare Worker 的 cron 觸發（workflow_dispatch，準時）。
+    # 每天 17:00 由 Cloudflare Worker 的 cron 觸發（workflow_dispatch，準時），17:30 再補一次。
     # 這個是備援：GitHub 排程常延遲好幾個小時，Worker 已經跑過的話 main.py 會直接略過。
     # 時間刻意排在 18:00（UTC 10:00），避免和 Worker 同時觸發而推播兩次。
     - cron: "0 10 * * 1-5"
@@ -10,6 +10,10 @@ on:
     inputs:
       preset:
         description: "只推播這個條件組合 id（從 LINE 設定頁按「立即篩選」時自動帶入；留空則依各組合的推播日）"
+        required: false
+        default: ""
+      auto:
+        description: "Worker 排程觸發時自動帶入：first = 17:00、retry = 17:30 補跑；手動執行請留空"
         required: false
         default: ""
 
@@ -28,6 +32,9 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
+        with:
+          # 取執行當下最新的 main：17:30 補跑排隊等 17:00 跑完時，才看得到 17:00 存回的結果
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -37,6 +44,7 @@ jobs:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
           PRESET: ${{ inputs.preset }}
+          AUTO: ${{ inputs.auto }}
       - name: 儲存交易日誌、集保快照與最新結果
         run: |
           git config user.name "github-actions[bot]"

@@ -3,15 +3,16 @@ import STRATEGIES from '../../strategies.json';
 
 const CONFIG_PATH = 'config.json';
 const RESULTS_PATH = 'data/results.json';
+const FIRST_CRON = '0 9 * * MON-FRI'; // wrangler.toml 的第一個 cron（17:00）；另一個是 17:30 補跑
 const MAX_PRESETS = 12; // Flex carousel 最多 12 張卡
 const WEEKDAYS = ['一', '二', '三', '四', '五'];
 const STRATEGY_INFO = Object.fromEntries(STRATEGIES.strategies.map((s) => [s.key, s]));
 const CUSTOM_INFO = { icon: '🧩', name: '自訂組合', desc: '自由搭配各種條件' };
 
 export default {
-  // wrangler.toml 的 cron：每個交易日 16:30 觸發篩選，依各組合的推播日推播
+  // wrangler.toml 的 cron：每個交易日 17:00 觸發篩選，依各組合的推播日推播；17:30 補跑（已成功就略過）
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(triggerWorkflow(env, ''));
+    ctx.waitUntil(triggerWorkflow(env, '', event.cron === FIRST_CRON ? 'first' : 'retry'));
   },
 
   async fetch(request, env) {
@@ -36,13 +37,17 @@ export default {
           const { config: old } = await readJson(env, CONFIG_PATH);
           const config = validateConfig(body.config, old);
           const sha = await writeJson(env, CONFIG_PATH, config, body.sha);
-          if (body.run) await triggerWorkflow(env, body.run);
-          return json({ sha, config });
+          // 結果已是最新就不重跑，請使用者到選單「查看結果」（免費）
+          const fresh = body.run && freshResult(config.presets.find((p) => p.id === body.run), await loadResults(env));
+          if (body.run && !fresh) await triggerWorkflow(env, body.run);
+          return json({ sha, config, fresh: fresh ? fresh.date : null });
         }
         if (request.method === 'POST' && url.pathname === '/api/run') {
           const { preset } = await request.json();
-          await triggerWorkflow(env, preset);
-          return json({ ok: true });
+          const { presets, results } = await loadAll(env);
+          const fresh = freshResult(presets.find((p) => p.id === preset), results);
+          if (!fresh) await triggerWorkflow(env, preset);
+          return json({ ok: true, fresh: fresh ? fresh.date : null });
         }
       }
       return new Response('Not found', { status: 404 });
@@ -133,10 +138,11 @@ async function writeJson(env, path, data, sha) {
   return res.content.sha;
 }
 
-async function triggerWorkflow(env, presetId) {
+// auto：排程觸發才有，first = 17:00、retry = 17:30 補跑；從 LINE 手動觸發時是空字串
+async function triggerWorkflow(env, presetId, auto = '') {
   await github(env, `/actions/workflows/${env.WORKFLOW_FILE}/dispatches`, {
     method: 'POST',
-    body: JSON.stringify({ ref: env.GITHUB_BRANCH, inputs: { preset: presetId || '' } }),
+    body: JSON.stringify({ ref: env.GITHUB_BRANCH, inputs: { preset: presetId || '', auto } }),
   });
 }
 
@@ -335,7 +341,7 @@ function presetBubble(env, p, result, resultsDate) {
   const info = STRATEGY_INFO[p.strategy] || CUSTOM_INFO;
   const stale = result && p.updated_at && resultsDate && p.updated_at > resultsDate;
   const lines = !result
-    ? [{ type: 'text', text: '還沒有結果，16:30 排程後就會有', size: 'sm', color: '#8c8c8c', wrap: true }]
+    ? [{ type: 'text', text: '還沒有結果，17:00 排程後就會有', size: 'sm', color: '#8c8c8c', wrap: true }]
     : (result.summary || []).slice(0, 6).map((s) => ({
         type: 'box', layout: 'horizontal', contents: [
           { type: 'text', text: s.kind, size: 'sm', color: '#555555', flex: 5, wrap: true },
@@ -377,12 +383,28 @@ function presetQuickReply(presets) {
   };
 }
 
+const loadResults = (env) => readJson(env, RESULTS_PATH).then((r) => r.config).catch(() => null);
+
 async function loadAll(env) {
-  const [{ config }, results] = await Promise.all([
-    readJson(env, CONFIG_PATH),
-    readJson(env, RESULTS_PATH).then((r) => r.config).catch(() => null),
-  ]);
+  const [{ config }, results] = await Promise.all([readJson(env, CONFIG_PATH), loadResults(env)]);
   return { presets: config.presets, results };
+}
+
+// 最近一個已收盤的交易日（台灣時間，YYYY-MM-DD）：平日 16:00 後算當天，否則往前找到平日
+// 國定假日不在這裡判斷，遇到時會多跑一次篩選，結果一樣
+function lastCloseDate(now = new Date()) {
+  const tw = new Date(now.getTime() + 8 * 3600e3);
+  let d = new Date(Date.UTC(tw.getUTCFullYear(), tw.getUTCMonth(), tw.getUTCDate(), 8)); // 台灣 16:00
+  while (d > now || [0, 6].includes(d.getUTCDay())) d = new Date(d.getTime() - 86400e3);
+  return d.toISOString().slice(0, 10);
+}
+
+// 這組的結果已經是最新資料、條件也沒改過：回傳結果（含資料日期），否則 null
+function freshResult(preset, results, now = new Date()) {
+  const result = preset && results?.results?.[preset.id];
+  if (!result || results.date < lastCloseDate(now)) return null;
+  if (preset.updated_at && preset.updated_at > new Date(results.generated_at).toISOString()) return null;
+  return { ...result, date: results.date };
 }
 
 async function runCommand(env, action, params) {
@@ -412,7 +434,7 @@ async function runCommand(env, action, params) {
     if (!preset) {
       text = '這組條件已被刪除。';
     } else if (!result) {
-      text = `「${preset.name}」還沒有結果，下次 16:30 排程後就會有；急的話可按卡片上的「立即篩選」（會用掉 1 則推播）。`;
+      text = `「${preset.name}」還沒有結果，下次 17:00 排程後就會有；急的話可按卡片上的「立即篩選」（會用掉 1 則推播）。`;
     } else {
       text = result.text;
       if (preset.updated_at && preset.updated_at > new Date(results.generated_at).toISOString()) {
@@ -424,14 +446,21 @@ async function runCommand(env, action, params) {
   }
 
   if (action === 'run') {
-    const { presets } = await loadAll(env);
+    const { presets, results } = await loadAll(env);
     const preset = presets.find((p) => p.id === params.get('id'));
     if (!preset) return [{ type: 'text', text: '這組條件已被刪除。' }];
+    // 已經是最新結果就直接回覆（回覆訊息免費），不用再篩選一次
+    const fresh = freshResult(preset, results);
+    if (fresh) {
+      let text = `ℹ️ 目前已是最新結果（資料日期 ${fresh.date}），不用重新篩選。\n\n${fresh.text}`;
+      if (text.length > 4900) text = text.slice(0, 4900) + '\n…（訊息過長已截斷）';
+      return [{ type: 'text', text, quickReply: presetQuickReply(presets) }];
+    }
     return [{
       type: 'template', altText: '確認立即篩選',
       template: {
         type: 'confirm',
-        text: `立即篩選「${preset.name}」？\n會用掉 1 則推播額度，約 3～5 分鐘後收到。`,
+        text: `立即篩選「${preset.name}」？\n會用掉 1 則推播額度，約 1～2 分鐘後收到。`,
         actions: [
           { type: 'postback', label: '確定', data: `action=run_confirm&id=${preset.id}`, displayText: '確定' },
           { type: 'postback', label: '取消', data: 'action=cancel', displayText: '取消' },
@@ -442,7 +471,7 @@ async function runCommand(env, action, params) {
 
   if (action === 'run_confirm') {
     await triggerWorkflow(env, params.get('id'));
-    return [{ type: 'text', text: '▶️ 已開始篩選，約 3～5 分鐘後推播結果。' }];
+    return [{ type: 'text', text: '▶️ 已開始篩選，約 1～2 分鐘後推播結果。' }];
   }
 
   if (action === 'cancel') return [{ type: 'text', text: '已取消。' }];

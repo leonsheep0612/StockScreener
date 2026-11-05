@@ -12,6 +12,8 @@ LINE_TOKEN = os.environ.get("LINE_CHANNEL_ACCESS_TOKEN")
 LINE_USER_ID = os.environ.get("LINE_USER_ID")
 # 從 LINE 設定頁按「立即篩選」時，GitHub Actions 會帶入該條件組合的 id，只推播這一組
 ONLY_PRESET = os.environ.get("PRESET", "").strip()
+# Worker 排程觸發時帶入：first = 17:00、retry = 17:30 補跑（17:00 已成功就略過）
+AUTO = os.environ.get("AUTO", "").strip()
 
 # 2. 篩選條件：config.json 的 presets（條件組合），可從 LINE 官方帳號的「條件設定」頁新增、刪除、修改
 #    四種策略範本與各區塊預設值在 strategies.json（依《用公開資訊從選股到精準進場》整理）
@@ -928,7 +930,7 @@ def save_results(latest_date, reports):
         json.dump(data, f, ensure_ascii=False, indent=1)
 
 def already_ran_today():
-    """Worker 16:30 觸發的篩選已經跑完了嗎（results.json 在 RUN_DAY 16:00 之後產生）"""
+    """今天收盤後的篩選已經跑完了嗎（results.json 在 RUN_DAY 16:00 之後產生）"""
     try:
         with open(RESULTS_PATH, encoding='utf-8') as f:
             generated = datetime.fromisoformat(json.load(f)['generated_at'])
@@ -938,12 +940,14 @@ def already_ran_today():
 
 def main():
     print("啟動量化程式...")
-    if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and already_ran_today():
-        print("今天 16:30 已由 Worker 觸發篩選並推播，GitHub 備援排程略過。")
+    if (os.environ.get("GITHUB_EVENT_NAME") == "schedule" or AUTO == "retry") and already_ran_today():
+        print("今天的篩選已經跑完並推播，這次補跑略過。")
         return
     # 今天有安排推播（或從 LINE 手動觸發）才推；否則連錯誤通知都不推，避免消耗額度
     will_push = bool(ONLY_PRESET) or any(RUN_DAY.weekday() in p['notify_days'] for p in PRESETS)
     notify = send_line_message if will_push else lambda text: print("（今天沒有安排推播，不發送）")
+    if AUTO == "first":  # 17:30 還會再試一次，這次失敗先不通知
+        notify = lambda text: print("（17:30 會自動再試，這次不發送錯誤通知）")
     try:
         # 取得最近 PRICE_DAYS 個交易日行情（最近 INSTI_DAYS 天含法人買賣超），第一次會比較久
         print(f"\n--- 取得近 {PRICE_DAYS} 個交易日行情、近 {INSTI_DAYS} 日法人買賣超（上市＋上櫃）---")
