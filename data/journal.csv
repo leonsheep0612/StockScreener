@@ -2778,375 +2778,645 @@
 2026-11-12,近60日累計同步買超,6902,GOGOLOOK,上市,278.0,32.0,,124.0,141.65,0.63,,,,成長股 法人同步,,,,,,,,,,,,,
 2026-11-12,近60日累計同步買超,6781,AES-KY,上市,187.0,10.0,,741.0,860.25,1.1,,,,成長股 法人同步,,,,,,,,,,,,,
 2026-11-12,近60日累計同步買超,6146,耕興,上櫃,21.0,30.0,,175.0,196.32,0.47,,,,成長股 法人同步,,,,,,,,,,,,,
-2026-11-13,成長股,4967,十銓,上市,nan,nan,nan,257.5,262.7,0.51,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,21933.33,66.2,92.06,53.44,40.12
-2026-11-13,成長股,3135,凌航,上市,nan,nan,nan,124.0,134.25,1.56,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,6047.06,320.07,167.09,20.87,47.6
-2026-11-13,成長股,5289,宜鼎,上櫃,nan,nan,nan,960.0,1052.75,0.89,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,5294.06,641.09,78.03,166.45,53.79
-2026-11-13,成長股,4916,事欣科,上市,nan,nan,nan,112.5,99.45,6.34,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,4700.0,76.28,8750.0,5.45,22.65
-2026-11-13,成長股,2451,創見,上市,nan,nan,nan,232.5,264.02,1.07,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,2726.53,482.44,140.82,46.63,54.9
-2026-11-13,成長股,6584,南俊國際,上櫃,nan,nan,nan,309.0,391.2,1.41,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,2483.33,40.78,90.14,6.47,19.51
-2026-11-13,成長股,2344,華邦電,上市,nan,nan,nan,125.0,148.12,0.7,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,1962.07,184.72,528.57,7.65,19.71
-2026-11-13,成長股,8271,宇瞻,上市,nan,nan,nan,163.5,175.05,0.46,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,1955.88,256.74,207.34,35.51,45.54
-2026-11-13,成長股,3028,增你強,上市,nan,nan,nan,55.2,58.05,0.54,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,1725.0,90.63,51.44,5.24,20.29
-2026-11-13,成長股,8112,至上,上市,nan,nan,nan,80.8,81.0,0.97,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,1529.41,167.24,43.84,9.45,27.79
-2026-11-13,成長股,7610,聯友金屬-創,上市,nan,nan,nan,1090.0,1297.5,2.14,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,1350.0,450.78,218.71,25.37,33.61
-2026-11-13,成長股,2408,南亞科,上市,nan,nan,nan,377.0,415.95,0.99,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,1234.09,684.23,229.88,23.38,23.09
-2026-11-13,成長股,3260,威剛,上櫃,nan,nan,nan,302.0,326.4,0.63,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,1070.04,197.43,150.59,62.46,55.09
-2026-11-13,成長股,2059,川湖,上市,nan,nan,nan,7880.0,9159.5,1.38,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,1053.18,156.11,59.82,110.96,38.03
-2026-11-13,成長股,6901,鑽石投資,上市,nan,nan,nan,14.3,15.65,1.22,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,876.92,922.64,53.38,3.62,24.95
-2026-11-13,成長股,6021,美好證,上櫃,nan,nan,nan,51.6,53.66,0.12,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,871.88,475.2,161.11,7.05,27.59
-2026-11-13,成長股,6902,GOGOLOOK,上市,nan,nan,nan,134.5,141.53,1.43,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,804.17,28.42,227.42,3.33,19.85
-2026-11-13,成長股,5864,致和證,上櫃,nan,nan,nan,31.95,34.19,0.91,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,764.86,914.74,29.29,9.8,49.64
-2026-11-13,成長股,6265,方土昶,上櫃,nan,nan,nan,37.2,41.46,2.36,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,581.82,1053.18,223.81,6.44,37.3
-2026-11-13,成長股,3324,雙鴻,上櫃,nan,nan,nan,1140.0,1307.25,1.78,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,494.29,63.96,33.11,23.01,27.47
-2026-11-13,成長股,2359,所羅門,上市,nan,nan,nan,98.2,110.18,0.57,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,477.0,38.54,46.43,4.55,17.77
-2026-11-13,成長股,6139,亞翔,上市,nan,nan,nan,618.0,630.05,0.77,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,473.52,70.5,62.89,25.91,48.46
-2026-11-13,成長股,3702,大聯大,上市,nan,nan,nan,86.4,103.84,0.92,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,387.62,82.15,41.77,8.42,19.32
-2026-11-13,成長股,6442,光聖,上市,nan,nan,nan,1160.0,1275.25,1.7,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,334.36,26.55,64.06,19.07,18.89
-2026-11-13,成長股,3081,聯亞,上櫃,nan,nan,nan,2110.0,2303.25,1.49,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,310.48,120.79,889.83,7.75,18.82
-2026-11-13,成長股,2413,環科,上市,nan,nan,nan,47.85,50.24,1.4,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,270.91,29.71,193.18,2.39,21.24
-2026-11-13,成長股,6274,台燿,上櫃,nan,nan,nan,974.0,1245.5,0.83,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,240.68,110.92,26.88,12.4,21.02
-2026-11-13,成長股,3036,文曄,上市,nan,nan,nan,186.5,201.78,0.59,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,236.84,127.62,42.8,13.0,17.94
-2026-11-13,成長股,3167,大量,上市,nan,nan,nan,824.0,898.7,2.2,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,205.03,125.04,449.32,9.26,23.87
-2026-11-13,成長股,7750,新代,上市,nan,nan,nan,1495.0,1727.5,0.78,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,185.19,107.46,57.42,42.53,28.59
-2026-11-13,成長股,2383,台光電,上市,nan,nan,nan,4215.0,4635.25,0.88,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,175.05,110.04,49.84,42.46,31.27
-2026-11-13,成長股,2404,漢唐,上市,nan,nan,nan,998.0,1035.1,1.26,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,168.83,76.4,45.96,36.23,55.58
-2026-11-13,成長股,2368,金像電,上市,nan,nan,nan,1030.0,1059.35,1.2,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,167.24,75.27,68.72,16.17,28.2
-2026-11-13,成長股,2360,致茂,上市,nan,nan,nan,1400.0,1686.5,0.6,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,161.85,109.58,121.78,21.27,50.47
-2026-11-13,成長股,6805,富世達,上市,nan,nan,nan,1975.0,2162.25,1.05,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,157.05,42.73,73.18,25.77,33.12
-2026-11-13,成長股,5439,高技,上櫃,nan,nan,nan,164.0,198.85,1.38,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,148.13,33.44,291.45,8.15,41.67
-2026-11-13,成長股,5274,信驊,上櫃,nan,nan,nan,12000.0,14581.75,0.86,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,145.47,72.33,52.73,78.28,59.73
-2026-11-13,成長股,3017,奇鋐,上市,nan,nan,nan,3040.0,2992.25,1.21,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,136.6,65.98,131.82,44.54,44.06
-2026-11-13,成長股,6223,旺矽,上櫃,nan,nan,nan,4670.0,4581.25,1.51,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,133.13,58.93,37.14,28.08,25.45
-2026-11-13,成長股,6446,藥華藥,上市,nan,nan,nan,1380.0,1239.25,1.18,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,122.4,90.3,52.23,11.35,18.93
-2026-11-13,成長股,2345,智邦,上市,nan,nan,nan,1520.0,1663.0,1.11,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,119.53,57.64,119.31,34.7,43.38
-2026-11-13,成長股,6691,洋基工程,上市,nan,nan,nan,569.0,625.1,0.71,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,112.19,89.31,27.89,17.46,45.82
-2026-11-13,成長股,5284,jpp-KY,上市,nan,nan,nan,225.0,249.25,0.89,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,110.0,42.62,1081.37,8.54,19.39
-2026-11-13,成長股,7769,鴻勁,上市,nan,nan,nan,4080.0,4731.25,0.79,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,99.48,100.36,129.77,56.14,28.66
-2026-11-13,成長股,3709,鑫聯大投控,上櫃,nan,nan,nan,61.5,62.04,0.82,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,95.21,30.18,192.59,6.54,26.58
-2026-11-13,成長股,4772,台特化,上櫃,nan,nan,nan,215.0,233.85,0.61,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,89.87,240.0,53.28,2.83,20.64
-2026-11-13,成長股,2308,台達電,上市,nan,nan,nan,1240.0,1390.5,0.85,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,80.26,47.75,70.65,17.59,25.64
-2026-11-13,成長股,2330,台積電,上市,nan,nan,nan,2350.0,2348.25,0.78,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,77.41,36.05,46.43,49.33,31.98
-2026-11-13,成長股,8996,高力,上市,nan,nan,nan,1440.0,1459.5,1.01,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,61.65,54.92,38.26,8.69,24.72
-2026-11-13,成長股,8210,勤誠,上市,nan,nan,nan,599.0,697.55,0.98,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,61.57,43.69,81.06,21.83,35.66
-2026-11-13,成長股,8390,金益鼎,上櫃,nan,nan,nan,78.6,82.97,0.42,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,50.66,30.36,36.36,5.16,21.57
-2026-11-13,成長股,3665,貿聯-KY,上市,nan,nan,nan,1520.0,1688.0,0.84,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,nan,nan,nan,46.08,37.49,83.27,26.94,21.47
-2026-11-13,短中線強勢股,2453,凌群,上市,nan,nan,nan,61.1,54.14,5.62,nan,nan,nan,中短線強勢股,39.2,15.4,24.1,1.22,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,短中線強勢股,7765,中華資安,上市,nan,nan,nan,269.5,239.0,5.82,nan,nan,nan,中短線強勢股,35.0,13.2,25.0,1.41,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,短中線強勢股,2891,中信金,上市,nan,nan,nan,78.7,74.53,1.43,nan,nan,nan,中短線強勢股,30.5,18.6,24.0,1.23,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,千張大戶週增,5475,德宏,上櫃,nan,nan,9.19,211.0,192.45,0.46,nan,20.84,12.7,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2892,第一金,上市,346506.0,99310.0,nan,43.45,42.29,0.8,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1802,台玻,上市,285295.0,36308.0,nan,85.1,67.26,2.53,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2610,華航,上市,285735.0,17930.0,nan,23.2,21.16,1.1,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2618,長榮航,上市,269496.0,28656.0,nan,47.75,43.94,1.26,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,5880,合庫金,上市,230999.0,58177.0,nan,28.55,28.26,0.55,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2412,中華電,上市,179750.0,18303.0,nan,165.0,158.53,0.61,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1326,台化,上市,144692.0,11876.0,nan,75.0,72.5,0.87,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,5876,上海商銀,上市,113704.0,6295.0,nan,53.4,53.19,0.55,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2880,華南金,上市,88639.0,8910.0,nan,51.9,49.67,0.89,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1815,富喬,上櫃,14433.0,78313.0,nan,142.0,136.03,1.01,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2881,富邦金,上市,52469.0,38328.0,nan,161.5,157.72,1.01,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3105,穩懋,上櫃,62949.0,13678.0,nan,568.0,508.7,1.15,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,9904,寶成,上市,41874.0,9283.0,nan,26.0,25.96,0.51,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,9933,中鼎,上市,48524.0,2539.0,nan,51.6,46.17,1.18,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2606,裕民,上市,35272.0,1406.0,nan,72.6,72.2,1.07,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2355,敬鵬,上市,32154.0,4283.0,nan,65.9,52.48,6.89,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6456,GIS-KY,上市,30586.0,2.0,nan,101.5,92.83,1.9,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2034,允強,上市,26297.0,909.0,nan,23.4,23.39,1.23,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3035,智原,上市,19246.0,1097.0,nan,196.0,192.4,0.92,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3374,精材,上櫃,3271.0,15557.0,nan,519.0,451.85,1.96,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6026,福邦證,上櫃,11859.0,413.0,nan,15.65,15.59,0.57,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1477,聚陽,上市,10520.0,1575.0,nan,225.5,210.3,3.02,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6757,台灣虎航,上市,11104.0,96.0,nan,59.1,54.45,1.46,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,4961,天鈺,上市,8119.0,2336.0,nan,185.5,181.65,0.78,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6271,同欣電,上市,6074.0,4344.0,nan,221.0,209.0,1.48,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,5904,寶雅*,上櫃,8729.0,1247.0,nan,76.4,73.84,0.93,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3029,零壹,上市,7566.0,216.0,nan,138.0,122.6,2.49,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6526,達發,上市,6376.0,1023.0,nan,756.0,740.85,1.02,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1476,儒鴻,上市,3927.0,2980.0,nan,386.5,333.77,1.87,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2915,潤泰全,上市,5897.0,407.0,nan,56.6,56.55,1.23,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,4105,東洋,上櫃,5558.0,630.0,nan,84.1,81.06,1.05,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3019,亞光,上市,5381.0,1.0,nan,138.0,129.18,1.79,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,4770,上品,上市,3757.0,936.0,nan,299.0,287.93,0.86,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6962,奕力-KY,上市,3430.0,488.0,nan,31.75,30.77,0.98,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2816,旺旺保,上市,3565.0,67.0,nan,44.45,41.91,2.7,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2597,潤弘,上市,2915.0,354.0,nan,176.0,167.65,2.23,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6472,保瑞,上市,836.0,2143.0,nan,402.0,397.8,0.93,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2033,佳大,上市,2317.0,234.0,nan,79.3,69.22,0.83,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6245,立端,上櫃,2306.0,107.0,nan,92.8,89.76,1.11,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3059,華晶科,上市,2005.0,239.0,nan,37.0,36.85,0.73,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3617,碩天,上市,1147.0,1058.0,nan,279.0,248.65,2.04,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1809,中釉,上市,1112.0,334.0,nan,45.1,44.35,0.52,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2528,皇普,上市,664.0,449.0,nan,17.5,17.38,0.38,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6743,安普新,上市,861.0,82.0,nan,32.55,30.42,1.19,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,5209,新鼎,上櫃,864.0,2.0,nan,232.5,199.3,1.49,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,7799,禾榮科,上市,692.0,140.0,nan,478.0,429.3,3.38,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6426,統新,上市,311.0,200.0,nan,302.0,293.02,1.37,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2101,南港,上市,130.0,220.0,nan,29.95,28.85,1.95,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,當月外資投信佔比,4105,東洋,上櫃,nan,nan,nan,84.1,81.06,1.05,24.14,nan,nan,主力操作股,nan,nan,nan,nan,4.5,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,當月外資投信佔比,2597,潤弘,上市,nan,nan,nan,176.0,167.65,2.23,11.54,nan,nan,主力操作股,nan,nan,nan,nan,8.27,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,當月外資投信佔比,2412,中華電,上市,nan,nan,nan,165.0,158.53,0.61,16.78,nan,nan,主力操作股,nan,nan,nan,nan,2.13,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,當月外資投信佔比,3293,鈊象,上櫃,nan,nan,nan,799.0,782.3,0.97,15.0,nan,nan,主力操作股,nan,nan,nan,nan,2.01,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,當月外資投信佔比,5880,合庫金,上市,nan,nan,nan,28.55,28.26,0.55,9.42,nan,nan,主力操作股,nan,nan,nan,nan,3.79,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,當月外資投信佔比,4961,天鈺,上市,nan,nan,nan,185.5,181.65,0.78,9.91,nan,nan,主力操作股,nan,nan,nan,nan,2.98,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,當月外資投信佔比,1476,儒鴻,上市,nan,nan,nan,386.5,333.77,1.87,8.1,nan,nan,主力操作股,nan,nan,nan,nan,4.37,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,單日大量同步買超,2891,中信金,上市,6713.0,15568.0,nan,78.7,74.53,1.43,10.43,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,單日大量同步買超,2610,華航,上市,11579.0,896.0,nan,23.2,21.16,1.1,28.86,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,單日大量同步買超,2606,裕民,上市,1017.0,494.0,nan,72.6,72.2,1.07,30.93,nan,nan,主力操作股,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,高殖利率價值股,2548,華固,上市,nan,nan,nan,95.2,92.2,0.8,nan,nan,nan,高殖利率價值股,nan,nan,nan,nan,nan,8.93,8.07,1.51,nan,nan,nan,nan,nan
-2026-11-13,高殖利率價值股,2010,春源,上市,nan,nan,nan,23.0,23.02,1.04,nan,nan,nan,高殖利率價值股,nan,nan,nan,nan,nan,8.7,8.58,1.14,nan,nan,nan,nan,nan
-2026-11-13,高殖利率價值股,2636,台驊控股,上市,nan,nan,nan,71.0,70.17,1.09,nan,nan,nan,高殖利率價值股,nan,nan,nan,nan,nan,7.04,7.47,0.9,nan,nan,nan,nan,nan
-2026-11-13,高殖利率價值股,2603,長榮,上市,nan,nan,nan,257.5,260.02,0.96,nan,nan,nan,高殖利率價值股,nan,nan,nan,nan,nan,6.21,7.01,0.92,nan,nan,nan,nan,nan
-2026-11-13,高殖利率價值股,1210,大成,上市,nan,nan,nan,52.0,50.93,1.44,nan,nan,nan,高殖利率價值股,nan,nan,nan,nan,nan,5.77,12.78,1.7,nan,nan,nan,nan,nan
-2026-11-13,高殖利率價值股,2852,第一保,上市,nan,nan,nan,29.05,27.88,1.25,nan,nan,nan,高殖利率價值股,nan,nan,nan,nan,nan,5.71,7.03,0.89,nan,nan,nan,nan,nan
-2026-11-13,短中線強勢股,2453,凌群,上市,nan,nan,nan,61.1,54.14,5.62,nan,nan,nan,自訂組合,39.2,15.4,24.1,1.22,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,短中線強勢股,2891,中信金,上市,nan,nan,nan,78.7,74.53,1.43,nan,nan,nan,自訂組合,30.5,18.6,24.0,1.23,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,成長股,4967,十銓,上市,nan,nan,nan,257.5,262.7,0.51,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,21933.33,66.2,92.06,53.44,40.12
-2026-11-13,成長股,3135,凌航,上市,nan,nan,nan,124.0,134.25,1.56,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,6047.06,320.07,167.09,20.87,47.6
-2026-11-13,成長股,5289,宜鼎,上櫃,nan,nan,nan,960.0,1052.75,0.89,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,5294.06,641.09,78.03,166.45,53.79
-2026-11-13,成長股,4916,事欣科,上市,nan,nan,nan,112.5,99.45,6.34,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,4700.0,76.28,8750.0,5.45,22.65
-2026-11-13,成長股,2451,創見,上市,nan,nan,nan,232.5,264.02,1.07,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,2726.53,482.44,140.82,46.63,54.9
-2026-11-13,成長股,6584,南俊國際,上櫃,nan,nan,nan,309.0,391.2,1.41,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,2483.33,40.78,90.14,6.47,19.51
-2026-11-13,成長股,2344,華邦電,上市,nan,nan,nan,125.0,148.12,0.7,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,1962.07,184.72,528.57,7.65,19.71
-2026-11-13,成長股,8271,宇瞻,上市,nan,nan,nan,163.5,175.05,0.46,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,1955.88,256.74,207.34,35.51,45.54
-2026-11-13,成長股,3028,增你強,上市,nan,nan,nan,55.2,58.05,0.54,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,1725.0,90.63,51.44,5.24,20.29
-2026-11-13,成長股,8112,至上,上市,nan,nan,nan,80.8,81.0,0.97,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,1529.41,167.24,43.84,9.45,27.79
-2026-11-13,成長股,7610,聯友金屬-創,上市,nan,nan,nan,1090.0,1297.5,2.14,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,1350.0,450.78,218.71,25.37,33.61
-2026-11-13,成長股,2408,南亞科,上市,nan,nan,nan,377.0,415.95,0.99,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,1234.09,684.23,229.88,23.38,23.09
-2026-11-13,成長股,3260,威剛,上櫃,nan,nan,nan,302.0,326.4,0.63,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,1070.04,197.43,150.59,62.46,55.09
-2026-11-13,成長股,2059,川湖,上市,nan,nan,nan,7880.0,9159.5,1.38,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,1053.18,156.11,59.82,110.96,38.03
-2026-11-13,成長股,6901,鑽石投資,上市,nan,nan,nan,14.3,15.65,1.22,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,876.92,922.64,53.38,3.62,24.95
-2026-11-13,成長股,6021,美好證,上櫃,nan,nan,nan,51.6,53.66,0.12,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,871.88,475.2,161.11,7.05,27.59
-2026-11-13,成長股,6902,GOGOLOOK,上市,nan,nan,nan,134.5,141.53,1.43,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,804.17,28.42,227.42,3.33,19.85
-2026-11-13,成長股,5864,致和證,上櫃,nan,nan,nan,31.95,34.19,0.91,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,764.86,914.74,29.29,9.8,49.64
-2026-11-13,成長股,6265,方土昶,上櫃,nan,nan,nan,37.2,41.46,2.36,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,581.82,1053.18,223.81,6.44,37.3
-2026-11-13,成長股,3324,雙鴻,上櫃,nan,nan,nan,1140.0,1307.25,1.78,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,494.29,63.96,33.11,23.01,27.47
-2026-11-13,成長股,2359,所羅門,上市,nan,nan,nan,98.2,110.18,0.57,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,477.0,38.54,46.43,4.55,17.77
-2026-11-13,成長股,6139,亞翔,上市,nan,nan,nan,618.0,630.05,0.77,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,473.52,70.5,62.89,25.91,48.46
-2026-11-13,成長股,3702,大聯大,上市,nan,nan,nan,86.4,103.84,0.92,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,387.62,82.15,41.77,8.42,19.32
-2026-11-13,成長股,6442,光聖,上市,nan,nan,nan,1160.0,1275.25,1.7,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,334.36,26.55,64.06,19.07,18.89
-2026-11-13,成長股,3081,聯亞,上櫃,nan,nan,nan,2110.0,2303.25,1.49,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,310.48,120.79,889.83,7.75,18.82
-2026-11-13,成長股,2413,環科,上市,nan,nan,nan,47.85,50.24,1.4,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,270.91,29.71,193.18,2.39,21.24
-2026-11-13,成長股,6274,台燿,上櫃,nan,nan,nan,974.0,1245.5,0.83,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,240.68,110.92,26.88,12.4,21.02
-2026-11-13,成長股,3036,文曄,上市,nan,nan,nan,186.5,201.78,0.59,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,236.84,127.62,42.8,13.0,17.94
-2026-11-13,成長股,3167,大量,上市,nan,nan,nan,824.0,898.7,2.2,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,205.03,125.04,449.32,9.26,23.87
-2026-11-13,成長股,7750,新代,上市,nan,nan,nan,1495.0,1727.5,0.78,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,185.19,107.46,57.42,42.53,28.59
-2026-11-13,成長股,2383,台光電,上市,nan,nan,nan,4215.0,4635.25,0.88,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,175.05,110.04,49.84,42.46,31.27
-2026-11-13,成長股,2404,漢唐,上市,nan,nan,nan,998.0,1035.1,1.26,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,168.83,76.4,45.96,36.23,55.58
-2026-11-13,成長股,2368,金像電,上市,nan,nan,nan,1030.0,1059.35,1.2,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,167.24,75.27,68.72,16.17,28.2
-2026-11-13,成長股,2360,致茂,上市,nan,nan,nan,1400.0,1686.5,0.6,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,161.85,109.58,121.78,21.27,50.47
-2026-11-13,成長股,6805,富世達,上市,nan,nan,nan,1975.0,2162.25,1.05,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,157.05,42.73,73.18,25.77,33.12
-2026-11-13,成長股,5439,高技,上櫃,nan,nan,nan,164.0,198.85,1.38,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,148.13,33.44,291.45,8.15,41.67
-2026-11-13,成長股,5274,信驊,上櫃,nan,nan,nan,12000.0,14581.75,0.86,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,145.47,72.33,52.73,78.28,59.73
-2026-11-13,成長股,3017,奇鋐,上市,nan,nan,nan,3040.0,2992.25,1.21,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,136.6,65.98,131.82,44.54,44.06
-2026-11-13,成長股,6223,旺矽,上櫃,nan,nan,nan,4670.0,4581.25,1.51,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,133.13,58.93,37.14,28.08,25.45
-2026-11-13,成長股,6446,藥華藥,上市,nan,nan,nan,1380.0,1239.25,1.18,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,122.4,90.3,52.23,11.35,18.93
-2026-11-13,成長股,2345,智邦,上市,nan,nan,nan,1520.0,1663.0,1.11,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,119.53,57.64,119.31,34.7,43.38
-2026-11-13,成長股,6691,洋基工程,上市,nan,nan,nan,569.0,625.1,0.71,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,112.19,89.31,27.89,17.46,45.82
-2026-11-13,成長股,5284,jpp-KY,上市,nan,nan,nan,225.0,249.25,0.89,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,110.0,42.62,1081.37,8.54,19.39
-2026-11-13,成長股,7769,鴻勁,上市,nan,nan,nan,4080.0,4731.25,0.79,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,99.48,100.36,129.77,56.14,28.66
-2026-11-13,成長股,3709,鑫聯大投控,上櫃,nan,nan,nan,61.5,62.04,0.82,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,95.21,30.18,192.59,6.54,26.58
-2026-11-13,成長股,4772,台特化,上櫃,nan,nan,nan,215.0,233.85,0.61,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,89.87,240.0,53.28,2.83,20.64
-2026-11-13,成長股,2308,台達電,上市,nan,nan,nan,1240.0,1390.5,0.85,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,80.26,47.75,70.65,17.59,25.64
-2026-11-13,成長股,2330,台積電,上市,nan,nan,nan,2350.0,2348.25,0.78,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,77.41,36.05,46.43,49.33,31.98
-2026-11-13,成長股,8996,高力,上市,nan,nan,nan,1440.0,1459.5,1.01,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,61.65,54.92,38.26,8.69,24.72
-2026-11-13,成長股,8210,勤誠,上市,nan,nan,nan,599.0,697.55,0.98,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,61.57,43.69,81.06,21.83,35.66
-2026-11-13,成長股,8390,金益鼎,上櫃,nan,nan,nan,78.6,82.97,0.42,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,50.66,30.36,36.36,5.16,21.57
-2026-11-13,成長股,3665,貿聯-KY,上市,nan,nan,nan,1520.0,1688.0,0.84,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,nan,nan,nan,46.08,37.49,83.27,26.94,21.47
-2026-11-13,成長股,4967,十銓,上市,nan,nan,nan,257.5,262.7,0.51,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,21933.33,66.2,92.06,53.44,40.12
-2026-11-13,成長股,6584,南俊國際,上櫃,nan,nan,nan,309.0,391.2,1.41,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,2483.33,40.78,90.14,6.47,19.51
-2026-11-13,成長股,2344,華邦電,上市,nan,nan,nan,125.0,148.12,0.7,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,1962.07,184.72,528.57,7.65,19.71
-2026-11-13,成長股,2408,南亞科,上市,nan,nan,nan,377.0,415.95,0.99,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,1234.09,684.23,229.88,23.38,23.09
-2026-11-13,成長股,3260,威剛,上櫃,nan,nan,nan,302.0,326.4,0.63,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,1070.04,197.43,150.59,62.46,55.09
-2026-11-13,成長股,2059,川湖,上市,nan,nan,nan,7880.0,9159.5,1.38,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,1053.18,156.11,59.82,110.96,38.03
-2026-11-13,成長股,6021,美好證,上櫃,nan,nan,nan,51.6,53.66,0.12,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,871.88,475.2,161.11,7.05,27.59
-2026-11-13,成長股,6265,方土昶,上櫃,nan,nan,nan,37.2,41.46,2.36,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,581.82,1053.18,223.81,6.44,37.3
-2026-11-13,成長股,3324,雙鴻,上櫃,nan,nan,nan,1140.0,1307.25,1.78,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,494.29,63.96,33.11,23.01,27.47
-2026-11-13,成長股,6139,亞翔,上市,nan,nan,nan,618.0,630.05,0.77,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,473.52,70.5,62.89,25.91,48.46
-2026-11-13,成長股,3081,聯亞,上櫃,nan,nan,nan,2110.0,2303.25,1.49,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,310.48,120.79,889.83,7.75,18.82
-2026-11-13,成長股,6274,台燿,上櫃,nan,nan,nan,974.0,1245.5,0.83,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,240.68,110.92,26.88,12.4,21.02
-2026-11-13,成長股,3036,文曄,上市,nan,nan,nan,186.5,201.78,0.59,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,236.84,127.62,42.8,13.0,17.94
-2026-11-13,成長股,3167,大量,上市,nan,nan,nan,824.0,898.7,2.2,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,205.03,125.04,449.32,9.26,23.87
-2026-11-13,成長股,7750,新代,上市,nan,nan,nan,1495.0,1727.5,0.78,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,185.19,107.46,57.42,42.53,28.59
-2026-11-13,成長股,2383,台光電,上市,nan,nan,nan,4215.0,4635.25,0.88,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,175.05,110.04,49.84,42.46,31.27
-2026-11-13,成長股,2404,漢唐,上市,nan,nan,nan,998.0,1035.1,1.26,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,168.83,76.4,45.96,36.23,55.58
-2026-11-13,成長股,2368,金像電,上市,nan,nan,nan,1030.0,1059.35,1.2,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,167.24,75.27,68.72,16.17,28.2
-2026-11-13,成長股,2360,致茂,上市,nan,nan,nan,1400.0,1686.5,0.6,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,161.85,109.58,121.78,21.27,50.47
-2026-11-13,成長股,6805,富世達,上市,nan,nan,nan,1975.0,2162.25,1.05,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,157.05,42.73,73.18,25.77,33.12
-2026-11-13,成長股,3017,奇鋐,上市,nan,nan,nan,3040.0,2992.25,1.21,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,136.6,65.98,131.82,44.54,44.06
-2026-11-13,成長股,6223,旺矽,上櫃,nan,nan,nan,4670.0,4581.25,1.51,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,133.13,58.93,37.14,28.08,25.45
-2026-11-13,成長股,6446,藥華藥,上市,nan,nan,nan,1380.0,1239.25,1.18,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,122.4,90.3,52.23,11.35,18.93
-2026-11-13,成長股,2345,智邦,上市,nan,nan,nan,1520.0,1663.0,1.11,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,119.53,57.64,119.31,34.7,43.38
-2026-11-13,成長股,2376,技嘉,上市,nan,nan,nan,284.0,330.62,3.05,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,116.92,41.03,21.09,17.73,24.28
-2026-11-13,成長股,4772,台特化,上櫃,nan,nan,nan,215.0,233.85,0.61,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,89.87,240.0,53.28,2.83,20.64
-2026-11-13,成長股,2330,台積電,上市,nan,nan,nan,2350.0,2348.25,0.78,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,77.41,36.05,46.43,49.33,31.98
-2026-11-13,成長股,3030,德律,上市,nan,nan,nan,232.0,250.82,0.63,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,75.45,23.92,34.83,7.36,29.3
-2026-11-13,成長股,8210,勤誠,上市,nan,nan,nan,599.0,697.55,0.98,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,61.57,43.69,81.06,21.83,35.66
-2026-11-13,成長股,3665,貿聯-KY,上市,nan,nan,nan,1520.0,1688.0,0.84,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,46.08,37.49,83.27,26.94,21.47
-2026-11-13,成長股,6669,緯穎,上市,nan,nan,nan,1635.0,1783.25,0.76,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,23.3,26.01,117.32,156.38,97.41
-2026-11-13,近60日累計同步買超,2892,第一金,上市,346506.0,99310.0,nan,43.45,42.29,0.8,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2609,陽明,上市,356403.0,7819.0,nan,60.3,61.39,0.7,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1802,台玻,上市,285295.0,36308.0,nan,85.1,67.26,2.53,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2610,華航,上市,285735.0,17930.0,nan,23.2,21.16,1.1,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2618,長榮航,上市,269496.0,28656.0,nan,47.75,43.94,1.26,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,5880,合庫金,上市,230999.0,58177.0,nan,28.55,28.26,0.55,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2412,中華電,上市,179750.0,18303.0,nan,165.0,158.53,0.61,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2883,凱基金,上市,82281.0,90590.0,nan,36.3,36.73,0.79,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3045,台灣大,上市,149930.0,20589.0,nan,131.0,131.82,0.84,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2002,中鋼,上市,150244.0,16645.0,nan,18.4,19.18,1.2,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1326,台化,上市,144692.0,11876.0,nan,75.0,72.5,0.87,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2603,長榮,上市,107604.0,37445.0,nan,257.5,260.02,0.96,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2801,彰銀,上市,43428.0,87370.0,nan,29.0,29.28,0.75,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,5876,上海商銀,上市,113704.0,6295.0,nan,53.4,53.19,0.55,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1102,亞泥,上市,117187.0,589.0,nan,35.75,37.45,1.03,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1301,台塑,上市,50725.0,65003.0,nan,71.1,72.55,0.45,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1101,台泥,上市,89575.0,17131.0,nan,27.35,27.44,0.58,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2880,華南金,上市,88639.0,8910.0,nan,51.9,49.67,0.89,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1815,富喬,上櫃,14433.0,78313.0,nan,142.0,136.03,1.01,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2881,富邦金,上市,52469.0,38328.0,nan,161.5,157.72,1.01,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2889,國票金,上市,82875.0,4034.0,nan,16.2,16.61,0.33,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2542,興富發,上市,56370.0,29686.0,nan,38.4,38.9,0.61,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2615,萬海,上市,79264.0,1929.0,nan,107.5,114.9,0.63,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3105,穩懋,上櫃,62949.0,13678.0,nan,568.0,508.7,1.15,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1402,遠東新,上市,66250.0,6513.0,nan,27.45,28.25,0.53,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2845,遠東銀,上市,59171.0,7435.0,nan,12.7,13.01,0.54,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,4904,遠傳,上市,45452.0,13622.0,nan,109.5,111.62,0.94,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2353,宏碁,上市,42755.0,8650.0,nan,29.6,31.05,0.64,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,9904,寶成,上市,41874.0,9283.0,nan,26.0,25.96,0.51,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,9933,中鼎,上市,48524.0,2539.0,nan,51.6,46.17,1.18,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2027,大成鋼,上市,16328.0,32919.0,nan,44.5,49.31,6.61,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6278,台表科,上市,18379.0,24980.0,nan,231.0,253.6,0.74,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2897,王道銀行,上市,37482.0,2071.0,nan,10.45,10.71,0.81,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2409,友達,上市,12312.0,25190.0,nan,30.4,31.81,1.29,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2606,裕民,上市,35272.0,1406.0,nan,72.6,72.2,1.07,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2355,敬鵬,上市,32154.0,4283.0,nan,65.9,52.48,6.89,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3037,欣興,上市,33328.0,2272.0,nan,785.0,952.7,1.17,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2855,統一證,上市,11847.0,20851.0,nan,52.5,53.3,1.15,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3034,聯詠,上市,24829.0,7773.0,nan,474.0,544.08,0.64,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2377,微星,上市,27056.0,5122.0,nan,138.0,153.5,2.27,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,4938,和碩,上市,6472.0,25041.0,nan,89.1,100.02,1.31,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6456,GIS-KY,上市,30586.0,2.0,nan,101.5,92.83,1.9,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3714,富采,上市,29555.0,154.0,nan,56.7,59.57,0.0,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,8150,南茂,上市,28293.0,220.0,nan,84.5,90.81,0.95,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2851,中再保,上市,26673.0,923.0,nan,48.1,48.8,0.79,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2034,允強,上市,26297.0,909.0,nan,23.4,23.39,1.23,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,9945,潤泰新,上市,21485.0,4776.0,nan,28.35,28.43,1.05,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3016,嘉晶,上市,23872.0,1558.0,nan,122.0,130.15,0.63,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2354,鴻準,上市,24212.0,46.0,nan,52.4,58.59,0.94,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3702,大聯大,上市,15699.0,6541.0,nan,86.4,103.84,0.92,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2379,瑞昱,上市,14009.0,8196.0,nan,758.0,765.25,0.81,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,5347,世界,上櫃,15570.0,6379.0,nan,135.0,147.1,0.63,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3035,智原,上市,19246.0,1097.0,nan,196.0,192.4,0.92,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6168,宏齊,上市,19454.0,368.0,nan,30.3,32.92,0.45,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3374,精材,上櫃,3271.0,15557.0,nan,519.0,451.85,1.96,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2617,台航,上市,16289.0,288.0,nan,29.9,30.92,0.51,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,9910,豐泰,上市,12632.0,3034.0,nan,66.5,68.62,0.84,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2455,全新,上市,7434.0,7940.0,nan,392.0,429.4,0.22,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3005,神基,上市,13574.0,1147.0,nan,109.5,119.33,0.61,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3532,台勝科,上市,3271.0,11277.0,nan,295.0,349.65,0.28,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2030,彰源,上市,12830.0,469.0,nan,24.6,27.15,0.49,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6026,福邦證,上櫃,11859.0,413.0,nan,15.65,15.59,0.57,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1477,聚陽,上市,10520.0,1575.0,nan,225.5,210.3,3.02,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,8422,可寧衛*,上市,10513.0,1409.0,nan,23.75,24.67,0.4,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2905,三商,上市,11480.0,334.0,nan,16.15,17.6,1.03,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6757,台灣虎航,上市,11104.0,96.0,nan,59.1,54.45,1.46,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2351,順德,上市,9528.0,1668.0,nan,149.0,175.95,1.09,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1229,聯華,上市,10432.0,463.0,nan,37.75,39.39,0.86,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,4961,天鈺,上市,8119.0,2336.0,nan,185.5,181.65,0.78,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6271,同欣電,上市,6074.0,4344.0,nan,221.0,209.0,1.48,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2395,研華,上市,6818.0,3205.0,nan,608.0,643.95,0.62,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,5904,寶雅*,上櫃,8729.0,1247.0,nan,76.4,73.84,0.93,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1504,東元,上市,4770.0,4919.0,nan,64.8,67.03,0.7,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,9907,統一實,上市,8929.0,737.0,nan,13.9,14.54,0.47,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,5483,中美晶,上櫃,3974.0,5392.0,nan,162.5,174.2,0.55,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6214,精誠,上市,5283.0,3946.0,nan,179.0,193.7,1.39,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1717,長興,上市,6295.0,2477.0,nan,59.1,65.98,1.49,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1513,中興電,上市,8207.0,309.0,nan,146.5,153.43,0.52,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3042,晶技,上市,7304.0,817.0,nan,143.5,159.72,0.89,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,5309,系統電,上櫃,7911.0,188.0,nan,53.6,62.82,0.51,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6173,信昌電,上櫃,6492.0,1422.0,nan,213.0,249.47,0.92,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3029,零壹,上市,7566.0,216.0,nan,138.0,122.6,2.49,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6526,達發,上市,6376.0,1023.0,nan,756.0,740.85,1.02,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3324,雙鴻,上櫃,5001.0,2376.0,nan,1140.0,1307.25,1.78,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1476,儒鴻,上市,3927.0,2980.0,nan,386.5,333.77,1.87,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6805,富世達,上市,1590.0,4919.0,nan,1975.0,2162.25,1.05,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3265,台星科,上櫃,2428.0,4057.0,nan,163.0,200.4,1.07,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2915,潤泰全,上市,5897.0,407.0,nan,56.6,56.55,1.23,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,8932,智通*,上櫃,6295.0,5.0,nan,76.9,84.59,0.93,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2329,華泰,上市,6270.0,5.0,nan,37.25,39.57,0.63,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,4105,東洋,上櫃,5558.0,630.0,nan,84.1,81.06,1.05,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3094,聯傑,上市,5818.0,172.0,nan,45.9,49.77,0.93,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2006,東和鋼鐵,上市,5584.0,333.0,nan,85.3,89.45,0.31,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6672,騰輝電子-KY,上市,3004.0,2749.0,nan,510.0,535.83,1.21,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6133,金橋,上市,5239.0,234.0,nan,21.85,23.64,0.53,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3019,亞光,上市,5381.0,1.0,nan,138.0,129.18,1.79,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2451,創見,上市,3062.0,2038.0,nan,232.5,264.02,1.07,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3167,大量,上市,218.0,4806.0,nan,824.0,898.7,2.2,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2367,燿華,上市,4846.0,4.0,nan,40.3,41.26,1.13,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,4770,上品,上市,3757.0,936.0,nan,299.0,287.93,0.86,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2646,星宇航空,上市,4648.0,3.0,nan,19.9,19.9,0.49,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,8215,明基材,上市,4233.0,406.0,nan,25.5,26.88,0.34,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2204,中華,上市,4266.0,172.0,nan,51.2,52.51,0.53,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6122,擎邦,上櫃,4310.0,64.0,nan,54.4,58.5,0.34,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2539,櫻花建,上市,4006.0,307.0,nan,31.5,31.59,0.68,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6533,晶心科,上市,4245.0,31.0,nan,249.5,261.32,0.82,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3717,聯嘉投控,上市,3824.0,411.0,nan,22.6,25.39,0.57,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6962,奕力-KY,上市,3430.0,488.0,nan,31.75,30.77,0.98,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,4566,時碩工業,上市,3593.0,200.0,nan,74.9,80.59,0.6,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2723,美食-KY,上市,3655.0,54.0,nan,74.4,81.64,0.69,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2816,旺旺保,上市,3565.0,67.0,nan,44.45,41.91,2.7,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3545,敦泰,上市,3342.0,167.0,nan,45.25,49.75,0.52,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2597,潤弘,上市,2915.0,354.0,nan,176.0,167.65,2.23,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3591,艾笛森,上市,2945.0,273.0,nan,25.5,25.72,0.81,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2605,新興,上市,2692.0,498.0,nan,33.95,34.05,1.04,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6189,豐藝,上市,2917.0,79.0,nan,43.1,46.57,0.71,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6472,保瑞,上市,836.0,2143.0,nan,402.0,397.8,0.93,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3026,禾伸堂,上市,2300.0,480.0,nan,512.0,651.77,1.04,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2903,遠百,上市,861.0,1810.0,nan,21.2,21.78,0.75,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6620,漢達,上櫃,1238.0,1407.0,nan,119.0,127.0,1.01,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2033,佳大,上市,2317.0,234.0,nan,79.3,69.22,0.83,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2530,華建,上市,1920.0,589.0,nan,18.4,19.32,0.39,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6245,立端,上櫃,2306.0,107.0,nan,92.8,89.76,1.11,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3059,華晶科,上市,2005.0,239.0,nan,37.0,36.85,0.73,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3617,碩天,上市,1147.0,1058.0,nan,279.0,248.65,2.04,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6191,精成科,上市,1271.0,926.0,nan,83.5,83.97,0.4,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6104,創惟,上櫃,2028.0,144.0,nan,80.1,83.1,0.9,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,5269,祥碩,上市,1380.0,725.0,nan,1165.0,1354.75,0.72,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6196,帆宣,上市,1619.0,473.0,nan,397.0,514.75,1.16,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,8081,致新,上市,77.0,1982.0,nan,228.5,252.82,0.63,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2495,普安,上市,1849.0,181.0,nan,29.4,30.99,0.81,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2547,日勝生,上市,1359.0,648.0,nan,9.55,9.6,1.06,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2439,美律,上市,1431.0,526.0,nan,68.8,74.66,0.65,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3592,瑞鼎,上市,403.0,1417.0,nan,216.5,238.0,0.46,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6177,達麗,上市,1576.0,223.0,nan,44.2,44.39,0.58,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,4956,光鋐,上市,1587.0,187.0,nan,34.65,35.7,1.63,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,7856,漢測,上櫃,556.0,1173.0,nan,2570.0,3044.75,1.8,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3515,華擎,上市,1639.0,79.0,nan,198.0,215.12,0.75,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2504,國產,上市,1523.0,184.0,nan,31.3,31.61,0.51,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,5285,界霖,上市,1533.0,151.0,nan,77.0,81.03,0.62,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6462,神盾,上櫃,1558.0,90.0,nan,89.6,91.02,2.13,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,3479,安勤,上櫃,1534.0,70.0,nan,103.5,116.4,0.56,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1809,中釉,上市,1112.0,334.0,nan,45.1,44.35,0.52,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,4968,立積,上市,1170.0,95.0,nan,83.4,86.38,1.5,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2207,和泰車,上市,1178.0,56.0,nan,527.0,532.95,0.62,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1503,士電,上市,1034.0,189.0,nan,170.0,182.03,0.87,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2528,皇普,上市,664.0,449.0,nan,17.5,17.38,0.38,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,8464,億豐,上市,842.0,205.0,nan,358.5,362.52,0.59,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6957,裕慶-KY,上市,809.0,203.0,nan,431.0,448.93,0.51,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6907,雅特力-KY,上櫃,838.0,110.0,nan,126.0,141.75,0.71,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6743,安普新,上市,861.0,82.0,nan,32.55,30.42,1.19,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,5209,新鼎,上櫃,864.0,2.0,nan,232.5,199.3,1.49,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,7799,禾榮科,上市,692.0,140.0,nan,478.0,429.3,3.38,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1514,亞力,上市,616.0,155.0,nan,84.7,92.09,0.54,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6933,AMAX-KY,上市,711.0,41.0,nan,312.0,369.55,0.76,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,4722,國精化,上市,737.0,11.0,nan,135.5,166.43,0.66,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,1712,興農,上市,304.0,277.0,nan,39.85,40.33,0.8,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6902,GOGOLOOK,上市,507.0,32.0,nan,134.5,141.53,1.43,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,7711,永擎,上市,492.0,29.0,nan,535.0,563.65,0.98,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6426,統新,上市,311.0,200.0,nan,302.0,293.02,1.37,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2025,千興,上市,26.0,378.0,nan,10.5,12.25,0.58,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2101,南港,上市,130.0,220.0,nan,29.95,28.85,1.95,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6146,耕興,上櫃,207.0,36.0,nan,187.0,195.47,0.98,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6509,聚和,上櫃,9.0,233.0,nan,45.7,47.38,2.46,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,6781,AES-KY,上市,228.0,10.0,nan,759.0,848.55,0.7,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,9938,百和,上市,72.0,135.0,nan,34.8,36.58,0.69,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
-2026-11-13,近60日累計同步買超,2527,宏璟,上市,111.0,92.0,nan,41.3,45.73,0.61,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+2026-11-13,成長股,4967,十銓,上市,,,,257.5,262.7,0.51,,,,長期成長股,,,,,,,,,21933.33,66.2,92.06,53.44,40.12
+2026-11-13,成長股,3135,凌航,上市,,,,124.0,134.25,1.56,,,,長期成長股,,,,,,,,,6047.06,320.07,167.09,20.87,47.6
+2026-11-13,成長股,5289,宜鼎,上櫃,,,,960.0,1052.75,0.89,,,,長期成長股,,,,,,,,,5294.06,641.09,78.03,166.45,53.79
+2026-11-13,成長股,4916,事欣科,上市,,,,112.5,99.45,6.34,,,,長期成長股,,,,,,,,,4700.0,76.28,8750.0,5.45,22.65
+2026-11-13,成長股,2451,創見,上市,,,,232.5,264.02,1.07,,,,長期成長股,,,,,,,,,2726.53,482.44,140.82,46.63,54.9
+2026-11-13,成長股,6584,南俊國際,上櫃,,,,309.0,391.2,1.41,,,,長期成長股,,,,,,,,,2483.33,40.78,90.14,6.47,19.51
+2026-11-13,成長股,2344,華邦電,上市,,,,125.0,148.12,0.7,,,,長期成長股,,,,,,,,,1962.07,184.72,528.57,7.65,19.71
+2026-11-13,成長股,8271,宇瞻,上市,,,,163.5,175.05,0.46,,,,長期成長股,,,,,,,,,1955.88,256.74,207.34,35.51,45.54
+2026-11-13,成長股,3028,增你強,上市,,,,55.2,58.05,0.54,,,,長期成長股,,,,,,,,,1725.0,90.63,51.44,5.24,20.29
+2026-11-13,成長股,8112,至上,上市,,,,80.8,81.0,0.97,,,,長期成長股,,,,,,,,,1529.41,167.24,43.84,9.45,27.79
+2026-11-13,成長股,7610,聯友金屬-創,上市,,,,1090.0,1297.5,2.14,,,,長期成長股,,,,,,,,,1350.0,450.78,218.71,25.37,33.61
+2026-11-13,成長股,2408,南亞科,上市,,,,377.0,415.95,0.99,,,,長期成長股,,,,,,,,,1234.09,684.23,229.88,23.38,23.09
+2026-11-13,成長股,3260,威剛,上櫃,,,,302.0,326.4,0.63,,,,長期成長股,,,,,,,,,1070.04,197.43,150.59,62.46,55.09
+2026-11-13,成長股,2059,川湖,上市,,,,7880.0,9159.5,1.38,,,,長期成長股,,,,,,,,,1053.18,156.11,59.82,110.96,38.03
+2026-11-13,成長股,6901,鑽石投資,上市,,,,14.3,15.65,1.22,,,,長期成長股,,,,,,,,,876.92,922.64,53.38,3.62,24.95
+2026-11-13,成長股,6021,美好證,上櫃,,,,51.6,53.66,0.12,,,,長期成長股,,,,,,,,,871.88,475.2,161.11,7.05,27.59
+2026-11-13,成長股,6902,GOGOLOOK,上市,,,,134.5,141.53,1.43,,,,長期成長股,,,,,,,,,804.17,28.42,227.42,3.33,19.85
+2026-11-13,成長股,5864,致和證,上櫃,,,,31.95,34.19,0.91,,,,長期成長股,,,,,,,,,764.86,914.74,29.29,9.8,49.64
+2026-11-13,成長股,6265,方土昶,上櫃,,,,37.2,41.46,2.36,,,,長期成長股,,,,,,,,,581.82,1053.18,223.81,6.44,37.3
+2026-11-13,成長股,3324,雙鴻,上櫃,,,,1140.0,1307.25,1.78,,,,長期成長股,,,,,,,,,494.29,63.96,33.11,23.01,27.47
+2026-11-13,成長股,2359,所羅門,上市,,,,98.2,110.18,0.57,,,,長期成長股,,,,,,,,,477.0,38.54,46.43,4.55,17.77
+2026-11-13,成長股,6139,亞翔,上市,,,,618.0,630.05,0.77,,,,長期成長股,,,,,,,,,473.52,70.5,62.89,25.91,48.46
+2026-11-13,成長股,3702,大聯大,上市,,,,86.4,103.84,0.92,,,,長期成長股,,,,,,,,,387.62,82.15,41.77,8.42,19.32
+2026-11-13,成長股,6442,光聖,上市,,,,1160.0,1275.25,1.7,,,,長期成長股,,,,,,,,,334.36,26.55,64.06,19.07,18.89
+2026-11-13,成長股,3081,聯亞,上櫃,,,,2110.0,2303.25,1.49,,,,長期成長股,,,,,,,,,310.48,120.79,889.83,7.75,18.82
+2026-11-13,成長股,2413,環科,上市,,,,47.85,50.24,1.4,,,,長期成長股,,,,,,,,,270.91,29.71,193.18,2.39,21.24
+2026-11-13,成長股,6274,台燿,上櫃,,,,974.0,1245.5,0.83,,,,長期成長股,,,,,,,,,240.68,110.92,26.88,12.4,21.02
+2026-11-13,成長股,3036,文曄,上市,,,,186.5,201.78,0.59,,,,長期成長股,,,,,,,,,236.84,127.62,42.8,13.0,17.94
+2026-11-13,成長股,3167,大量,上市,,,,824.0,898.7,2.2,,,,長期成長股,,,,,,,,,205.03,125.04,449.32,9.26,23.87
+2026-11-13,成長股,7750,新代,上市,,,,1495.0,1727.5,0.78,,,,長期成長股,,,,,,,,,185.19,107.46,57.42,42.53,28.59
+2026-11-13,成長股,2383,台光電,上市,,,,4215.0,4635.25,0.88,,,,長期成長股,,,,,,,,,175.05,110.04,49.84,42.46,31.27
+2026-11-13,成長股,2404,漢唐,上市,,,,998.0,1035.1,1.26,,,,長期成長股,,,,,,,,,168.83,76.4,45.96,36.23,55.58
+2026-11-13,成長股,2368,金像電,上市,,,,1030.0,1059.35,1.2,,,,長期成長股,,,,,,,,,167.24,75.27,68.72,16.17,28.2
+2026-11-13,成長股,2360,致茂,上市,,,,1400.0,1686.5,0.6,,,,長期成長股,,,,,,,,,161.85,109.58,121.78,21.27,50.47
+2026-11-13,成長股,6805,富世達,上市,,,,1975.0,2162.25,1.05,,,,長期成長股,,,,,,,,,157.05,42.73,73.18,25.77,33.12
+2026-11-13,成長股,5439,高技,上櫃,,,,164.0,198.85,1.38,,,,長期成長股,,,,,,,,,148.13,33.44,291.45,8.15,41.67
+2026-11-13,成長股,5274,信驊,上櫃,,,,12000.0,14581.75,0.86,,,,長期成長股,,,,,,,,,145.47,72.33,52.73,78.28,59.73
+2026-11-13,成長股,3017,奇鋐,上市,,,,3040.0,2992.25,1.21,,,,長期成長股,,,,,,,,,136.6,65.98,131.82,44.54,44.06
+2026-11-13,成長股,6223,旺矽,上櫃,,,,4670.0,4581.25,1.51,,,,長期成長股,,,,,,,,,133.13,58.93,37.14,28.08,25.45
+2026-11-13,成長股,6446,藥華藥,上市,,,,1380.0,1239.25,1.18,,,,長期成長股,,,,,,,,,122.4,90.3,52.23,11.35,18.93
+2026-11-13,成長股,2345,智邦,上市,,,,1520.0,1663.0,1.11,,,,長期成長股,,,,,,,,,119.53,57.64,119.31,34.7,43.38
+2026-11-13,成長股,6691,洋基工程,上市,,,,569.0,625.1,0.71,,,,長期成長股,,,,,,,,,112.19,89.31,27.89,17.46,45.82
+2026-11-13,成長股,5284,jpp-KY,上市,,,,225.0,249.25,0.89,,,,長期成長股,,,,,,,,,110.0,42.62,1081.37,8.54,19.39
+2026-11-13,成長股,7769,鴻勁,上市,,,,4080.0,4731.25,0.79,,,,長期成長股,,,,,,,,,99.48,100.36,129.77,56.14,28.66
+2026-11-13,成長股,3709,鑫聯大投控,上櫃,,,,61.5,62.04,0.82,,,,長期成長股,,,,,,,,,95.21,30.18,192.59,6.54,26.58
+2026-11-13,成長股,4772,台特化,上櫃,,,,215.0,233.85,0.61,,,,長期成長股,,,,,,,,,89.87,240.0,53.28,2.83,20.64
+2026-11-13,成長股,2308,台達電,上市,,,,1240.0,1390.5,0.85,,,,長期成長股,,,,,,,,,80.26,47.75,70.65,17.59,25.64
+2026-11-13,成長股,2330,台積電,上市,,,,2350.0,2348.25,0.78,,,,長期成長股,,,,,,,,,77.41,36.05,46.43,49.33,31.98
+2026-11-13,成長股,8996,高力,上市,,,,1440.0,1459.5,1.01,,,,長期成長股,,,,,,,,,61.65,54.92,38.26,8.69,24.72
+2026-11-13,成長股,8210,勤誠,上市,,,,599.0,697.55,0.98,,,,長期成長股,,,,,,,,,61.57,43.69,81.06,21.83,35.66
+2026-11-13,成長股,8390,金益鼎,上櫃,,,,78.6,82.97,0.42,,,,長期成長股,,,,,,,,,50.66,30.36,36.36,5.16,21.57
+2026-11-13,成長股,3665,貿聯-KY,上市,,,,1520.0,1688.0,0.84,,,,長期成長股,,,,,,,,,46.08,37.49,83.27,26.94,21.47
+2026-11-13,短中線強勢股,2453,凌群,上市,,,,61.1,54.14,5.62,,,,中短線強勢股,39.2,15.4,24.1,1.22,,,,,,,,,
+2026-11-13,短中線強勢股,7765,中華資安,上市,,,,269.5,239.0,5.82,,,,中短線強勢股,35.0,13.2,25.0,1.41,,,,,,,,,
+2026-11-13,短中線強勢股,2891,中信金,上市,,,,78.7,74.53,1.43,,,,中短線強勢股,30.5,18.6,24.0,1.23,,,,,,,,,
+2026-11-13,千張大戶週增,5475,德宏,上櫃,,,9.19,211.0,192.45,0.46,,20.84,12.7,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2892,第一金,上市,346506.0,99310.0,,43.45,42.29,0.8,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1802,台玻,上市,285295.0,36308.0,,85.1,67.26,2.53,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2610,華航,上市,285735.0,17930.0,,23.2,21.16,1.1,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2618,長榮航,上市,269496.0,28656.0,,47.75,43.94,1.26,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,5880,合庫金,上市,230999.0,58177.0,,28.55,28.26,0.55,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2412,中華電,上市,179750.0,18303.0,,165.0,158.53,0.61,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1326,台化,上市,144692.0,11876.0,,75.0,72.5,0.87,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,5876,上海商銀,上市,113704.0,6295.0,,53.4,53.19,0.55,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2880,華南金,上市,88639.0,8910.0,,51.9,49.67,0.89,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1815,富喬,上櫃,14433.0,78313.0,,142.0,136.03,1.01,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2881,富邦金,上市,52469.0,38328.0,,161.5,157.72,1.01,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3105,穩懋,上櫃,62949.0,13678.0,,568.0,508.7,1.15,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,9904,寶成,上市,41874.0,9283.0,,26.0,25.96,0.51,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,9933,中鼎,上市,48524.0,2539.0,,51.6,46.17,1.18,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2606,裕民,上市,35272.0,1406.0,,72.6,72.2,1.07,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2355,敬鵬,上市,32154.0,4283.0,,65.9,52.48,6.89,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6456,GIS-KY,上市,30586.0,2.0,,101.5,92.83,1.9,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2034,允強,上市,26297.0,909.0,,23.4,23.39,1.23,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3035,智原,上市,19246.0,1097.0,,196.0,192.4,0.92,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3374,精材,上櫃,3271.0,15557.0,,519.0,451.85,1.96,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6026,福邦證,上櫃,11859.0,413.0,,15.65,15.59,0.57,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1477,聚陽,上市,10520.0,1575.0,,225.5,210.3,3.02,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6757,台灣虎航,上市,11104.0,96.0,,59.1,54.45,1.46,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,4961,天鈺,上市,8119.0,2336.0,,185.5,181.65,0.78,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6271,同欣電,上市,6074.0,4344.0,,221.0,209.0,1.48,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,5904,寶雅*,上櫃,8729.0,1247.0,,76.4,73.84,0.93,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3029,零壹,上市,7566.0,216.0,,138.0,122.6,2.49,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6526,達發,上市,6376.0,1023.0,,756.0,740.85,1.02,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1476,儒鴻,上市,3927.0,2980.0,,386.5,333.77,1.87,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2915,潤泰全,上市,5897.0,407.0,,56.6,56.55,1.23,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,4105,東洋,上櫃,5558.0,630.0,,84.1,81.06,1.05,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3019,亞光,上市,5381.0,1.0,,138.0,129.18,1.79,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,4770,上品,上市,3757.0,936.0,,299.0,287.93,0.86,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6962,奕力-KY,上市,3430.0,488.0,,31.75,30.77,0.98,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2816,旺旺保,上市,3565.0,67.0,,44.45,41.91,2.7,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2597,潤弘,上市,2915.0,354.0,,176.0,167.65,2.23,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6472,保瑞,上市,836.0,2143.0,,402.0,397.8,0.93,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2033,佳大,上市,2317.0,234.0,,79.3,69.22,0.83,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6245,立端,上櫃,2306.0,107.0,,92.8,89.76,1.11,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3059,華晶科,上市,2005.0,239.0,,37.0,36.85,0.73,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3617,碩天,上市,1147.0,1058.0,,279.0,248.65,2.04,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1809,中釉,上市,1112.0,334.0,,45.1,44.35,0.52,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2528,皇普,上市,664.0,449.0,,17.5,17.38,0.38,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6743,安普新,上市,861.0,82.0,,32.55,30.42,1.19,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,5209,新鼎,上櫃,864.0,2.0,,232.5,199.3,1.49,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,7799,禾榮科,上市,692.0,140.0,,478.0,429.3,3.38,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6426,統新,上市,311.0,200.0,,302.0,293.02,1.37,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2101,南港,上市,130.0,220.0,,29.95,28.85,1.95,,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,當月外資投信佔比,4105,東洋,上櫃,,,,84.1,81.06,1.05,24.14,,,主力操作股,,,,,4.5,,,,,,,,
+2026-11-13,當月外資投信佔比,2597,潤弘,上市,,,,176.0,167.65,2.23,11.54,,,主力操作股,,,,,8.27,,,,,,,,
+2026-11-13,當月外資投信佔比,2412,中華電,上市,,,,165.0,158.53,0.61,16.78,,,主力操作股,,,,,2.13,,,,,,,,
+2026-11-13,當月外資投信佔比,3293,鈊象,上櫃,,,,799.0,782.3,0.97,15.0,,,主力操作股,,,,,2.01,,,,,,,,
+2026-11-13,當月外資投信佔比,5880,合庫金,上市,,,,28.55,28.26,0.55,9.42,,,主力操作股,,,,,3.79,,,,,,,,
+2026-11-13,當月外資投信佔比,4961,天鈺,上市,,,,185.5,181.65,0.78,9.91,,,主力操作股,,,,,2.98,,,,,,,,
+2026-11-13,當月外資投信佔比,1476,儒鴻,上市,,,,386.5,333.77,1.87,8.1,,,主力操作股,,,,,4.37,,,,,,,,
+2026-11-13,單日大量同步買超,2891,中信金,上市,6713.0,15568.0,,78.7,74.53,1.43,10.43,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,單日大量同步買超,2610,華航,上市,11579.0,896.0,,23.2,21.16,1.1,28.86,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,單日大量同步買超,2606,裕民,上市,1017.0,494.0,,72.6,72.2,1.07,30.93,,,主力操作股,,,,,,,,,,,,,
+2026-11-13,高殖利率價值股,2548,華固,上市,,,,95.2,92.2,0.8,,,,高殖利率價值股,,,,,,8.93,8.07,1.51,,,,,
+2026-11-13,高殖利率價值股,2010,春源,上市,,,,23.0,23.02,1.04,,,,高殖利率價值股,,,,,,8.7,8.58,1.14,,,,,
+2026-11-13,高殖利率價值股,2636,台驊控股,上市,,,,71.0,70.17,1.09,,,,高殖利率價值股,,,,,,7.04,7.47,0.9,,,,,
+2026-11-13,高殖利率價值股,2603,長榮,上市,,,,257.5,260.02,0.96,,,,高殖利率價值股,,,,,,6.21,7.01,0.92,,,,,
+2026-11-13,高殖利率價值股,1210,大成,上市,,,,52.0,50.93,1.44,,,,高殖利率價值股,,,,,,5.77,12.78,1.7,,,,,
+2026-11-13,高殖利率價值股,2852,第一保,上市,,,,29.05,27.88,1.25,,,,高殖利率價值股,,,,,,5.71,7.03,0.89,,,,,
+2026-11-13,短中線強勢股,2453,凌群,上市,,,,61.1,54.14,5.62,,,,自訂組合,39.2,15.4,24.1,1.22,,,,,,,,,
+2026-11-13,短中線強勢股,2891,中信金,上市,,,,78.7,74.53,1.43,,,,自訂組合,30.5,18.6,24.0,1.23,,,,,,,,,
+2026-11-13,成長股,4967,十銓,上市,,,,257.5,262.7,0.51,,,,自訂組合,,,,,,,,,21933.33,66.2,92.06,53.44,40.12
+2026-11-13,成長股,3135,凌航,上市,,,,124.0,134.25,1.56,,,,自訂組合,,,,,,,,,6047.06,320.07,167.09,20.87,47.6
+2026-11-13,成長股,5289,宜鼎,上櫃,,,,960.0,1052.75,0.89,,,,自訂組合,,,,,,,,,5294.06,641.09,78.03,166.45,53.79
+2026-11-13,成長股,4916,事欣科,上市,,,,112.5,99.45,6.34,,,,自訂組合,,,,,,,,,4700.0,76.28,8750.0,5.45,22.65
+2026-11-13,成長股,2451,創見,上市,,,,232.5,264.02,1.07,,,,自訂組合,,,,,,,,,2726.53,482.44,140.82,46.63,54.9
+2026-11-13,成長股,6584,南俊國際,上櫃,,,,309.0,391.2,1.41,,,,自訂組合,,,,,,,,,2483.33,40.78,90.14,6.47,19.51
+2026-11-13,成長股,2344,華邦電,上市,,,,125.0,148.12,0.7,,,,自訂組合,,,,,,,,,1962.07,184.72,528.57,7.65,19.71
+2026-11-13,成長股,8271,宇瞻,上市,,,,163.5,175.05,0.46,,,,自訂組合,,,,,,,,,1955.88,256.74,207.34,35.51,45.54
+2026-11-13,成長股,3028,增你強,上市,,,,55.2,58.05,0.54,,,,自訂組合,,,,,,,,,1725.0,90.63,51.44,5.24,20.29
+2026-11-13,成長股,8112,至上,上市,,,,80.8,81.0,0.97,,,,自訂組合,,,,,,,,,1529.41,167.24,43.84,9.45,27.79
+2026-11-13,成長股,7610,聯友金屬-創,上市,,,,1090.0,1297.5,2.14,,,,自訂組合,,,,,,,,,1350.0,450.78,218.71,25.37,33.61
+2026-11-13,成長股,2408,南亞科,上市,,,,377.0,415.95,0.99,,,,自訂組合,,,,,,,,,1234.09,684.23,229.88,23.38,23.09
+2026-11-13,成長股,3260,威剛,上櫃,,,,302.0,326.4,0.63,,,,自訂組合,,,,,,,,,1070.04,197.43,150.59,62.46,55.09
+2026-11-13,成長股,2059,川湖,上市,,,,7880.0,9159.5,1.38,,,,自訂組合,,,,,,,,,1053.18,156.11,59.82,110.96,38.03
+2026-11-13,成長股,6901,鑽石投資,上市,,,,14.3,15.65,1.22,,,,自訂組合,,,,,,,,,876.92,922.64,53.38,3.62,24.95
+2026-11-13,成長股,6021,美好證,上櫃,,,,51.6,53.66,0.12,,,,自訂組合,,,,,,,,,871.88,475.2,161.11,7.05,27.59
+2026-11-13,成長股,6902,GOGOLOOK,上市,,,,134.5,141.53,1.43,,,,自訂組合,,,,,,,,,804.17,28.42,227.42,3.33,19.85
+2026-11-13,成長股,5864,致和證,上櫃,,,,31.95,34.19,0.91,,,,自訂組合,,,,,,,,,764.86,914.74,29.29,9.8,49.64
+2026-11-13,成長股,6265,方土昶,上櫃,,,,37.2,41.46,2.36,,,,自訂組合,,,,,,,,,581.82,1053.18,223.81,6.44,37.3
+2026-11-13,成長股,3324,雙鴻,上櫃,,,,1140.0,1307.25,1.78,,,,自訂組合,,,,,,,,,494.29,63.96,33.11,23.01,27.47
+2026-11-13,成長股,2359,所羅門,上市,,,,98.2,110.18,0.57,,,,自訂組合,,,,,,,,,477.0,38.54,46.43,4.55,17.77
+2026-11-13,成長股,6139,亞翔,上市,,,,618.0,630.05,0.77,,,,自訂組合,,,,,,,,,473.52,70.5,62.89,25.91,48.46
+2026-11-13,成長股,3702,大聯大,上市,,,,86.4,103.84,0.92,,,,自訂組合,,,,,,,,,387.62,82.15,41.77,8.42,19.32
+2026-11-13,成長股,6442,光聖,上市,,,,1160.0,1275.25,1.7,,,,自訂組合,,,,,,,,,334.36,26.55,64.06,19.07,18.89
+2026-11-13,成長股,3081,聯亞,上櫃,,,,2110.0,2303.25,1.49,,,,自訂組合,,,,,,,,,310.48,120.79,889.83,7.75,18.82
+2026-11-13,成長股,2413,環科,上市,,,,47.85,50.24,1.4,,,,自訂組合,,,,,,,,,270.91,29.71,193.18,2.39,21.24
+2026-11-13,成長股,6274,台燿,上櫃,,,,974.0,1245.5,0.83,,,,自訂組合,,,,,,,,,240.68,110.92,26.88,12.4,21.02
+2026-11-13,成長股,3036,文曄,上市,,,,186.5,201.78,0.59,,,,自訂組合,,,,,,,,,236.84,127.62,42.8,13.0,17.94
+2026-11-13,成長股,3167,大量,上市,,,,824.0,898.7,2.2,,,,自訂組合,,,,,,,,,205.03,125.04,449.32,9.26,23.87
+2026-11-13,成長股,7750,新代,上市,,,,1495.0,1727.5,0.78,,,,自訂組合,,,,,,,,,185.19,107.46,57.42,42.53,28.59
+2026-11-13,成長股,2383,台光電,上市,,,,4215.0,4635.25,0.88,,,,自訂組合,,,,,,,,,175.05,110.04,49.84,42.46,31.27
+2026-11-13,成長股,2404,漢唐,上市,,,,998.0,1035.1,1.26,,,,自訂組合,,,,,,,,,168.83,76.4,45.96,36.23,55.58
+2026-11-13,成長股,2368,金像電,上市,,,,1030.0,1059.35,1.2,,,,自訂組合,,,,,,,,,167.24,75.27,68.72,16.17,28.2
+2026-11-13,成長股,2360,致茂,上市,,,,1400.0,1686.5,0.6,,,,自訂組合,,,,,,,,,161.85,109.58,121.78,21.27,50.47
+2026-11-13,成長股,6805,富世達,上市,,,,1975.0,2162.25,1.05,,,,自訂組合,,,,,,,,,157.05,42.73,73.18,25.77,33.12
+2026-11-13,成長股,5439,高技,上櫃,,,,164.0,198.85,1.38,,,,自訂組合,,,,,,,,,148.13,33.44,291.45,8.15,41.67
+2026-11-13,成長股,5274,信驊,上櫃,,,,12000.0,14581.75,0.86,,,,自訂組合,,,,,,,,,145.47,72.33,52.73,78.28,59.73
+2026-11-13,成長股,3017,奇鋐,上市,,,,3040.0,2992.25,1.21,,,,自訂組合,,,,,,,,,136.6,65.98,131.82,44.54,44.06
+2026-11-13,成長股,6223,旺矽,上櫃,,,,4670.0,4581.25,1.51,,,,自訂組合,,,,,,,,,133.13,58.93,37.14,28.08,25.45
+2026-11-13,成長股,6446,藥華藥,上市,,,,1380.0,1239.25,1.18,,,,自訂組合,,,,,,,,,122.4,90.3,52.23,11.35,18.93
+2026-11-13,成長股,2345,智邦,上市,,,,1520.0,1663.0,1.11,,,,自訂組合,,,,,,,,,119.53,57.64,119.31,34.7,43.38
+2026-11-13,成長股,6691,洋基工程,上市,,,,569.0,625.1,0.71,,,,自訂組合,,,,,,,,,112.19,89.31,27.89,17.46,45.82
+2026-11-13,成長股,5284,jpp-KY,上市,,,,225.0,249.25,0.89,,,,自訂組合,,,,,,,,,110.0,42.62,1081.37,8.54,19.39
+2026-11-13,成長股,7769,鴻勁,上市,,,,4080.0,4731.25,0.79,,,,自訂組合,,,,,,,,,99.48,100.36,129.77,56.14,28.66
+2026-11-13,成長股,3709,鑫聯大投控,上櫃,,,,61.5,62.04,0.82,,,,自訂組合,,,,,,,,,95.21,30.18,192.59,6.54,26.58
+2026-11-13,成長股,4772,台特化,上櫃,,,,215.0,233.85,0.61,,,,自訂組合,,,,,,,,,89.87,240.0,53.28,2.83,20.64
+2026-11-13,成長股,2308,台達電,上市,,,,1240.0,1390.5,0.85,,,,自訂組合,,,,,,,,,80.26,47.75,70.65,17.59,25.64
+2026-11-13,成長股,2330,台積電,上市,,,,2350.0,2348.25,0.78,,,,自訂組合,,,,,,,,,77.41,36.05,46.43,49.33,31.98
+2026-11-13,成長股,8996,高力,上市,,,,1440.0,1459.5,1.01,,,,自訂組合,,,,,,,,,61.65,54.92,38.26,8.69,24.72
+2026-11-13,成長股,8210,勤誠,上市,,,,599.0,697.55,0.98,,,,自訂組合,,,,,,,,,61.57,43.69,81.06,21.83,35.66
+2026-11-13,成長股,8390,金益鼎,上櫃,,,,78.6,82.97,0.42,,,,自訂組合,,,,,,,,,50.66,30.36,36.36,5.16,21.57
+2026-11-13,成長股,3665,貿聯-KY,上市,,,,1520.0,1688.0,0.84,,,,自訂組合,,,,,,,,,46.08,37.49,83.27,26.94,21.47
+2026-11-13,成長股,4967,十銓,上市,,,,257.5,262.7,0.51,,,,成長股 法人同步,,,,,,,,,21933.33,66.2,92.06,53.44,40.12
+2026-11-13,成長股,6584,南俊國際,上櫃,,,,309.0,391.2,1.41,,,,成長股 法人同步,,,,,,,,,2483.33,40.78,90.14,6.47,19.51
+2026-11-13,成長股,2344,華邦電,上市,,,,125.0,148.12,0.7,,,,成長股 法人同步,,,,,,,,,1962.07,184.72,528.57,7.65,19.71
+2026-11-13,成長股,2408,南亞科,上市,,,,377.0,415.95,0.99,,,,成長股 法人同步,,,,,,,,,1234.09,684.23,229.88,23.38,23.09
+2026-11-13,成長股,3260,威剛,上櫃,,,,302.0,326.4,0.63,,,,成長股 法人同步,,,,,,,,,1070.04,197.43,150.59,62.46,55.09
+2026-11-13,成長股,2059,川湖,上市,,,,7880.0,9159.5,1.38,,,,成長股 法人同步,,,,,,,,,1053.18,156.11,59.82,110.96,38.03
+2026-11-13,成長股,6021,美好證,上櫃,,,,51.6,53.66,0.12,,,,成長股 法人同步,,,,,,,,,871.88,475.2,161.11,7.05,27.59
+2026-11-13,成長股,6265,方土昶,上櫃,,,,37.2,41.46,2.36,,,,成長股 法人同步,,,,,,,,,581.82,1053.18,223.81,6.44,37.3
+2026-11-13,成長股,3324,雙鴻,上櫃,,,,1140.0,1307.25,1.78,,,,成長股 法人同步,,,,,,,,,494.29,63.96,33.11,23.01,27.47
+2026-11-13,成長股,6139,亞翔,上市,,,,618.0,630.05,0.77,,,,成長股 法人同步,,,,,,,,,473.52,70.5,62.89,25.91,48.46
+2026-11-13,成長股,3081,聯亞,上櫃,,,,2110.0,2303.25,1.49,,,,成長股 法人同步,,,,,,,,,310.48,120.79,889.83,7.75,18.82
+2026-11-13,成長股,6274,台燿,上櫃,,,,974.0,1245.5,0.83,,,,成長股 法人同步,,,,,,,,,240.68,110.92,26.88,12.4,21.02
+2026-11-13,成長股,3036,文曄,上市,,,,186.5,201.78,0.59,,,,成長股 法人同步,,,,,,,,,236.84,127.62,42.8,13.0,17.94
+2026-11-13,成長股,3167,大量,上市,,,,824.0,898.7,2.2,,,,成長股 法人同步,,,,,,,,,205.03,125.04,449.32,9.26,23.87
+2026-11-13,成長股,7750,新代,上市,,,,1495.0,1727.5,0.78,,,,成長股 法人同步,,,,,,,,,185.19,107.46,57.42,42.53,28.59
+2026-11-13,成長股,2383,台光電,上市,,,,4215.0,4635.25,0.88,,,,成長股 法人同步,,,,,,,,,175.05,110.04,49.84,42.46,31.27
+2026-11-13,成長股,2404,漢唐,上市,,,,998.0,1035.1,1.26,,,,成長股 法人同步,,,,,,,,,168.83,76.4,45.96,36.23,55.58
+2026-11-13,成長股,2368,金像電,上市,,,,1030.0,1059.35,1.2,,,,成長股 法人同步,,,,,,,,,167.24,75.27,68.72,16.17,28.2
+2026-11-13,成長股,2360,致茂,上市,,,,1400.0,1686.5,0.6,,,,成長股 法人同步,,,,,,,,,161.85,109.58,121.78,21.27,50.47
+2026-11-13,成長股,6805,富世達,上市,,,,1975.0,2162.25,1.05,,,,成長股 法人同步,,,,,,,,,157.05,42.73,73.18,25.77,33.12
+2026-11-13,成長股,3017,奇鋐,上市,,,,3040.0,2992.25,1.21,,,,成長股 法人同步,,,,,,,,,136.6,65.98,131.82,44.54,44.06
+2026-11-13,成長股,6223,旺矽,上櫃,,,,4670.0,4581.25,1.51,,,,成長股 法人同步,,,,,,,,,133.13,58.93,37.14,28.08,25.45
+2026-11-13,成長股,6446,藥華藥,上市,,,,1380.0,1239.25,1.18,,,,成長股 法人同步,,,,,,,,,122.4,90.3,52.23,11.35,18.93
+2026-11-13,成長股,2345,智邦,上市,,,,1520.0,1663.0,1.11,,,,成長股 法人同步,,,,,,,,,119.53,57.64,119.31,34.7,43.38
+2026-11-13,成長股,2376,技嘉,上市,,,,284.0,330.62,3.05,,,,成長股 法人同步,,,,,,,,,116.92,41.03,21.09,17.73,24.28
+2026-11-13,成長股,4772,台特化,上櫃,,,,215.0,233.85,0.61,,,,成長股 法人同步,,,,,,,,,89.87,240.0,53.28,2.83,20.64
+2026-11-13,成長股,2330,台積電,上市,,,,2350.0,2348.25,0.78,,,,成長股 法人同步,,,,,,,,,77.41,36.05,46.43,49.33,31.98
+2026-11-13,成長股,3030,德律,上市,,,,232.0,250.82,0.63,,,,成長股 法人同步,,,,,,,,,75.45,23.92,34.83,7.36,29.3
+2026-11-13,成長股,8210,勤誠,上市,,,,599.0,697.55,0.98,,,,成長股 法人同步,,,,,,,,,61.57,43.69,81.06,21.83,35.66
+2026-11-13,成長股,3665,貿聯-KY,上市,,,,1520.0,1688.0,0.84,,,,成長股 法人同步,,,,,,,,,46.08,37.49,83.27,26.94,21.47
+2026-11-13,成長股,6669,緯穎,上市,,,,1635.0,1783.25,0.76,,,,成長股 法人同步,,,,,,,,,23.3,26.01,117.32,156.38,97.41
+2026-11-13,近60日累計同步買超,2892,第一金,上市,346506.0,99310.0,,43.45,42.29,0.8,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2609,陽明,上市,356403.0,7819.0,,60.3,61.39,0.7,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1802,台玻,上市,285295.0,36308.0,,85.1,67.26,2.53,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2610,華航,上市,285735.0,17930.0,,23.2,21.16,1.1,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2618,長榮航,上市,269496.0,28656.0,,47.75,43.94,1.26,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,5880,合庫金,上市,230999.0,58177.0,,28.55,28.26,0.55,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2412,中華電,上市,179750.0,18303.0,,165.0,158.53,0.61,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2883,凱基金,上市,82281.0,90590.0,,36.3,36.73,0.79,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3045,台灣大,上市,149930.0,20589.0,,131.0,131.82,0.84,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2002,中鋼,上市,150244.0,16645.0,,18.4,19.18,1.2,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1326,台化,上市,144692.0,11876.0,,75.0,72.5,0.87,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2603,長榮,上市,107604.0,37445.0,,257.5,260.02,0.96,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2801,彰銀,上市,43428.0,87370.0,,29.0,29.28,0.75,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,5876,上海商銀,上市,113704.0,6295.0,,53.4,53.19,0.55,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1102,亞泥,上市,117187.0,589.0,,35.75,37.45,1.03,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1301,台塑,上市,50725.0,65003.0,,71.1,72.55,0.45,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1101,台泥,上市,89575.0,17131.0,,27.35,27.44,0.58,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2880,華南金,上市,88639.0,8910.0,,51.9,49.67,0.89,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1815,富喬,上櫃,14433.0,78313.0,,142.0,136.03,1.01,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2881,富邦金,上市,52469.0,38328.0,,161.5,157.72,1.01,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2889,國票金,上市,82875.0,4034.0,,16.2,16.61,0.33,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2542,興富發,上市,56370.0,29686.0,,38.4,38.9,0.61,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2615,萬海,上市,79264.0,1929.0,,107.5,114.9,0.63,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3105,穩懋,上櫃,62949.0,13678.0,,568.0,508.7,1.15,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1402,遠東新,上市,66250.0,6513.0,,27.45,28.25,0.53,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2845,遠東銀,上市,59171.0,7435.0,,12.7,13.01,0.54,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,4904,遠傳,上市,45452.0,13622.0,,109.5,111.62,0.94,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2353,宏碁,上市,42755.0,8650.0,,29.6,31.05,0.64,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,9904,寶成,上市,41874.0,9283.0,,26.0,25.96,0.51,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,9933,中鼎,上市,48524.0,2539.0,,51.6,46.17,1.18,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2027,大成鋼,上市,16328.0,32919.0,,44.5,49.31,6.61,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6278,台表科,上市,18379.0,24980.0,,231.0,253.6,0.74,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2897,王道銀行,上市,37482.0,2071.0,,10.45,10.71,0.81,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2409,友達,上市,12312.0,25190.0,,30.4,31.81,1.29,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2606,裕民,上市,35272.0,1406.0,,72.6,72.2,1.07,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2355,敬鵬,上市,32154.0,4283.0,,65.9,52.48,6.89,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3037,欣興,上市,33328.0,2272.0,,785.0,952.7,1.17,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2855,統一證,上市,11847.0,20851.0,,52.5,53.3,1.15,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3034,聯詠,上市,24829.0,7773.0,,474.0,544.08,0.64,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2377,微星,上市,27056.0,5122.0,,138.0,153.5,2.27,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,4938,和碩,上市,6472.0,25041.0,,89.1,100.02,1.31,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6456,GIS-KY,上市,30586.0,2.0,,101.5,92.83,1.9,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3714,富采,上市,29555.0,154.0,,56.7,59.57,0.0,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,8150,南茂,上市,28293.0,220.0,,84.5,90.81,0.95,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2851,中再保,上市,26673.0,923.0,,48.1,48.8,0.79,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2034,允強,上市,26297.0,909.0,,23.4,23.39,1.23,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,9945,潤泰新,上市,21485.0,4776.0,,28.35,28.43,1.05,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3016,嘉晶,上市,23872.0,1558.0,,122.0,130.15,0.63,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2354,鴻準,上市,24212.0,46.0,,52.4,58.59,0.94,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3702,大聯大,上市,15699.0,6541.0,,86.4,103.84,0.92,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2379,瑞昱,上市,14009.0,8196.0,,758.0,765.25,0.81,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,5347,世界,上櫃,15570.0,6379.0,,135.0,147.1,0.63,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3035,智原,上市,19246.0,1097.0,,196.0,192.4,0.92,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6168,宏齊,上市,19454.0,368.0,,30.3,32.92,0.45,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3374,精材,上櫃,3271.0,15557.0,,519.0,451.85,1.96,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2617,台航,上市,16289.0,288.0,,29.9,30.92,0.51,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,9910,豐泰,上市,12632.0,3034.0,,66.5,68.62,0.84,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2455,全新,上市,7434.0,7940.0,,392.0,429.4,0.22,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3005,神基,上市,13574.0,1147.0,,109.5,119.33,0.61,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3532,台勝科,上市,3271.0,11277.0,,295.0,349.65,0.28,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2030,彰源,上市,12830.0,469.0,,24.6,27.15,0.49,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6026,福邦證,上櫃,11859.0,413.0,,15.65,15.59,0.57,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1477,聚陽,上市,10520.0,1575.0,,225.5,210.3,3.02,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,8422,可寧衛*,上市,10513.0,1409.0,,23.75,24.67,0.4,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2905,三商,上市,11480.0,334.0,,16.15,17.6,1.03,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6757,台灣虎航,上市,11104.0,96.0,,59.1,54.45,1.46,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2351,順德,上市,9528.0,1668.0,,149.0,175.95,1.09,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1229,聯華,上市,10432.0,463.0,,37.75,39.39,0.86,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,4961,天鈺,上市,8119.0,2336.0,,185.5,181.65,0.78,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6271,同欣電,上市,6074.0,4344.0,,221.0,209.0,1.48,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2395,研華,上市,6818.0,3205.0,,608.0,643.95,0.62,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,5904,寶雅*,上櫃,8729.0,1247.0,,76.4,73.84,0.93,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1504,東元,上市,4770.0,4919.0,,64.8,67.03,0.7,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,9907,統一實,上市,8929.0,737.0,,13.9,14.54,0.47,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,5483,中美晶,上櫃,3974.0,5392.0,,162.5,174.2,0.55,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6214,精誠,上市,5283.0,3946.0,,179.0,193.7,1.39,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1717,長興,上市,6295.0,2477.0,,59.1,65.98,1.49,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1513,中興電,上市,8207.0,309.0,,146.5,153.43,0.52,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3042,晶技,上市,7304.0,817.0,,143.5,159.72,0.89,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,5309,系統電,上櫃,7911.0,188.0,,53.6,62.82,0.51,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6173,信昌電,上櫃,6492.0,1422.0,,213.0,249.47,0.92,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3029,零壹,上市,7566.0,216.0,,138.0,122.6,2.49,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6526,達發,上市,6376.0,1023.0,,756.0,740.85,1.02,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3324,雙鴻,上櫃,5001.0,2376.0,,1140.0,1307.25,1.78,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1476,儒鴻,上市,3927.0,2980.0,,386.5,333.77,1.87,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6805,富世達,上市,1590.0,4919.0,,1975.0,2162.25,1.05,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3265,台星科,上櫃,2428.0,4057.0,,163.0,200.4,1.07,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2915,潤泰全,上市,5897.0,407.0,,56.6,56.55,1.23,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,8932,智通*,上櫃,6295.0,5.0,,76.9,84.59,0.93,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2329,華泰,上市,6270.0,5.0,,37.25,39.57,0.63,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,4105,東洋,上櫃,5558.0,630.0,,84.1,81.06,1.05,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3094,聯傑,上市,5818.0,172.0,,45.9,49.77,0.93,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2006,東和鋼鐵,上市,5584.0,333.0,,85.3,89.45,0.31,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6672,騰輝電子-KY,上市,3004.0,2749.0,,510.0,535.83,1.21,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6133,金橋,上市,5239.0,234.0,,21.85,23.64,0.53,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3019,亞光,上市,5381.0,1.0,,138.0,129.18,1.79,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2451,創見,上市,3062.0,2038.0,,232.5,264.02,1.07,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3167,大量,上市,218.0,4806.0,,824.0,898.7,2.2,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2367,燿華,上市,4846.0,4.0,,40.3,41.26,1.13,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,4770,上品,上市,3757.0,936.0,,299.0,287.93,0.86,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2646,星宇航空,上市,4648.0,3.0,,19.9,19.9,0.49,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,8215,明基材,上市,4233.0,406.0,,25.5,26.88,0.34,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2204,中華,上市,4266.0,172.0,,51.2,52.51,0.53,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6122,擎邦,上櫃,4310.0,64.0,,54.4,58.5,0.34,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2539,櫻花建,上市,4006.0,307.0,,31.5,31.59,0.68,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6533,晶心科,上市,4245.0,31.0,,249.5,261.32,0.82,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3717,聯嘉投控,上市,3824.0,411.0,,22.6,25.39,0.57,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6962,奕力-KY,上市,3430.0,488.0,,31.75,30.77,0.98,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,4566,時碩工業,上市,3593.0,200.0,,74.9,80.59,0.6,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2723,美食-KY,上市,3655.0,54.0,,74.4,81.64,0.69,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2816,旺旺保,上市,3565.0,67.0,,44.45,41.91,2.7,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3545,敦泰,上市,3342.0,167.0,,45.25,49.75,0.52,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2597,潤弘,上市,2915.0,354.0,,176.0,167.65,2.23,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3591,艾笛森,上市,2945.0,273.0,,25.5,25.72,0.81,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2605,新興,上市,2692.0,498.0,,33.95,34.05,1.04,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6189,豐藝,上市,2917.0,79.0,,43.1,46.57,0.71,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6472,保瑞,上市,836.0,2143.0,,402.0,397.8,0.93,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3026,禾伸堂,上市,2300.0,480.0,,512.0,651.77,1.04,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2903,遠百,上市,861.0,1810.0,,21.2,21.78,0.75,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6620,漢達,上櫃,1238.0,1407.0,,119.0,127.0,1.01,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2033,佳大,上市,2317.0,234.0,,79.3,69.22,0.83,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2530,華建,上市,1920.0,589.0,,18.4,19.32,0.39,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6245,立端,上櫃,2306.0,107.0,,92.8,89.76,1.11,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3059,華晶科,上市,2005.0,239.0,,37.0,36.85,0.73,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3617,碩天,上市,1147.0,1058.0,,279.0,248.65,2.04,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6191,精成科,上市,1271.0,926.0,,83.5,83.97,0.4,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6104,創惟,上櫃,2028.0,144.0,,80.1,83.1,0.9,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,5269,祥碩,上市,1380.0,725.0,,1165.0,1354.75,0.72,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6196,帆宣,上市,1619.0,473.0,,397.0,514.75,1.16,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,8081,致新,上市,77.0,1982.0,,228.5,252.82,0.63,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2495,普安,上市,1849.0,181.0,,29.4,30.99,0.81,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2547,日勝生,上市,1359.0,648.0,,9.55,9.6,1.06,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2439,美律,上市,1431.0,526.0,,68.8,74.66,0.65,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3592,瑞鼎,上市,403.0,1417.0,,216.5,238.0,0.46,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6177,達麗,上市,1576.0,223.0,,44.2,44.39,0.58,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,4956,光鋐,上市,1587.0,187.0,,34.65,35.7,1.63,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,7856,漢測,上櫃,556.0,1173.0,,2570.0,3044.75,1.8,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3515,華擎,上市,1639.0,79.0,,198.0,215.12,0.75,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2504,國產,上市,1523.0,184.0,,31.3,31.61,0.51,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,5285,界霖,上市,1533.0,151.0,,77.0,81.03,0.62,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6462,神盾,上櫃,1558.0,90.0,,89.6,91.02,2.13,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,3479,安勤,上櫃,1534.0,70.0,,103.5,116.4,0.56,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1809,中釉,上市,1112.0,334.0,,45.1,44.35,0.52,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,4968,立積,上市,1170.0,95.0,,83.4,86.38,1.5,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2207,和泰車,上市,1178.0,56.0,,527.0,532.95,0.62,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1503,士電,上市,1034.0,189.0,,170.0,182.03,0.87,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2528,皇普,上市,664.0,449.0,,17.5,17.38,0.38,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,8464,億豐,上市,842.0,205.0,,358.5,362.52,0.59,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6957,裕慶-KY,上市,809.0,203.0,,431.0,448.93,0.51,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6907,雅特力-KY,上櫃,838.0,110.0,,126.0,141.75,0.71,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6743,安普新,上市,861.0,82.0,,32.55,30.42,1.19,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,5209,新鼎,上櫃,864.0,2.0,,232.5,199.3,1.49,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,7799,禾榮科,上市,692.0,140.0,,478.0,429.3,3.38,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1514,亞力,上市,616.0,155.0,,84.7,92.09,0.54,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6933,AMAX-KY,上市,711.0,41.0,,312.0,369.55,0.76,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,4722,國精化,上市,737.0,11.0,,135.5,166.43,0.66,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,1712,興農,上市,304.0,277.0,,39.85,40.33,0.8,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6902,GOGOLOOK,上市,507.0,32.0,,134.5,141.53,1.43,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,7711,永擎,上市,492.0,29.0,,535.0,563.65,0.98,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6426,統新,上市,311.0,200.0,,302.0,293.02,1.37,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2025,千興,上市,26.0,378.0,,10.5,12.25,0.58,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2101,南港,上市,130.0,220.0,,29.95,28.85,1.95,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6146,耕興,上櫃,207.0,36.0,,187.0,195.47,0.98,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6509,聚和,上櫃,9.0,233.0,,45.7,47.38,2.46,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,6781,AES-KY,上市,228.0,10.0,,759.0,848.55,0.7,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,9938,百和,上市,72.0,135.0,,34.8,36.58,0.69,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-13,近60日累計同步買超,2527,宏璟,上市,111.0,92.0,,41.3,45.73,0.61,,,,成長股 法人同步,,,,,,,,,,,,,
+2026-11-16,成長股,6465,威潤,上櫃,nan,nan,nan,36.6,39.22,0.29,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,1833.33,139.62,165.15,2.84,23.1
+2026-11-16,成長股,3498,陽程,上櫃,nan,nan,nan,182.0,224.35,0.52,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,1475.0,384.95,119.2,6.01,18.52
+2026-11-16,成長股,5289,宜鼎,上櫃,nan,nan,nan,866.0,1040.3,1.13,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,1228.11,579.93,78.03,256.23,86.76
+2026-11-16,成長股,3260,威剛,上櫃,nan,nan,nan,278.0,322.8,1.07,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,597.85,265.2,150.59,101.47,84.49
+2026-11-16,成長股,3081,聯亞,上櫃,nan,nan,nan,1900.0,2266.25,0.48,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,467.59,182.59,889.83,13.88,30.58
+2026-11-16,成長股,6265,方土昶,上櫃,nan,nan,nan,34.35,40.93,1.06,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,292.94,557.71,223.81,9.78,52.64
+2026-11-16,成長股,6274,台燿,上櫃,nan,nan,nan,877.0,1208.1,0.42,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,263.41,122.61,26.88,25.41,34.49
+2026-11-16,成長股,4931,新盛力,上櫃,nan,nan,nan,162.0,191.3,1.03,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,257.75,150.74,25.2,6.23,31.77
+2026-11-16,成長股,5228,鈺鎧,上櫃,nan,nan,nan,38.6,51.8,0.3,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,197.87,87.41,90.52,2.26,20.77
+2026-11-16,成長股,3709,鑫聯大投控,上櫃,nan,nan,nan,58.0,61.66,0.61,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,189.21,100.78,192.59,10.56,34.67
+2026-11-16,成長股,3219,倚強科,上櫃,nan,nan,nan,97.2,103.67,0.97,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,178.75,44.68,406.67,4.89,21.25
+2026-11-16,成長股,1815,富喬,上櫃,nan,nan,nan,131.0,136.2,0.84,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,116.67,76.51,1161.54,3.41,19.42
+2026-11-16,成長股,6223,旺矽,上櫃,nan,nan,nan,4305.0,4531.5,1.1,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,106.24,72.95,37.14,47.26,33.38
+2026-11-16,成長股,6510,精測,上櫃,nan,nan,nan,3005.0,2922.75,1.1,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,99.17,53.35,95.56,42.2,17.46
+2026-11-16,成長股,8155,博智,上櫃,nan,nan,nan,252.5,272.15,1.35,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,93.07,38.62,46.7,11.15,20.29
+2026-11-16,成長股,5340,建榮,上櫃,nan,nan,nan,85.7,89.78,0.5,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,90.24,47.31,52.56,1.78,18.78
+2026-11-16,成長股,6532,瑞耘,上櫃,nan,nan,nan,91.7,109.33,0.38,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,78.35,60.09,81.39,3.74,27.64
+2026-11-16,成長股,3264,欣銓,上櫃,nan,nan,nan,174.0,214.7,0.55,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,78.16,48.53,34.91,7.49,20.69
+2026-11-16,成長股,7717,萊德光電-KY,上櫃,nan,nan,nan,485.0,426.5,6.5,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,61.38,65.39,82.99,6.68,18.63
+2026-11-16,成長股,5536,聖暉*,上櫃,nan,nan,nan,688.0,752.55,0.57,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,56.45,29.31,34.76,36.59,33.11
+2026-11-16,成長股,5274,信驊,上櫃,nan,nan,nan,10800.0,14324.5,0.54,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,49.84,105.41,52.73,126.41,73.84
+2026-11-16,成長股,6584,南俊國際,上櫃,nan,nan,nan,291.0,381.43,1.64,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,49.75,33.61,90.14,9.45,22.59
+2026-11-16,成長股,4979,華星光,上櫃,nan,nan,nan,341.5,418.0,0.69,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,48.05,51.42,43.27,5.19,22.82
+2026-11-16,成長股,4772,台特化,上櫃,nan,nan,nan,196.0,230.62,1.12,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,37.5,58.26,53.28,4.48,24.48
+2026-11-16,成長股,3131,弘塑,上櫃,nan,nan,nan,1565.0,1844.5,0.74,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,28.65,48.73,56.45,40.65,43.24
+2026-11-16,成長股,8088,品安,上櫃,nan,nan,nan,34.0,39.51,1.01,nan,nan,nan,長期成長股,nan,nan,nan,nan,nan,,,,27.91,64.57,962.5,1.69,17.75
+2026-11-16,短中線強勢股,9935,慶豐富,上市,nan,nan,nan,20.25,18.73,2.94,nan,nan,nan,中短線強勢股,50.9,18.5,21.2,1.09,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,短中線強勢股,4807,日成-KY,上市,nan,nan,nan,35.3,30.61,7.62,nan,nan,nan,中短線強勢股,37.3,19.4,21.2,1.27,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,千張大戶週增,2355,敬鵬,上市,nan,nan,18.73,60.3,52.82,2.99,nan,40.65,39.7,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,千張大戶週增,4916,事欣科,上市,nan,nan,15.08,104.5,99.8,6.22,nan,29.34,12.4,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,千張大戶週增,2465,麗臺,上市,nan,nan,35.95,150.0,115.8,1.07,nan,45.23,9.4,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,千張大戶週增,1528,恩德,上市,nan,nan,21.35,27.05,25.93,0.87,nan,35.54,19.1,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,千張大戶週增,6152,百一,上市,nan,nan,39.66,18.7,18.35,1.63,nan,22.18,16.8,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,千張大戶週增,3715,定穎投控,上市,nan,nan,27.3,137.5,125.43,2.13,nan,26.5,28.4,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,千張大戶週增,3693,營邦,上櫃,nan,nan,8.55,647.0,644.95,0.85,nan,39.42,4.3,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2892,第一金,上市,346517.0,79797.0,nan,42.35,42.33,0.9,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2610,華航,上市,302665.0,15368.0,nan,22.7,21.27,1.14,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1802,台玻,上市,279603.0,24488.0,nan,76.6,67.95,1.2,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2618,長榮航,上市,258804.0,28793.0,nan,47.4,44.14,1.31,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2412,中華電,上市,182822.0,15424.0,nan,163.5,159.07,1.04,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,9904,寶成,上市,77579.0,8608.0,nan,26.8,25.99,2.96,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2880,華南金,上市,79417.0,1926.0,nan,50.7,49.73,1.09,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3105,穩懋,上櫃,59634.0,14456.0,nan,512.0,509.2,1.43,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,9933,中鼎,上市,49911.0,2538.0,nan,51.5,46.62,0.76,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2355,敬鵬,上市,34488.0,3793.0,nan,60.3,52.82,2.99,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3714,富采,上市,24162.0,154.0,nan,87.4,60.86,1.98,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3374,精材,上櫃,4250.0,15559.0,nan,467.5,452.6,1.16,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1477,聚陽,上市,12496.0,1431.0,nan,224.5,211.1,1.92,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6757,台灣虎航,上市,11325.0,96.0,nan,58.7,54.71,1.39,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1476,儒鴻,上市,4953.0,3155.0,nan,385.0,336.82,1.01,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,4105,東洋,上櫃,5950.0,629.0,nan,82.8,81.09,0.99,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3029,零壹,上市,6174.0,223.0,nan,130.0,123.12,2.55,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2915,潤泰全,上市,4585.0,407.0,nan,56.5,56.43,2.01,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,4770,上品,上市,3757.0,1206.0,nan,295.0,289.02,0.87,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2539,櫻花建,上市,4380.0,307.0,nan,32.05,31.5,1.31,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2597,潤弘,上市,3285.0,353.0,nan,177.0,168.32,2.57,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2816,旺旺保,上市,3351.0,67.0,nan,43.2,41.81,1.64,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2033,佳大,上市,2422.0,234.0,nan,80.5,70.52,0.75,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3617,碩天,上市,379.0,1280.0,nan,266.5,248.93,1.77,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2101,南港,上市,1383.0,220.0,nan,29.5,28.81,1.86,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6743,安普新,上市,1471.0,82.0,nan,34.9,30.54,10.09,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,8464,億豐,上市,940.0,208.0,nan,365.0,362.12,0.66,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,7799,禾榮科,上市,871.0,140.0,nan,463.0,430.1,1.44,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,5209,新鼎,上櫃,847.0,2.0,nan,218.0,200.95,1.11,nan,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,當月外資投信佔比,4105,東洋,上櫃,nan,nan,nan,82.8,81.09,0.99,25.27,nan,nan,主力操作股,nan,nan,nan,nan,4.12,,,,nan,nan,nan,nan,nan
+2026-11-16,當月外資投信佔比,2597,潤弘,上市,nan,nan,nan,177.0,168.32,2.57,20.35,nan,nan,主力操作股,nan,nan,nan,nan,6.46,,,,nan,nan,nan,nan,nan
+2026-11-16,當月外資投信佔比,2501,國建,上市,nan,nan,nan,21.05,20.42,1.67,10.88,nan,nan,主力操作股,nan,nan,nan,nan,5.93,,,,nan,nan,nan,nan,nan
+2026-11-16,當月外資投信佔比,1476,儒鴻,上市,nan,nan,nan,385.0,336.82,1.01,8.12,nan,nan,主力操作股,nan,nan,nan,nan,4.68,,,,nan,nan,nan,nan,nan
+2026-11-16,單日大量同步買超,2610,華航,上市,12932.0,188.0,nan,22.7,21.27,1.14,30.1,nan,nan,主力操作股,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,成長股,6465,威潤,上櫃,nan,nan,nan,36.6,39.22,0.29,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,1833.33,139.62,165.15,2.84,23.1
+2026-11-16,成長股,3498,陽程,上櫃,nan,nan,nan,182.0,224.35,0.52,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,1475.0,384.95,119.2,6.01,18.52
+2026-11-16,成長股,5289,宜鼎,上櫃,nan,nan,nan,866.0,1040.3,1.13,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,1228.11,579.93,78.03,256.23,86.76
+2026-11-16,成長股,3260,威剛,上櫃,nan,nan,nan,278.0,322.8,1.07,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,597.85,265.2,150.59,101.47,84.49
+2026-11-16,成長股,3081,聯亞,上櫃,nan,nan,nan,1900.0,2266.25,0.48,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,467.59,182.59,889.83,13.88,30.58
+2026-11-16,成長股,6265,方土昶,上櫃,nan,nan,nan,34.35,40.93,1.06,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,292.94,557.71,223.81,9.78,52.64
+2026-11-16,成長股,6274,台燿,上櫃,nan,nan,nan,877.0,1208.1,0.42,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,263.41,122.61,26.88,25.41,34.49
+2026-11-16,成長股,4931,新盛力,上櫃,nan,nan,nan,162.0,191.3,1.03,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,257.75,150.74,25.2,6.23,31.77
+2026-11-16,成長股,5228,鈺鎧,上櫃,nan,nan,nan,38.6,51.8,0.3,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,197.87,87.41,90.52,2.26,20.77
+2026-11-16,成長股,3709,鑫聯大投控,上櫃,nan,nan,nan,58.0,61.66,0.61,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,189.21,100.78,192.59,10.56,34.67
+2026-11-16,成長股,3219,倚強科,上櫃,nan,nan,nan,97.2,103.67,0.97,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,178.75,44.68,406.67,4.89,21.25
+2026-11-16,成長股,1815,富喬,上櫃,nan,nan,nan,131.0,136.2,0.84,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,116.67,76.51,1161.54,3.41,19.42
+2026-11-16,成長股,6223,旺矽,上櫃,nan,nan,nan,4305.0,4531.5,1.1,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,106.24,72.95,37.14,47.26,33.38
+2026-11-16,成長股,6510,精測,上櫃,nan,nan,nan,3005.0,2922.75,1.1,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,99.17,53.35,95.56,42.2,17.46
+2026-11-16,成長股,8155,博智,上櫃,nan,nan,nan,252.5,272.15,1.35,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,93.07,38.62,46.7,11.15,20.29
+2026-11-16,成長股,5340,建榮,上櫃,nan,nan,nan,85.7,89.78,0.5,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,90.24,47.31,52.56,1.78,18.78
+2026-11-16,成長股,6532,瑞耘,上櫃,nan,nan,nan,91.7,109.33,0.38,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,78.35,60.09,81.39,3.74,27.64
+2026-11-16,成長股,3264,欣銓,上櫃,nan,nan,nan,174.0,214.7,0.55,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,78.16,48.53,34.91,7.49,20.69
+2026-11-16,成長股,7717,萊德光電-KY,上櫃,nan,nan,nan,485.0,426.5,6.5,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,61.38,65.39,82.99,6.68,18.63
+2026-11-16,成長股,5536,聖暉*,上櫃,nan,nan,nan,688.0,752.55,0.57,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,56.45,29.31,34.76,36.59,33.11
+2026-11-16,成長股,5274,信驊,上櫃,nan,nan,nan,10800.0,14324.5,0.54,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,49.84,105.41,52.73,126.41,73.84
+2026-11-16,成長股,6584,南俊國際,上櫃,nan,nan,nan,291.0,381.43,1.64,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,49.75,33.61,90.14,9.45,22.59
+2026-11-16,成長股,4979,華星光,上櫃,nan,nan,nan,341.5,418.0,0.69,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,48.05,51.42,43.27,5.19,22.82
+2026-11-16,成長股,4772,台特化,上櫃,nan,nan,nan,196.0,230.62,1.12,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,37.5,58.26,53.28,4.48,24.48
+2026-11-16,成長股,3131,弘塑,上櫃,nan,nan,nan,1565.0,1844.5,0.74,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,28.65,48.73,56.45,40.65,43.24
+2026-11-16,成長股,8088,品安,上櫃,nan,nan,nan,34.0,39.51,1.01,nan,nan,nan,自訂組合,nan,nan,nan,nan,nan,,,,27.91,64.57,962.5,1.69,17.75
+2026-11-16,成長股,6465,威潤,上櫃,nan,nan,nan,36.6,39.22,0.29,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,1833.33,139.62,165.15,2.84,23.1
+2026-11-16,成長股,3260,威剛,上櫃,nan,nan,nan,278.0,322.8,1.07,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,597.85,265.2,150.59,101.47,84.49
+2026-11-16,成長股,3081,聯亞,上櫃,nan,nan,nan,1900.0,2266.25,0.48,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,467.59,182.59,889.83,13.88,30.58
+2026-11-16,成長股,6265,方土昶,上櫃,nan,nan,nan,34.35,40.93,1.06,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,292.94,557.71,223.81,9.78,52.64
+2026-11-16,成長股,6274,台燿,上櫃,nan,nan,nan,877.0,1208.1,0.42,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,263.41,122.61,26.88,25.41,34.49
+2026-11-16,成長股,4931,新盛力,上櫃,nan,nan,nan,162.0,191.3,1.03,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,257.75,150.74,25.2,6.23,31.77
+2026-11-16,成長股,3709,鑫聯大投控,上櫃,nan,nan,nan,58.0,61.66,0.61,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,189.21,100.78,192.59,10.56,34.67
+2026-11-16,成長股,1815,富喬,上櫃,nan,nan,nan,131.0,136.2,0.84,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,116.67,76.51,1161.54,3.41,19.42
+2026-11-16,成長股,6223,旺矽,上櫃,nan,nan,nan,4305.0,4531.5,1.1,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,106.24,72.95,37.14,47.26,33.38
+2026-11-16,成長股,7717,萊德光電-KY,上櫃,nan,nan,nan,485.0,426.5,6.5,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,61.38,65.39,82.99,6.68,18.63
+2026-11-16,成長股,5536,聖暉*,上櫃,nan,nan,nan,688.0,752.55,0.57,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,56.45,29.31,34.76,36.59,33.11
+2026-11-16,成長股,5274,信驊,上櫃,nan,nan,nan,10800.0,14324.5,0.54,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,49.84,105.41,52.73,126.41,73.84
+2026-11-16,成長股,6584,南俊國際,上櫃,nan,nan,nan,291.0,381.43,1.64,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,49.75,33.61,90.14,9.45,22.59
+2026-11-16,成長股,4772,台特化,上櫃,nan,nan,nan,196.0,230.62,1.12,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,37.5,58.26,53.28,4.48,24.48
+2026-11-16,近60日累計同步買超,2892,第一金,上市,346517.0,79797.0,nan,42.35,42.33,0.9,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2609,陽明,上市,339290.0,6065.0,nan,60.0,61.23,0.95,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2610,華航,上市,302665.0,15368.0,nan,22.7,21.27,1.14,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1802,台玻,上市,279603.0,24488.0,nan,76.6,67.95,1.2,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2618,長榮航,上市,258804.0,28793.0,nan,47.4,44.14,1.31,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,5880,合庫金,上市,231814.0,44552.0,nan,28.25,28.3,1.06,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2412,中華電,上市,182822.0,15424.0,nan,163.5,159.07,1.04,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1216,統一,上市,162394.0,6209.0,nan,78.5,78.89,1.12,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2883,凱基金,上市,116525.0,51309.0,nan,34.55,36.53,0.97,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3045,台灣大,上市,138932.0,21702.0,nan,129.0,131.72,0.79,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1326,台化,上市,145805.0,12183.0,nan,69.8,72.14,0.75,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2002,中鋼,上市,127343.0,16645.0,nan,18.0,19.12,1.33,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2801,彰銀,上市,43185.0,87218.0,nan,28.4,29.24,0.8,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2603,長榮,上市,83272.0,38989.0,nan,257.0,260.02,0.9,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,5876,上海商銀,上市,114750.0,6546.0,nan,53.1,53.17,0.66,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1301,台塑,上市,50211.0,65473.0,nan,67.0,71.81,0.55,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1101,台泥,上市,92285.0,17131.0,nan,26.45,27.42,0.68,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1815,富喬,上櫃,16812.0,78314.0,nan,131.0,136.2,0.84,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2889,國票金,上市,85246.0,4000.0,nan,16.05,16.57,0.73,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2881,富邦金,上市,46079.0,43166.0,nan,152.0,157.35,1.37,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,9904,寶成,上市,77579.0,8608.0,nan,26.8,25.99,2.96,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2542,興富發,上市,55514.0,26854.0,nan,37.9,38.83,0.8,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2880,華南金,上市,79417.0,1926.0,nan,50.7,49.73,1.09,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3105,穩懋,上櫃,59634.0,14456.0,nan,512.0,509.2,1.43,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2353,宏碁,上市,61024.0,8035.0,nan,29.1,30.92,0.7,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2615,萬海,上市,64995.0,2227.0,nan,109.5,114.42,0.95,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1402,遠東新,上市,59988.0,5823.0,nan,27.15,28.14,0.83,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,4904,遠傳,上市,43407.0,13357.0,nan,109.0,111.42,1.07,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,9933,中鼎,上市,49911.0,2538.0,nan,51.5,46.62,0.76,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2845,遠東銀,上市,42675.0,7483.0,nan,12.55,12.98,0.75,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6278,台表科,上市,18255.0,25893.0,nan,208.0,248.85,0.43,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2377,微星,上市,35300.0,4997.0,nan,132.5,152.22,1.0,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2355,敬鵬,上市,34488.0,3793.0,nan,60.3,52.82,2.99,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2897,王道銀行,上市,35969.0,2071.0,nan,10.35,10.68,0.68,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,4938,和碩,上市,15534.0,20638.0,nan,85.7,99.4,0.66,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2606,裕民,上市,32241.0,1345.0,nan,71.6,71.98,1.18,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3034,聯詠,上市,25291.0,7230.0,nan,451.0,538.38,0.68,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2855,統一證,上市,12261.0,20225.0,nan,49.0,52.8,1.0,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6456,GIS-KY,上市,29903.0,2.0,nan,91.4,92.96,0.62,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2851,中再保,上市,27411.0,914.0,nan,46.35,48.46,0.66,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2034,允強,上市,26822.0,909.0,nan,23.25,23.39,0.92,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,8150,南茂,上市,23767.0,2896.0,nan,76.3,89.35,0.73,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3702,大聯大,上市,17529.0,8442.0,nan,82.4,102.19,1.08,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,9945,潤泰新,上市,20541.0,4748.0,nan,28.3,28.37,1.37,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3016,嘉晶,上市,23479.0,1558.0,nan,110.0,127.83,0.71,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3714,富采,上市,24162.0,154.0,nan,87.4,60.86,1.98,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,5347,世界,上櫃,17768.0,5772.0,nan,124.5,145.25,0.89,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2354,鴻準,上市,23208.0,51.0,nan,50.2,57.99,1.01,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2379,瑞昱,上市,14725.0,7690.0,nan,716.0,762.85,0.77,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3374,精材,上櫃,4250.0,15559.0,nan,467.5,452.6,1.16,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6168,宏齊,上市,19070.0,368.0,nan,27.8,32.57,0.77,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,9910,豐泰,上市,13567.0,2727.0,nan,66.8,68.55,0.99,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2617,台航,上市,15848.0,288.0,nan,29.25,30.76,0.96,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3035,智原,上市,15010.0,1095.0,nan,186.5,191.85,3.0,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2455,全新,上市,7060.0,7929.0,nan,353.0,422.88,0.32,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3532,台勝科,上市,6189.0,8688.0,nan,265.5,342.93,0.46,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1477,聚陽,上市,12496.0,1431.0,nan,224.5,211.1,1.92,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,5904,寶雅*,上櫃,12548.0,1234.0,nan,73.8,73.88,0.55,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2030,彰源,上市,12428.0,469.0,nan,24.1,26.94,0.4,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,8422,可寧衛*,上市,11391.0,996.0,nan,23.3,24.58,0.77,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6026,福邦證,上櫃,11491.0,407.0,nan,15.2,15.57,0.81,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3005,神基,上市,10695.0,1135.0,nan,103.5,118.45,1.26,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1229,聯華,上市,11385.0,445.0,nan,39.25,39.28,2.32,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6757,台灣虎航,上市,11325.0,96.0,nan,58.7,54.71,1.39,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2351,順德,上市,9691.0,1543.0,nan,136.0,172.5,1.01,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2905,三商,上市,10464.0,334.0,nan,15.75,17.5,1.69,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,4961,天鈺,上市,8197.0,2350.0,nan,175.0,181.07,0.56,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,5483,中美晶,上櫃,5562.0,4897.0,nan,150.0,171.93,0.79,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3037,欣興,上市,9078.0,1163.0,nan,707.0,934.3,0.74,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1717,長興,上市,7610.0,2477.0,nan,55.9,65.19,0.97,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,9907,統一實,上市,9118.0,737.0,nan,13.8,14.47,0.92,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6271,同欣電,上市,4982.0,4787.0,nan,202.5,207.68,1.07,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6214,精誠,上市,4866.0,4134.0,nan,187.5,193.22,1.47,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2395,研華,上市,5821.0,3135.0,nan,580.0,638.05,0.78,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3324,雙鴻,上櫃,5904.0,2356.0,nan,1030.0,1288.25,0.75,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1476,儒鴻,上市,4953.0,3155.0,nan,385.0,336.82,1.01,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,5309,系統電,上櫃,7673.0,189.0,nan,48.7,61.88,0.75,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1513,中興電,上市,7191.0,299.0,nan,141.0,152.22,0.75,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6526,達發,上市,6140.0,1033.0,nan,688.0,736.3,1.05,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2357,華碩,上市,171.0,6797.0,nan,836.0,917.1,1.17,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6173,信昌電,上櫃,5542.0,1422.0,nan,192.0,244.88,0.33,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3265,台星科,上櫃,2593.0,4072.0,nan,147.0,193.85,0.77,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2646,星宇航空,上市,6601.0,3.0,nan,19.75,19.88,1.25,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,4105,東洋,上櫃,5950.0,629.0,nan,82.8,81.09,0.99,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3029,零壹,上市,6174.0,223.0,nan,130.0,123.12,2.55,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6805,富世達,上市,2215.0,4023.0,nan,1805.0,2146.75,0.95,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3094,聯傑,上市,5939.0,172.0,nan,41.8,48.92,0.99,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2006,東和鋼鐵,上市,5501.0,334.0,nan,83.5,89.12,0.41,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2451,創見,上市,3389.0,2036.0,nan,212.0,261.18,1.06,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6672,騰輝電子-KY,上市,2626.0,2754.0,nan,459.0,530.27,0.53,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1504,東元,上市,325.0,4902.0,nan,60.5,66.6,1.11,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6133,金橋,上市,4937.0,234.0,nan,20.6,23.43,0.7,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,8932,智通*,上櫃,5115.0,6.0,nan,70.0,83.51,1.03,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3167,大量,上市,282.0,4748.0,nan,742.0,887.8,0.92,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2915,潤泰全,上市,4585.0,407.0,nan,56.5,56.43,2.01,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3042,晶技,上市,4171.0,815.0,nan,130.0,156.75,0.8,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,4770,上品,上市,3757.0,1206.0,nan,295.0,289.02,0.87,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2539,櫻花建,上市,4380.0,307.0,nan,32.05,31.5,1.31,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6533,晶心科,上市,4580.0,31.0,nan,240.5,258.62,1.49,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6122,擎邦,上櫃,4136.0,64.0,nan,52.7,57.98,0.34,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2903,遠百,上市,2244.0,1809.0,nan,21.05,21.71,1.01,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6962,奕力-KY,上市,3508.0,488.0,nan,30.0,30.7,0.89,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2204,中華,上市,3625.0,172.0,nan,50.4,52.43,0.74,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2723,美食-KY,上市,3611.0,54.0,nan,73.3,81.16,0.91,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2597,潤弘,上市,3285.0,353.0,nan,177.0,168.32,2.57,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3717,聯嘉投控,上市,3179.0,411.0,nan,21.0,25.02,0.77,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,4566,時碩工業,上市,3283.0,200.0,nan,67.5,80.25,0.6,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2816,旺旺保,上市,3351.0,67.0,nan,43.2,41.81,1.64,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2439,美律,上市,2790.0,532.0,nan,66.8,73.96,0.54,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3019,亞光,上市,3260.0,1.0,nan,127.5,128.9,1.06,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3591,艾笛森,上市,2756.0,273.0,nan,23.8,25.58,1.05,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2605,新興,上市,2492.0,498.0,nan,33.1,33.91,1.1,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3545,敦泰,上市,2751.0,167.0,nan,42.15,49.37,0.84,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6189,豐藝,上市,2741.0,94.0,nan,42.25,46.18,1.11,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1810,和成,上市,2791.0,10.0,nan,20.05,21.57,0.68,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6620,漢達,上櫃,1366.0,1407.0,nan,107.5,125.85,0.75,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2367,燿華,上市,2690.0,4.0,nan,37.25,40.89,1.24,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2033,佳大,上市,2422.0,234.0,nan,80.5,70.52,0.75,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6472,保瑞,上市,394.0,2142.0,nan,363.0,394.75,2.07,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2504,國產,上市,2257.0,159.0,nan,31.2,31.59,0.86,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2530,華建,上市,1786.0,581.0,nan,18.1,19.19,0.68,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3059,華晶科,上市,2039.0,239.0,nan,35.3,36.72,0.91,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2495,普安,上市,2014.0,181.0,nan,27.1,30.65,0.78,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6245,立端,上櫃,2038.0,117.0,nan,85.8,89.66,0.83,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6177,達麗,上市,1896.0,223.0,nan,43.95,44.3,0.86,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,5269,祥碩,上市,1396.0,717.0,nan,1090.0,1334.5,0.74,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6104,創惟,上櫃,1809.0,144.0,nan,75.4,82.58,0.95,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,7856,漢測,上櫃,698.0,1173.0,nan,2315.0,2995.5,1.64,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6191,精成科,上市,1049.0,729.0,nan,76.7,83.3,0.63,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,5285,界霖,上市,1553.0,151.0,nan,71.9,80.19,1.21,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3592,瑞鼎,上市,261.0,1427.0,nan,204.0,235.88,0.64,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3479,安勤,上櫃,1596.0,77.0,nan,98.7,114.78,0.68,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3617,碩天,上市,379.0,1280.0,nan,266.5,248.93,1.77,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6196,帆宣,上市,723.0,914.0,nan,357.5,501.98,1.25,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,3515,華擎,上市,1535.0,82.0,nan,186.5,213.38,0.88,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2101,南港,上市,1383.0,220.0,nan,29.5,28.81,1.86,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6743,安普新,上市,1471.0,82.0,nan,34.9,30.54,10.09,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6462,神盾,上櫃,1385.0,90.0,nan,82.4,90.37,2.01,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2207,和泰車,上市,1231.0,22.0,nan,526.0,531.95,0.9,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,8464,億豐,上市,940.0,208.0,nan,365.0,362.12,0.66,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,4968,立積,上市,1042.0,95.0,nan,77.1,85.64,1.07,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,2528,皇普,上市,618.0,449.0,nan,17.3,17.32,0.32,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,4956,光鋐,上市,867.0,187.0,nan,31.5,35.38,3.11,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6727,亞泰金屬,上櫃,55.0,972.0,nan,331.5,411.48,0.55,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,7799,禾榮科,上市,871.0,140.0,nan,463.0,430.1,1.44,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6957,裕慶-KY,上市,766.0,203.0,nan,403.0,445.93,0.66,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6933,AMAX-KY,上市,837.0,41.0,nan,281.0,363.07,0.55,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,5209,新鼎,上櫃,847.0,2.0,nan,218.0,200.95,1.11,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6907,雅特力-KY,上櫃,681.0,110.0,nan,113.5,138.97,0.75,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,4722,國精化,上市,703.0,11.0,nan,124.0,162.5,0.93,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1809,中釉,上市,289.0,334.0,nan,40.6,44.33,0.51,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1514,亞力,上市,457.0,155.0,nan,80.0,91.06,0.71,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1503,士電,上市,401.0,183.0,nan,164.0,180.38,0.83,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6426,統新,上市,347.0,200.0,nan,272.0,290.6,0.94,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,1712,興農,上市,159.0,277.0,nan,39.8,40.29,0.85,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6902,GOGOLOOK,上市,402.0,32.0,nan,126.5,141.28,1.09,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6197,佳必琪,上市,307.0,59.0,nan,214.5,281.95,0.72,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,7711,永擎,上市,301.0,29.0,nan,481.5,559.33,0.88,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,6146,耕興,上櫃,280.0,40.0,nan,186.5,194.43,1.08,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,9938,百和,上市,120.0,135.0,nan,34.0,36.32,0.96,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
+2026-11-16,近60日累計同步買超,7610,聯友金屬-創,上市,53.0,11.0,nan,981.0,1273.8,2.2,nan,nan,nan,成長股 法人同步,nan,nan,nan,nan,nan,,,,nan,nan,nan,nan,nan
