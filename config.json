@@ -213,7 +213,7 @@
         3,
         4
       ],
-      "combine": "separate",
+      "combine": "intersect",
       "top_n": 10,
       "filters": {
         "require_above_ma20": true,
@@ -300,7 +300,8 @@
             "lots": 4000
           }
         ]
-      }
+      },
+      "updated_at": "2026-11-17T02:24:05.278Z"
     },
     {
       "id": "value",
