@@ -307,7 +307,13 @@
       "id": "value",
       "name": "高殖利率價值股",
       "strategy": "value",
-      "notify_days": [],
+      "notify_days": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
       "combine": "separate",
       "top_n": 10,
       "filters": {
@@ -395,7 +401,8 @@
             "lots": 4000
           }
         ]
-      }
+      },
+      "updated_at": "2026-11-17T02:24:41.846Z"
     }
   ]
 }
