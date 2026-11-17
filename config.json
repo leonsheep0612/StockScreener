@@ -4,7 +4,13 @@
       "id": "growth",
       "name": "長期成長股",
       "strategy": "growth",
-      "notify_days": [],
+      "notify_days": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
       "combine": "separate",
       "top_n": 10,
       "filters": {
@@ -92,13 +98,20 @@
             "lots": 4000
           }
         ]
-      }
+      },
+      "updated_at": "2026-11-17T02:23:54.402Z"
     },
     {
       "id": "strong",
       "name": "中短線強勢股",
       "strategy": "strong",
-      "notify_days": [],
+      "notify_days": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
       "combine": "separate",
       "top_n": 10,
       "filters": {
@@ -186,7 +199,8 @@
             "lots": 4000
           }
         ]
-      }
+      },
+      "updated_at": "2026-11-17T02:23:54.402Z"
     },
     {
       "id": "chip",
