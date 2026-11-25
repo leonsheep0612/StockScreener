@@ -14,6 +14,10 @@ on:
         description: "這次的查詢半徑（公里），留空用 10；例如填 50 查整個高雄"
         required: false
         default: ""
+      query:
+        description: "填 1 只查詢、把結果印在執行紀錄，不推播（不耗 LINE 額度）"
+        required: false
+        default: ""
       test:
         description: "填 1 不管有沒有進貨都推播一次，用來確認連線"
         required: false
@@ -45,6 +49,7 @@ jobs:
           ALL: ${{ inputs.all }}
           TEST: ${{ inputs.test }}
           RADIUS_KM: ${{ inputs.radius }}
+          QUERY: ${{ inputs.query }}
       - name: 儲存已通知的門市
         run: |
           git config user.name "github-actions[bot]"

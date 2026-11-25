@@ -26,6 +26,8 @@ SIZE = re.compile(r"28")                          # 要的尺寸 28-29；商品�
 SCAN_ALL = os.environ.get("ALL", "").strip() == "1"
 # TEST = 1 時不管有沒有變化都推播一次，用來確認 LINE 與 foodomo 連得到
 TEST = os.environ.get("TEST", "").strip() == "1"
+# QUERY = 1 時只把查到的門市與地址印在執行紀錄，不推播、不改已通知紀錄（只想看結果時用這個，不耗額度）
+QUERY = os.environ.get("QUERY", "").strip() == "1"
 DAILY_PUSH_LIMIT = None                           # 每天最多推幾則，超過的新進貨留到隔天一起推；None 不限制
 QUOTA_KEEP = 3                                    # 本月額度剩不到這麼多就不推（選股推播暫停中，不用替它保留）
 
@@ -91,6 +93,12 @@ def main():
     print(f"查詢失敗 {failed} 家；有 BEAMS 拖鞋庫存的品項 {len(found)} 筆")
     for g in found:
         print(f"  {g['store']}（距{g['place']} {g['km']} km）{g['title']} × {g['stock']}")
+    if QUERY:
+        for g in found:
+            info = call(ac="store", op="index", ta="index", sid=g["sid"])
+            print(f"  📍 {g['store']}：{((info or {}).get('store') or {}).get('address', '')}")
+        print("只查詢模式：不推播、不更新已通知紀錄")
+        return
 
     # 只在出現「之前沒有庫存的門市＋品項」時推播，避免每次都消耗推播額度
     state = {}
