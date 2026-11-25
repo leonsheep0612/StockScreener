@@ -16,7 +16,8 @@ BASE_PARAMS = {"i": 1, "m": "ht_wmps", "c": "entry", "do": "mobile", "lang": "zh
 
 # 以這幾個地點為中心，任一個半徑內的門市都查；距離以最近的地點計算
 CENTERS = {"中鋼路": (22.554, 120.347),          # 高雄市小港區中鋼路 3 號
-           "英明路": (22.616, 120.325)}          # 高雄市苓雅區英明路 196 號
+           "英明路": (22.616, 120.325),          # 高雄市苓雅區英明路 196 號
+           "美術東二路": (22.663, 120.288)}      # 高雄市鼓山區美術東二路 626 號
 RADIUS_KM = float(os.environ.get("RADIUS_KM") or 10)
 KEYWORD = "拖鞋"                                  # 用「拖鞋」搜尋，再用 TARGET 過濾出 BEAMS DESIGN 款
 TARGET = re.compile(r"(BD|BEAMS).*拖|拖.*(BD|BEAMS)", re.I)
