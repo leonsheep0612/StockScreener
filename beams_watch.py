@@ -14,7 +14,9 @@ API = "https://opennow.foodomo.com/app/wxapp.php"
 BASE_PARAMS = {"i": 1, "m": "ht_wmps", "c": "entry", "do": "mobile", "lang": "zh-cn",
                "ctrl": "wmall", "from": "vue", "u": "wap"}
 
-CENTER = (22.554, 120.347)                       # 高雄市小港區中鋼路 3 號
+# 以這幾個地點為中心，任一個半徑內的門市都查；距離以最近的地點計算
+CENTERS = {"中鋼路": (22.554, 120.347),          # 高雄市小港區中鋼路 3 號
+           "英明路": (22.616, 120.325)}          # 高雄市苓雅區英明路 196 號
 RADIUS_KM = float(os.environ.get("RADIUS_KM") or 10)
 KEYWORD = "拖鞋"                                  # 用「拖鞋」搜尋，再用 TARGET 過濾出 BEAMS DESIGN 款
 TARGET = re.compile(r"(BD|BEAMS).*拖|拖.*(BD|BEAMS)", re.I)
@@ -46,7 +48,7 @@ def distance_km(lat1, lng1, lat2, lng2):
 
 
 def list_stores():
-    """全台門市 [(sid, 店名, 距離 km)]，依距離排序"""
+    """全台門市 [(sid, 店名, 距離 km, 最近的地點)]，依距離排序"""
     pages = range(1, 37)  # 每頁 200 家，全台約 7,100 家
     with ThreadPoolExecutor(8) as pool:
         results = list(pool.map(lambda p: call(ac="home", op="index", ta="store", psize=200, page=p), pages))
@@ -54,18 +56,20 @@ def list_stores():
     for res in results:
         for s in (res or {}).get("stores", []):
             try:
-                stores[s["id"]] = (s["id"], s["title"], distance_km(*CENTER, float(s["location_x"]), float(s["location_y"])))
+                lat, lng = float(s["location_x"]), float(s["location_y"])
+                km, place = min((distance_km(*c, lat, lng), name) for name, c in CENTERS.items())
+                stores[s["id"]] = (s["id"], s["title"], km, place)
             except (KeyError, ValueError):
                 pass
     return sorted(stores.values(), key=lambda s: s[2])
 
 
 def find_slippers(store):
-    sid, name, dist = store
+    sid, name, dist, place = store
     res = call(ac="store", op="goods", ta="list", page=1, psize=100, keyword=KEYWORD, sid=sid)
     if res is None:
         return None
-    return [{"sid": sid, "store": name, "km": round(dist, 1), "title": g["title"], "stock": int(g.get("total") or 0)}
+    return [{"sid": sid, "store": name, "km": round(dist, 1), "place": place, "title": g["title"], "stock": int(g.get("total") or 0)}
             for g in res.get("goods", []) if TARGET.search(g["title"])]
 
 
@@ -83,7 +87,7 @@ def main():
     found = [g for r in results if r for g in r if g["stock"] > 0]
     print(f"查詢失敗 {failed} 家；有 BEAMS 拖鞋庫存的品項 {len(found)} 筆")
     for g in found:
-        print(f"  {g['store']}（{g['km']} km）{g['title']} × {g['stock']}")
+        print(f"  {g['store']}（距{g['place']} {g['km']} km）{g['title']} × {g['stock']}")
 
     # 只在出現「之前沒有庫存的門市＋品項」時推播，避免每次都消耗推播額度
     old = set()
@@ -102,11 +106,11 @@ def main():
         return
     want = [g for g in new if SIZE.search(g["title"]) or not re.search(r"\d{2}", g["title"])]
     lines = [f"👟 BEAMS DESIGN 休閒拖鞋 {'有新進貨' if new else '目前沒有庫存'}"
-             f"（{'全台' if SCAN_ALL else f'中鋼路 {RADIUS_KM:g} 公里內'}，查了 {len(targets)} 家）"]
+             f"（{'全台' if SCAN_ALL else '、'.join(CENTERS) + f' {RADIUS_KM:g} 公里內'}，查了 {len(targets)} 家）"]
     for title, group in (("28-29 號", want), ("其他尺寸", [g for g in new if g not in want])):
         if group:
             lines.append(f"\n【{title}】")
-            lines += [f"{g['store']}（{g['km']} km）{g['title']} × {g['stock']}" for g in group[:30]]
+            lines += [f"{g['store']}（距{g['place']} {g['km']} km）{g['title']} × {g['stock']}" for g in group[:30]]
     if TEST and not new:
         lines.append(f"\n（測試推播：foodomo 連線正常，查詢失敗 {failed} 家）")
     send_line_message("\n".join(lines))

@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       all:
-        description: "填 1 查全台約 7,000 家門市（約十幾分鐘）；留空只查中鋼路 10 公里內"
+        description: "填 1 查全台約 7,000 家門市（約十幾分鐘）；留空只查中鋼路、英明路各 10 公里內"
         required: false
         default: ""
       test:
