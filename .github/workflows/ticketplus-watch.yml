@@ -2,7 +2,7 @@ name: Ticket Plus Watch
 
 on:
   schedule:
-    # 每 5 分鐘查一次（GitHub 排程最短 5 分鐘，尖峰時常延遲，不保證準時）
+    # 每 5 分鐘查一次票況、讀一次 Telegram 指令（GitHub 排程最短 5 分鐘，尖峰時常延遲，不保證準時）
     - cron: "*/5 * * * *"
   workflow_dispatch:
     inputs:
@@ -12,7 +12,7 @@ on:
         default: ""
 
 permissions:
-  contents: write  # 把已通知過的票區存回 data/ticketplus_state.json，避免重複推播
+  contents: write  # 把已通知過的票區、Telegram 加入的監控清單存回 repo，避免重複推播
 
 concurrency:
   group: ticketplus-watch
@@ -35,11 +35,11 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TEST: ${{ inputs.test }}
-      - name: 儲存已通知的票區
+      - name: 儲存已通知的票區與監控清單
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          git add data/ticketplus_state.json
+          git add data/ticketplus_state.json ticketplus_watch.json
           git diff --cached --quiet && exit 0
           git commit -m "Update Ticket Plus watch $(TZ=Asia/Taipei date '+%F %H:%M')"
           git pull --rebase origin ${{ github.ref_name }}
