@@ -1,0 +1,51 @@
+name: BEAMS Slipper Watch
+
+on:
+  schedule:
+    # 台灣時間 08:20～22:20 每小時查一次（GitHub 排程可能延遲，不保證準時）
+    - cron: "20 0-14 * * *"
+  workflow_dispatch:
+    inputs:
+      all:
+        description: "填 1 查全台約 7,000 家門市（約十幾分鐘）；留空只查中鋼路 10 公里內"
+        required: false
+        default: ""
+      test:
+        description: "填 1 不管有沒有進貨都推播一次，用來確認連線"
+        required: false
+        default: ""
+
+permissions:
+  contents: write  # 把已通知過的門市存回 data/beams_state.json，避免重複推播
+
+concurrency:
+  group: beams-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python beams_watch.py
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+          ALL: ${{ inputs.all }}
+          TEST: ${{ inputs.test }}
+      - name: 儲存已通知的門市
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add data/beams_state.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Update BEAMS watch $(TZ=Asia/Taipei date '+%F %H:%M')"
+          git pull --rebase origin main
+          git push
