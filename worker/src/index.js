@@ -4,6 +4,7 @@ import STRATEGIES from '../../strategies.json';
 const CONFIG_PATH = 'config.json';
 const RESULTS_PATH = 'data/results.json';
 const FIRST_CRON = '0 9 * * MON-FRI'; // wrangler.toml 的第一個 cron（17:00）；另一個是 17:30 補跑
+const BEAMS_CRON = '*/10 0-14 * * *'; // wrangler.toml 的 BEAMS 拖鞋監控 cron（每 10 分鐘）
 const MAX_PRESETS = 12; // Flex carousel 最多 12 張卡
 const WEEKDAYS = ['一', '二', '三', '四', '五'];
 const STRATEGY_INFO = Object.fromEntries(STRATEGIES.strategies.map((s) => [s.key, s]));
@@ -12,6 +13,13 @@ const CUSTOM_INFO = { icon: '🧩', name: '自訂組合', desc: '自由搭配各
 export default {
   // wrangler.toml 的 cron：每個交易日 17:00 觸發篩選，依各組合的推播日推播；17:30 補跑（已成功就略過）
   async scheduled(event, env, ctx) {
+    if (event.cron === BEAMS_CRON) {
+      ctx.waitUntil(github(env, '/actions/workflows/beams-watch.yml/dispatches', {
+        method: 'POST',
+        body: JSON.stringify({ ref: env.GITHUB_BRANCH, inputs: {} }),
+      }));
+      return;
+    }
     ctx.waitUntil(triggerWorkflow(env, '', event.cron === FIRST_CRON ? 'first' : 'retry'));
   },
 
