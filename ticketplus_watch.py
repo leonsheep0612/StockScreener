@@ -3,9 +3,10 @@ import re
 import json
 import requests
 
-from main import send_line_message, quota_left, HEADERS
+from main import HEADERS
 
-# 監控遠大售票 Ticket Plus 指定活動有沒有釋票：票區從售完變成有票時推播，買票由自己手動操作
+# 監控遠大售票 Ticket Plus 指定活動有沒有釋票：票區從售完變成有票時用 Telegram 推播，買票由自己手動操作
+# 只用 Telegram，不會用到 StockScreener 的 LINE 推播額度
 # 只讀售票網站公開的票數 API，不登入、不下單
 # 資料來源：getS3 取活動清單、場次與票區（靜態 JSON），get?ticketAreaId= 取各票區的狀態與剩餘張數
 # 有設 Telegram 時，每次執行會先讀你傳給機器人的訊息：傳演唱會名稱就加入監控、/list 看清單、/stop_xxx 取消
@@ -19,7 +20,6 @@ CONFIG_PATH = os.path.join(ROOT, "ticketplus_watch.json")
 STATE_PATH = os.path.join(ROOT, "data", "ticketplus_state.json")
 # TEST = 1 時不管有沒有變化都推播一次，用來確認推播與 Ticket Plus 連得到
 TEST = os.environ.get("TEST", "").strip() == "1"
-QUOTA_KEEP = 20                                   # 用 LINE 推播時，本月額度剩不到這麼多就不推，留給選股推播
 
 TG_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 TG_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
@@ -74,17 +74,9 @@ def tg(method, **payload):
 
 
 def notify(text):
-    """有設 Telegram 就用 Telegram（沒有每月額度），否則用 StockScreener 的 LINE"""
-    if TG_TOKEN and TG_CHAT_ID:
-        ok = tg("sendMessage", chat_id=TG_CHAT_ID, text=text[:4000], disable_web_page_preview=True) is not None
-        print("✅ Telegram 推播成功" if ok else "❌ Telegram 推播失敗")
-        return ok
-    left = quota_left()
-    if left is not None and left < QUOTA_KEEP and not TEST:
-        print(f"⚠️ 本月 LINE 推播額度只剩 {left} 則，這次不推播")
-        return False
-    send_line_message(text)
-    return True
+    ok = tg("sendMessage", chat_id=TG_CHAT_ID, text=text[:4000], disable_web_page_preview=True) is not None
+    print("✅ Telegram 推播成功" if ok else "❌ Telegram 推播失敗")
+    return ok
 
 
 def event_id(url):
@@ -223,6 +215,9 @@ def handle_commands(events, state):
 
 
 def main():
+    if not TG_TOKEN or not TG_CHAT_ID:
+        # 沒設好就直接讓 workflow 失敗，GitHub 會寄信通知，而不是默默不推播
+        raise SystemExit("❌ 找不到 TELEGRAM_BOT_TOKEN 或 TELEGRAM_CHAT_ID，請到 GitHub Secrets 設定")
     with open(CONFIG_PATH, encoding="utf-8") as f:
         config = json.load(f)
     events = config.setdefault("events", [])
@@ -231,7 +226,7 @@ def main():
         with open(STATE_PATH, encoding="utf-8") as f:
             state = json.load(f)
 
-    if TG_TOKEN and TG_CHAT_ID and state.get("tg_profile") != BOT_PROFILE_VERSION:
+    if state.get("tg_profile") != BOT_PROFILE_VERSION:
         ok = all(tg(method, **payload) is not None for method, payload in (
             ("setMyDescription", {"description": BOT_DESCRIPTION}),
             ("setMyShortDescription", {"short_description": BOT_SHORT_DESCRIPTION}),
@@ -240,7 +235,7 @@ def main():
             state["tg_profile"] = BOT_PROFILE_VERSION
             print("✅ 已設定 Telegram 機器人簡介與指令選單")
 
-    if TG_TOKEN and TG_CHAT_ID and handle_commands(events, state):
+    if handle_commands(events, state):
         with open(CONFIG_PATH, "w", encoding="utf-8") as f:
             json.dump(config, f, ensure_ascii=False, indent=1)
             f.write("\n")
