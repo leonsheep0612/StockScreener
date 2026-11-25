@@ -121,9 +121,9 @@ def main():
 
     def save(count):
         os.makedirs(os.path.dirname(STATE_PATH), exist_ok=True)
+        # 不記檢查時間：庫存與推播次數沒變時檔案就不變，workflow 不會每 10 分鐘 commit 一次
         with open(STATE_PATH, "w", encoding="utf-8") as f:
-            json.dump({"checked_at": datetime.now(TW_TZ).isoformat(timespec="minutes"),
-                       "push_date": today, "pushes": {"count": count},
+            json.dump({"push_date": today, "pushes": {"count": count},
                        "in_stock": sorted(now)}, f, ensure_ascii=False, indent=1)
 
     if skip or (not new and not TEST):
