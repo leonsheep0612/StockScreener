@@ -6,7 +6,7 @@ import requests
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 
-from main import send_line_message, TW_TZ, HEADERS
+from main import send_line_message, quota_left, TW_TZ, HEADERS
 
 # 監控 7-11 × BEAMS DESIGN 休閒拖鞋有沒有進貨，有新門市上架就用 LINE 推播
 # 資料來源是 foodomo（7-11 外送平台）的 API：ac=home/ta=store 列出全台門市座標，ac=store/op=goods 查單一門市的商品與庫存
@@ -25,6 +25,8 @@ SIZE = re.compile(r"28")                          # 要的尺寸 28-29；商品�
 SCAN_ALL = os.environ.get("ALL", "").strip() == "1"
 # TEST = 1 時不管有沒有變化都推播一次，用來確認 LINE 與 foodomo 連得到
 TEST = os.environ.get("TEST", "").strip() == "1"
+DAILY_PUSH_LIMIT = 3                              # 每天最多推幾則，超過的新進貨留到隔天一起推
+QUOTA_KEEP = 20                                   # 本月額度剩不到這麼多就不推，留給 StockScreener 的選股推播
 
 STATE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "beams_state.json")
 
@@ -90,30 +92,64 @@ def main():
         print(f"  {g['store']}（距{g['place']} {g['km']} km）{g['title']} × {g['stock']}")
 
     # 只在出現「之前沒有庫存的門市＋品項」時推播，避免每次都消耗推播額度
-    old = set()
+    state = {}
     if os.path.exists(STATE_PATH):
         with open(STATE_PATH, encoding="utf-8") as f:
-            old = {tuple(k) for k in json.load(f).get("in_stock", [])}
-    now = {(g["sid"], g["title"]) for g in found}
+            state = json.load(f)
+    old = {tuple(k) for k in state.get("in_stock", [])}
+    # 這次查詢失敗的門市沿用上次的紀錄，免得下次查到又當成新進貨
+    failed_sids = {s[0] for s, r in zip(targets, results) if r is None}
+    now = {(g["sid"], g["title"]) for g in found} | {k for k in old if k[0] in failed_sids}
     new = [g for g in found if (g["sid"], g["title"]) not in old]
-    os.makedirs(os.path.dirname(STATE_PATH), exist_ok=True)
-    with open(STATE_PATH, "w", encoding="utf-8") as f:
-        json.dump({"checked_at": datetime.now(TW_TZ).isoformat(timespec="minutes"),
-                   "in_stock": sorted(now)}, f, ensure_ascii=False, indent=1)
 
-    if not new and not TEST:
-        print("沒有新進貨的門市，不推播")
+    # 推播額度和 StockScreener 共用：每天最多推 DAILY_PUSH_LIMIT 則，本月剩不到 QUOTA_KEEP 則就不推
+    today = datetime.now(TW_TZ).date().isoformat()
+    pushes = state.get("pushes", {}) if state.get("push_date") == today else {}
+    pushed_today = pushes.get("count", 0)
+    skip = None
+    if new or TEST:
+        left = quota_left()
+        if pushed_today >= DAILY_PUSH_LIMIT and not TEST:
+            skip = f"今天已推播 {pushed_today} 則"
+        elif left is not None and left < QUOTA_KEEP:
+            skip = f"本月推播額度只剩 {left} 則"
+    if skip:
+        # 沒推出去的新進貨不記進已通知，下次有額度時會一起推
+        now -= {(g["sid"], g["title"]) for g in new}
+        print(f"⚠️ {skip}，這次不推播，{len(new)} 筆新進貨留到下次")
+
+    def save(count):
+        os.makedirs(os.path.dirname(STATE_PATH), exist_ok=True)
+        with open(STATE_PATH, "w", encoding="utf-8") as f:
+            json.dump({"checked_at": datetime.now(TW_TZ).isoformat(timespec="minutes"),
+                       "push_date": today, "pushes": {"count": count},
+                       "in_stock": sorted(now)}, f, ensure_ascii=False, indent=1)
+
+    if skip or (not new and not TEST):
+        save(pushed_today)
+        if not skip:
+            print("沒有新進貨的門市，不推播")
         return
-    want = [g for g in new if SIZE.search(g["title"]) or not re.search(r"\d{2}", g["title"])]
-    lines = [f"👟 BEAMS DESIGN 休閒拖鞋 {'有新進貨' if new else '目前沒有庫存'}"
-             f"（{'全台' if SCAN_ALL else '、'.join(CENTERS) + f' {RADIUS_KM:g} 公里內'}，查了 {len(targets)} 家）"]
-    for title, group in (("28-29 號", want), ("其他尺寸", [g for g in new if g not in want])):
+
+    shown = new or found
+    # 門市清單 API 沒有地址，只對要推播的門市另外查
+    sids = sorted({g["sid"] for g in shown})
+    with ThreadPoolExecutor(8) as pool:
+        infos = pool.map(lambda sid: call(ac="store", op="index", ta="index", sid=sid), sids)
+        address = {sid: ((info or {}).get("store") or {}).get("address", "") for sid, info in zip(sids, infos)}
+    want = [g for g in shown if SIZE.search(g["title"]) or not re.search(r"\d{2}", g["title"])]
+    lines = [f"👟 BEAMS DESIGN 休閒拖鞋 {'有新進貨' if new else '目前有貨的門市'}"
+             f"（{'全台' if SCAN_ALL else '、'.join(CENTERS) + f' {RADIUS_KM:g} 公里內'}，查了 {len(targets)} 家）"
+             "\n※ foodomo 庫存不是即時的，出發前先打電話確認"]
+    for title, group in (("28-29 號", want), ("其他尺寸", [g for g in shown if g not in want])):
         if group:
             lines.append(f"\n【{title}】")
-            lines += [f"{g['store']}（距{g['place']} {g['km']} km）{g['title']} × {g['stock']}" for g in group[:30]]
-    if TEST and not new:
+            lines += [f"{g['store']}（距{g['place']} {g['km']} km）{g['title']} × {g['stock']}\n📍 {address.get(g['sid']) or '（查不到地址）'}"
+                      for g in group[:30]]
+    if TEST:
         lines.append(f"\n（測試推播：foodomo 連線正常，查詢失敗 {failed} 家）")
     send_line_message("\n".join(lines))
+    save(pushed_today + 1)
 
 
 if __name__ == "__main__":
