@@ -138,6 +138,8 @@ def main():
     with ThreadPoolExecutor(8) as pool:
         infos = pool.map(lambda sid: call(ac="store", op="index", ta="index", sid=sid), sids)
         address = {sid: ((info or {}).get("store") or {}).get("address", "") for sid, info in zip(sids, infos)}
+    for g in shown:
+        print(f"  📍 {g['store']}：{address.get(g['sid'])}")
     want = [g for g in shown if SIZE.search(g["title"]) or not re.search(r"\d{2}", g["title"])]
     lines = [f"👟 BEAMS DESIGN 休閒拖鞋 {'有新進貨' if new else '目前有貨的門市'}"
              f"（{'全台' if SCAN_ALL else '、'.join(CENTERS) + f' {RADIUS_KM:g} 公里內'}，查了 {len(targets)} 家）"

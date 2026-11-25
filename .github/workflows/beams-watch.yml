@@ -10,6 +10,10 @@ on:
         description: "填 1 查全台約 7,000 家門市（約十幾分鐘）；留空只查中鋼路、英明路、美術東二路各 10 公里內"
         required: false
         default: ""
+      radius:
+        description: "這次的查詢半徑（公里），留空用 10；例如填 50 查整個高雄"
+        required: false
+        default: ""
       test:
         description: "填 1 不管有沒有進貨都推播一次，用來確認連線"
         required: false
@@ -40,6 +44,7 @@ jobs:
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
           ALL: ${{ inputs.all }}
           TEST: ${{ inputs.test }}
+          RADIUS_KM: ${{ inputs.radius }}
       - name: 儲存已通知的門市
         run: |
           git config user.name "github-actions[bot]"
