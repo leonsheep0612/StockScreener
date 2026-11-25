@@ -26,8 +26,8 @@ SIZE = re.compile(r"28")                          # 要的尺寸 28-29；商品�
 SCAN_ALL = os.environ.get("ALL", "").strip() == "1"
 # TEST = 1 時不管有沒有變化都推播一次，用來確認 LINE 與 foodomo 連得到
 TEST = os.environ.get("TEST", "").strip() == "1"
-DAILY_PUSH_LIMIT = 3                              # 每天最多推幾則，超過的新進貨留到隔天一起推
-QUOTA_KEEP = 20                                   # 本月額度剩不到這麼多就不推，留給 StockScreener 的選股推播
+DAILY_PUSH_LIMIT = None                           # 每天最多推幾則，超過的新進貨留到隔天一起推；None 不限制
+QUOTA_KEEP = 3                                    # 本月額度剩不到這麼多就不推（選股推播暫停中，不用替它保留）
 
 STATE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "beams_state.json")
 
@@ -110,7 +110,7 @@ def main():
     skip = None
     if new or TEST:
         left = quota_left()
-        if pushed_today >= DAILY_PUSH_LIMIT and not TEST:
+        if DAILY_PUSH_LIMIT is not None and pushed_today >= DAILY_PUSH_LIMIT and not TEST:
             skip = f"今天已推播 {pushed_today} 則"
         elif left is not None and left < QUOTA_KEEP:
             skip = f"本月推播額度只剩 {left} 則"
