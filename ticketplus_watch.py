@@ -24,12 +24,28 @@ QUOTA_KEEP = 20                                   # 用 LINE 推播時，本月�
 TG_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 TG_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
 
-HELP = ("🎫 Ticket Plus 釋票通知\n"
-        "・傳演唱會名稱（例如：田馥甄），或貼上 ticketplus.com.tw/activity/… 網址，就會加入監控\n"
-        "・/list 看目前監控的活動與票況\n"
-        "・/stop_代碼 取消監控（/list 裡可以直接點）\n"
-        "票區從售完變成有票時會推播，買票請自己到網站操作。\n"
-        "※ 每 5 分鐘左右才讀一次訊息，回覆會慢幾分鐘")
+HELP = ("🎫 歡迎使用 Ticket Plus 遠大售票 釋票通知！\n"
+        "\n"
+        "【加入監控】直接傳演唱會名稱，例如：\n"
+        "  田馥甄\n"
+        "  YOASOBI\n"
+        "  高明駿 台北站（多個詞要全部符合）\n"
+        "找到好幾個活動時，點要監控的那個 /w_… 就好；也可以直接貼 ticketplus.com.tw/activity/… 網址。\n"
+        "\n"
+        "【其他指令】\n"
+        "  /list 看監控中的活動與目前票況\n"
+        "  /stop_代碼 取消監控（/list 裡可以直接點）\n"
+        "  /help 再看一次這段說明\n"
+        "\n"
+        "票區從售完變成有票時會通知你，買票請自己到網站操作。\n"
+        "※ 機器人每 5 分鐘左右才讀一次訊息，傳完請稍等幾分鐘再看回覆")
+# 機器人簡介與指令選單；內容有改就把版本加 1，下次執行會重新設定
+BOT_PROFILE_VERSION = 1
+BOT_DESCRIPTION = ("傳演唱會名稱給我，遠大售票（Ticket Plus）有人退票、清票釋出時通知你。\n"
+                   "按下方「開始」看使用方式。")
+BOT_SHORT_DESCRIPTION = "遠大售票 Ticket Plus 釋票通知：傳演唱會名稱就幫你盯票"
+BOT_COMMANDS = [{"command": "list", "description": "監控中的活動與目前票況"},
+                {"command": "help", "description": "使用方式"}]
 
 
 def call(endpoint, **params):
@@ -214,6 +230,15 @@ def main():
     if os.path.exists(STATE_PATH):
         with open(STATE_PATH, encoding="utf-8") as f:
             state = json.load(f)
+
+    if TG_TOKEN and TG_CHAT_ID and state.get("tg_profile") != BOT_PROFILE_VERSION:
+        ok = all(tg(method, **payload) is not None for method, payload in (
+            ("setMyDescription", {"description": BOT_DESCRIPTION}),
+            ("setMyShortDescription", {"short_description": BOT_SHORT_DESCRIPTION}),
+            ("setMyCommands", {"commands": BOT_COMMANDS})))
+        if ok:
+            state["tg_profile"] = BOT_PROFILE_VERSION
+            print("✅ 已設定 Telegram 機器人簡介與指令選單")
 
     if TG_TOKEN and TG_CHAT_ID and handle_commands(events, state):
         with open(CONFIG_PATH, "w", encoding="utf-8") as f:
